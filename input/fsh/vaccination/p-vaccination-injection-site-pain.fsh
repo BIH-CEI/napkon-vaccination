@@ -1,10 +1,10 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-Profile: VaccinationInjectionSitePainRest
+Profile: VaccinationInjectionSitePain
 Parent: Observation
-Id: vaccination-injection-site-pain-rest
-Title: "Vaccination Injection Site Pain Rest"
-Description: "Pain intensity at vaccine injection site at rest"
+Id: vaccination-injection-site-pain
+Title: "Vaccination Injection Site Pain"
+Description: "Pain intensity at vaccine injection site at rest or movement"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
 * insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
@@ -29,11 +29,11 @@ Description: ""
 * $sctIntl2021#426120002 "Pain provoked by rest (finding)"
 * $sctIntl2021#425423002 "Pain provoked by movement (finding)"
 
-Instance: VaccinationInjectionSitePainRest
-InstanceOf: vaccination-injection-site-pain-rest
+Instance: VaccinationInjectionSitePain
+InstanceOf: vaccination-injection-site-pain
 Usage: #example
 Title: "Vaccination Injection Site Pain Rest"
-Description: "Example of mild pain at vaccine injection site at rest"
+Description: "Example of mild pain at vaccine injection site at rest and movement"
 * status = #final
 * component[+]
   * code = $sctIntl2021#426120002 "Pain provoked by rest (finding)"
