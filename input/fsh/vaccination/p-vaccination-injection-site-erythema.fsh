@@ -26,5 +26,5 @@ Description: "Example of a 2.5-5 cm erythema at a vaccine injection site"
 * status = #final
 * valueRange
   * low = 2.5 'cm'
-  * high = 3.0 'cm'
+  * high = 5.0 'cm'
 * subject = Reference(ExamplePatient)

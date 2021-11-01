@@ -15,9 +15,8 @@ Description: "Size of an swelling at a vaccine injection site"
 * code.coding[sct] = $sctIntl2021#863910007 "Vaccination site swelling (disorder)"
 * code.coding[sct].system 1..
 * code.coding[sct].code 1..
-* value[x] MS
-* value[x] only CodeableConcept
-* valueCodeableConcept from VaccinationInjectionSiteSwellingSize (required)
+* bodySite = $sctIntl2021#13136005 "Injection site (morphologic abnormality)"
+* insert value-quantity-or-range(#cm, "CentiMeter")
 
 Instance: VaccinationInjectionSiteSwelling
 InstanceOf: vaccination-injection-site-swelling
@@ -25,5 +24,7 @@ Usage: #example
 Title: "Vaccination Injection Site Swelling Instance"
 Description: "Example of a 5.1-10 cm swelling at a vaccine injection site"
 * status = #final
-* valueCodeableConcept = $nvm#4003 "Zwischen 5,1 und 10 Zentimeter"
+* valueRange
+  * low = 5.1 'cm'
+  * high = 10 'cm'
 * subject = Reference(ExamplePatient)
