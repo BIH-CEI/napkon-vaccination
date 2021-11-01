@@ -6,6 +6,7 @@ Id: chemotherapy
 Title: "Chemotherapy"
 Description: "Whether a patient is or has been receiving a chemotherapy within the last 3 months"
 * insert napkon-metadata(2021-09-13, #draft, 0.1.0)
+* insert mii-patient-reference
 * status from RestrictedEventStatus
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
@@ -17,8 +18,7 @@ Description: "Whether a patient is or has been receiving a chemotherapy within t
 * code.coding ^slicing.rules = #open
 * code.coding contains sct 1..1
 * code.coding[sct] = $sctIntl2021#367336001	"Chemotherapy (procedure)"
-* subject only Reference(Patient)
-* subject MS
+
 // TODO: IG "aktuell oder in den letzten 3 Monaten"
 
 Instance: Chemotherapy

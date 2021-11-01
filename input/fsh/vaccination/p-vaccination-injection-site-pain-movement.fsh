@@ -6,6 +6,7 @@ Id: vaccination-injection-site-pain-movement
 Title: "Vaccination Injection Site Pain Movement"
 Description: "Pain intensity at vaccine injection site during pressure or movement"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -25,3 +26,4 @@ Title: "Vaccination Injection Site Pain Movement Instance"
 Description: "Example of mild pain at vaccine injection site during pressure or movement"
 * status = #final
 * valueCodeableConcept = $nvm#3001 "Leichte Schmerzen, diese stören nicht bei täglichen Aktivitäten"
+* subject = Reference(ExamplePatient)

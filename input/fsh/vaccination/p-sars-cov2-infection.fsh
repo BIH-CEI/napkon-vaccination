@@ -6,6 +6,7 @@ Id: sars-cov2-infection-vaccination
 Title: "SARS CoV2 Infection"
 Description: "Whether SARS CoV2 was detected in a patient"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -27,3 +28,4 @@ Description: "Example of a patient without detected SARS CoV2"
 * status = #final
 * valueCodeableConcept = $sctIntl2021#260415000 "Not detected (qualifier value)"
 * effectiveDateTime = "2021-10-01T13:06:00+02:00"
+* subject = Reference(ExamplePatient)

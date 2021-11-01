@@ -6,6 +6,7 @@ Id: body-temperature-after-vaccination
 Title: "Body Temperature After Vaccination"
 Description: "Maximal body temperature after a vaccination event (indicating fever)"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -18,6 +19,7 @@ Description: "Maximal body temperature after a vaccination event (indicating fev
 * value[x] only CodeableConcept
 * valueCodeableConcept from BodyTemperature (required)
 
+
 Instance: BodyTemperatureAfterVaccination
 InstanceOf: body-temperature-after-vaccination
 Usage: #example
@@ -25,3 +27,4 @@ Title: "Body Temperature After Vaccination"
 Description: "Example of an elevated body temperature after vaccination"
 * status = #final
 * valueCodeableConcept = $nvm#7003 "38,0 °C bis 38,4 °C"
+* subject = Reference(ExamplePatient)

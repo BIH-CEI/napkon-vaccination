@@ -6,6 +6,7 @@ Id: immunomodulatory-therapy
 Title: "Immunomodulatory Therapy"
 Description: "Whether a patient is receiving an immunosuppressive or -modulatory therapy"
 * insert napkon-metadata(2021-09-13, #draft, 0.1.0)
+* insert mii-patient-reference
 * status from RestrictedEventStatus
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
@@ -17,8 +18,6 @@ Description: "Whether a patient is receiving an immunosuppressive or -modulatory
 * code.coding ^slicing.rules = #open
 * code.coding contains sct 1..1
 * code.coding[sct] from ImmunosuppressiveImmunomodulatoryTherapy
-* subject only Reference(Patient)
-* subject MS
 
 Instance: ImmunomodulatoryTherapyNotDone
 InstanceOf: immunomodulatory-therapy

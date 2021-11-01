@@ -6,6 +6,7 @@ Id: vaccination-injection-site-erythema
 Title: "Vaccination Injection Site Erythema"
 Description: "Size of an erythema at a vaccine injection site"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -25,3 +26,4 @@ Title: "Vaccination Injection Site Erythema"
 Description: "Example of a 2.5-5 cm erythema at a vaccine injection site"
 * status = #final
 * valueCodeableConcept = $nvm#4002 "Zwischen 2,5 und 5 Zentimeter"
+* subject = Reference(ExamplePatient)

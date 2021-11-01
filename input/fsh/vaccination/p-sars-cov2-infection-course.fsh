@@ -6,6 +6,7 @@ Id: sars-cov2-infection-course-vaccination
 Title: "SARS CoV2 Infection Course"
 Description: "Course of a SARS CoV2 infection"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -25,3 +26,4 @@ Title: "SARS CoV2 Infection Course Instance"
 Description: "Example of a patient who suffered from COVID-19 and was treated on an intensive care unit"
 * status = #final
 * valueCodeableConcept = $nvm#1005 "Erkrankt und im Krankenhaus auf einer Intensivstation"
+* subject = Reference(ExamplePatient)

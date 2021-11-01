@@ -6,6 +6,7 @@ Id: regular-alcohol-intake-quantity
 Title: "Regular Alcohol Intake Quantity"
 Description: "How many alcoholic drinks a patient usually drings per day"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -25,3 +26,4 @@ Title: "Regular Alcohol Intake Quantity"
 Description: "Example of intake of 5 or more alcoholic beverages per day"
 * status = #final
 * valueCodeableConcept = $nvm#9005 "5 oder mehr alkoholische Getränke pro Tag"
+* subject = Reference(ExamplePatient)

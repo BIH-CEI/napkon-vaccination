@@ -5,10 +5,10 @@ Parent: MedicationStatement // don't use MII profile, as that one requires effec
 Id: analgesic-antipyretic-intake-after-vaccination
 Title: "Analgesic Antipyretic Intake After Vaccination"
 Description: "Whether a patient took analgesic or antipyretic drugs after a vaccination event"
+* insert mii-patient-reference
 * medication[x] only CodeableConcept
 * medicationCodeableConcept from AnalgesicsAntipyretics
 * reasonCode = $sctIntl2021#33879002 "Administration of vaccine to produce active immunity (procedure)"
-* subject only Reference(Patient)
 
 Instance: AnalgesicAntipyreticIntakeAfterVaccination
 InstanceOf: analgesic-antipyretic-intake-after-vaccination

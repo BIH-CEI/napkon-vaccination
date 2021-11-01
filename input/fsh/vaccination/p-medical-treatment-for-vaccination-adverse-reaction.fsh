@@ -6,6 +6,7 @@ Id: medical-treatment-for-vaccination-adverse-reaction
 Title: "Medical Treatment For Vaccination Adverse Reaction"
 Description: "Whether a patient underwent medical treatment for a potential or actual adverse reaction to a vaccination event"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert mii-patient-reference
 * obeys reason-if-treated
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
@@ -28,6 +29,7 @@ Description: "Example of a patient hospitalized for a potential or actual advers
 * status = #final
 * valueCodeableConcept = $nvm#6002 "Ja, Behandlung mit Aufnahme im Krankenhaus"
 * derivedFrom = Reference(MedicalTreatmentReason)
+* subject = Reference(ExamplePatient)
 
 Instance: MedicalTreatmentForVaccinationAdverseReactionAtGP
 InstanceOf: medical-treatment-for-vaccination-adverse-reaction
@@ -37,6 +39,7 @@ Description: "Example of a patient treated in the mergency room or by a general 
 * status = #final
 * valueCodeableConcept = $nvm#6001 "Ja, Behandlung in Arztpraxis oder Rettungsstelle"
 * derivedFrom = Reference(MedicalTreatmentReason)
+* subject = Reference(ExamplePatient)
 
 Instance: MedicalTreatmentForVaccinationAdverseReaction
 InstanceOf: medical-treatment-for-vaccination-adverse-reaction
@@ -45,3 +48,4 @@ Title: "Medical Treatment For Vaccination Adverse Reaction"
 Description: "Example of a patient not treated for a potential or actual adverse reaction to a vaccination event"
 * status = #final
 * valueCodeableConcept = $sctIntl2021#373067005 "No (qualifier value)"
+* subject = Reference(ExamplePatient)

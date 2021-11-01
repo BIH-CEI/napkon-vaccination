@@ -9,6 +9,7 @@ Id: sars-cov2-variant
 Title: "SARS CoV2 Variant"
 Description: "Variant/strain of detected SARS CoV2 (Pango Cov-lineage)"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert mii-patient-reference
 
 * code = $loinc#96741-4 "SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing"
 * value[x] only CodeableConcept
@@ -27,8 +28,6 @@ Description: "Variant/strain of detected SARS CoV2 (Pango Cov-lineage)"
   * coding[observation-category] = $cs-observation-category#laboratory
 * code MS
 * code = $loinc#96741-4 "SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing"
-* subject 1.. MS
-* subject only $mii-reference
 * value[x] only CodeableConcept
 * valueCodeableConcept MS
 * valueCodeableConcept from $loinc-sars-cov2-variants (required)
@@ -41,7 +40,6 @@ Description: "Variant/strain of detected SARS CoV2 (Pango Cov-lineage)"
   * reference MS
   * identifier MS
 * device MS
-
 
 Instance: SARSCoV2Variant
 InstanceOf: sars-cov2-variant

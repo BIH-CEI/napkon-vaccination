@@ -6,6 +6,7 @@ Id: medical-treatment-reason
 Title: "Medical Treatment Reason"
 Description: "Reason for a medical treatment for a potential or actual adverse reaction to a vaccination event (free text only)"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -24,3 +25,4 @@ Title: "Medical Treatment Reason"
 Description: "Example of a skin rash as a reason for a medical treatment for a potential or actual adverse reaction to a vaccination event"
 * status = #final
 * valueString = "Starker Hautausschlag"
+* subject = Reference(ExamplePatient)

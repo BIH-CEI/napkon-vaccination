@@ -6,6 +6,7 @@ Id: additional-vaccination-willingness
 Title: "Additional Vaccination Willingness"
 Description: "Willingness of the patient to receive additional COVID-19 vaccination if officially recommended"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -25,3 +26,4 @@ Title: "Additional Vaccination Willingness"
 Description: "Example of a willingness for additional vaccinations item"
 * status = #final
 * valueCodeableConcept = $sctIntl2021#373066001 "Yes (qualifier value)"
+* subject = Reference(ExamplePatient)
