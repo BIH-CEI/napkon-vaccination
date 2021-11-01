@@ -11,19 +11,25 @@ Description: "Whether a patient regularly drinks alcohol"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-    napkon 1..*
-* code.coding[napkon] = $sctIntl2021#897148007 "Alcoholic beverage intake (observable entity)"
-* code.coding[napkon].system 1..
-* code.coding[napkon].code 1..
+    loinc 1..*
+* code.coding[loinc] = $loinc#81032-5 "Days per week alcoholic drinks consumed"
+* code.coding[loinc].system 1..
+* code.coding[loinc].code 1..
 * value[x] MS
-* value[x] only CodeableConcept
-* valueCodeableConcept from RegularAlcoholIntake (required)
+* value[x] only Quantity or Range
+* valueQuantity MS
+  * insert quantity-per-week
+* valueRange
+  * low
+    * insert quantity-per-week
+  * high
+    * insert quantity-per-week
 
 Instance: RegularAlcoholIntake
 InstanceOf: regular-alcohol-intake
 Usage: #example
 Title: "Regular Alcohol Intake"
-Description: "Example of a patient who does not drink alcohol"
+Description: "Example of a patient who drinks a single drink per week"
 * status = #final
-* valueCodeableConcept = $sctIntl2021#373067005 "No (qualifier value)"
+* valueQuantity = 1 #/wk
 * subject = Reference(ExamplePatient)
