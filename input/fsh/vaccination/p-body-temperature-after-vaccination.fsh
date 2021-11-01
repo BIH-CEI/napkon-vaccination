@@ -16,15 +16,49 @@ Description: "Maximal body temperature after a vaccination event (indicating fev
 * code.coding[sct].system 1..
 * code.coding[sct].code 1..
 * value[x] MS
-* value[x] only CodeableConcept
-* valueCodeableConcept from BodyTemperature (required)
+* value[x] only Range or Quantity
+* valueQuantity MS
+  * system 1.. MS
+  * system = $ucum
+  * value 1.. MS
+  * unit 1.. MS
+  * unit = "DegreesCelsius"
+  * code 1.. MS
+  * code = #Cel
+* valueRange
+  * low
+    * system 1.. MS
+    * system = $ucum
+    * value 1.. MS
+    * unit 1.. MS
+    * unit = "DegreesCelsius"
+    * code 1.. MS
+    * code = #Cel
+  * high
+    * system 1.. MS
+    * system = $ucum
+    * value 1.. MS
+    * unit 1.. MS
+    * unit = "DegreesCelsius"
+    * code 1.. MS
+    * code = #Cel
 
-
-Instance: BodyTemperatureAfterVaccination
+Instance: BodyTemperatureAfterVaccinationQuantity
 InstanceOf: body-temperature-after-vaccination
 Usage: #example
 Title: "Body Temperature After Vaccination"
 Description: "Example of an elevated body temperature after vaccination"
 * status = #final
-* valueCodeableConcept = $nvm#7003 "38,0 °C bis 38,4 °C"
+* valueQuantity = 37.5 #Cel
+* subject = Reference(ExamplePatient)
+
+Instance: BodyTemperatureAfterVaccinationRange
+InstanceOf: body-temperature-after-vaccination
+Usage: #example
+Title: "Body Temperature After Vaccination"
+Description: "Example of an elevated body temperature after vaccination"
+* status = #final
+* valueRange
+  * low = 37.5 #Cel
+  * high = 38.0 #Cel
 * subject = Reference(ExamplePatient)
