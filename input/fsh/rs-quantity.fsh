@@ -1,26 +1,19 @@
-RuleSet: quantity-per-day
+RuleSet: quantity-ucum(code, unit)
 * system 1.. MS
 * system = $ucum
 * value 1.. MS
 * unit 1.. MS
-* unit = "PerDay"
+* unit = {unit}
 * code 1.. MS
-* code = #/d
+* code = {code}
 
-RuleSet: quantity-per-week
-* system 1.. MS
-* system = $ucum
-* value 1.. MS
-* unit 1.. MS
-* unit = "PerWeek"
-* code 1.. MS
-* code = #/wk
-
-RuleSet: quantity-degrees-celsius
-* system 1.. MS
-* system = $ucum
-* value 1.. MS
-* unit 1.. MS
-* unit = "DegreesCelsius"
-* code 1.. MS
-* code = #Cel
+RuleSet: value-quantity-or-range(code, unit)
+* value[x] MS
+* value[x] only Range or Quantity
+* valueQuantity MS
+  * insert quantity-ucum({code}, {unit})
+* valueRange
+  * low
+    * insert quantity-ucum({code}, {unit})
+  * high
+    * insert quantity-ucum({code}, {unit})

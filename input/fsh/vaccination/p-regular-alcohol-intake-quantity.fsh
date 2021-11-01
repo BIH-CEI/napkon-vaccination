@@ -15,15 +15,7 @@ Description: "How many alcoholic drinks a patient usually drings per day"
 * code.coding[loinc] = $loinc#74013-4 "Alcoholic drinks per day"
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
-* value[x] MS
-* value[x] only Quantity or Range
-* valueQuantity MS
-  * insert quantity-per-day
-* valueRange
-  * low
-    * insert quantity-per-day
-  * high
-    * insert quantity-per-day
+* insert value-quantity-or-range(#/d, "PerDay")
 
 Instance: RegularAlcoholIntakeQuantity
 InstanceOf: regular-alcohol-intake-quantity

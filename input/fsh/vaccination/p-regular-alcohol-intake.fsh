@@ -15,15 +15,7 @@ Description: "Whether a patient regularly drinks alcohol"
 * code.coding[loinc] = $loinc#81032-5 "Days per week alcoholic drinks consumed"
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
-* value[x] MS
-* value[x] only Quantity or Range
-* valueQuantity MS
-  * insert quantity-per-week
-* valueRange
-  * low
-    * insert quantity-per-week
-  * high
-    * insert quantity-per-week
+* insert value-quantity-or-range(#/wk, "PerWeek")
 
 Instance: RegularAlcoholIntake
 InstanceOf: regular-alcohol-intake
