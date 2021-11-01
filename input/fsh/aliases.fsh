@@ -40,3 +40,4 @@ Alias: $nvm = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napko
 // Extensions
 Alias: $ext-data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $ext-condition-dueTo = http://hl7.org/fhir/StructureDefinition/condition-dueTo
+Alias: $ext-condition-occurredFollowing = http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing
