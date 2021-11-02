@@ -15,13 +15,52 @@ Description: "Whether a patient regularly drinks alcohol"
 * code.coding[loinc] = $loinc#81032-5 "Days per week alcoholic drinks consumed"
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
-* insert value-quantity-or-range(#/wk, "PerWeek")
+* value[x] MS
+* value[x] only Range or Quantity or CodeableConcept
+* valueQuantity MS
+  * insert quantity-ucum(#/wk, "PerWeek")
+* valueRange MS
+  * low
+    * insert quantity-ucum(#/wk, "PerWeek")
+  * high
+    * insert quantity-ucum(#/wk, "PerWeek")
+* valueCodeableConcept 0..1 MS
+* valueCodeableConcept = $nvm#no-longer "No longer"
+* obeys value-or-data-absent-reason
 
-Instance: RegularAlcoholIntake
+Instance: RegularAlcoholIntake1
 InstanceOf: regular-alcohol-intake
 Usage: #example
 Title: "Regular Alcohol Intake"
 Description: "Example of a patient who drinks a single drink per week"
 * status = #final
 * valueQuantity = 1 #/wk
+* subject = Reference(ExamplePatient)
+
+Instance: RegularAlcoholIntake4
+InstanceOf: regular-alcohol-intake
+Usage: #example
+Title: "Regular Alcohol Intake"
+Description: "Example of a patient who drinks at least 4 drinks per week"
+* status = #final
+* valueRange
+  * low = 4 #/wk
+* subject = Reference(ExamplePatient)
+
+Instance: RegularAlcoholIntakeNoLonger
+InstanceOf: regular-alcohol-intake
+Usage: #example
+Title: "Regular Alcohol Intake"
+Description: "Example of a patient who does no longer drink alcohol"
+* status = #final
+* valueCodeableConcept = $nvm#8001 "No longer"
+* subject = Reference(ExamplePatient)
+
+Instance: RegularAlcoholIntakeNo
+InstanceOf: regular-alcohol-intake
+Usage: #example
+Title: "Regular Alcohol Intake"
+Description: "Example of a patient for whom the alcohol intake is unknown"
+* status = #final
+* dataAbsentReason = $cs-data-absent-reason#unknown
 * subject = Reference(ExamplePatient)

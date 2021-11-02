@@ -4,7 +4,7 @@ Profile: RegularAlcoholIntakeQuantity
 Parent: Observation
 Id: regular-alcohol-intake-quantity
 Title: "Regular Alcohol Intake Quantity"
-Description: "How many alcoholic drinks a patient usually drings per day"
+Description: "How many alcoholic drinks a patient usually drinks per day"
 * insert napkon-metadata(2021-10-05, #draft, 0.1.0)
 * insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
@@ -16,6 +16,16 @@ Description: "How many alcoholic drinks a patient usually drings per day"
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
 * insert value-quantity-or-range(#/d, "PerDay")
+* obeys value-or-data-absent-reason
+
+Instance: RegularAlcoholIntakeQuantityNone
+InstanceOf: regular-alcohol-intake-quantity
+Usage: #example
+Title: "Regular Alcohol Intake Quantity"
+Description: "Example of a patient for whom the quantity is unknown"
+* status = #final
+* subject = Reference(ExamplePatient)
+* dataAbsentReason = $cs-data-absent-reason#unknown
 
 Instance: RegularAlcoholIntakeQuantity
 InstanceOf: regular-alcohol-intake-quantity

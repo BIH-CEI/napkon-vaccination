@@ -38,37 +38,7 @@ Description: "NAPKON Vaccination Module Code System - Collection of vaccination 
 * #3002 "Mäßige Schmerzen, diese stören bei täglichen Aktivitäten"
 * #3003 "Sehr starke Schmerzen, die dazu führen, dass täglichen Aktivitäten nicht mehr durchgeführt werden können"
 
-// vaccination injection site erythema/swelling size
-* #4001 "Kleiner als 2,5 Zentimeter"
-* #4002 "Zwischen 2,5 und 5 Zentimeter"
-* #4003 "Zwischen 5,1 und 10 Zentimeter"
-* #4004 "Größer als 10 Zentimeter"
-
-// medical treatment to potential or actual adverse reactions to vaccination
-* #6001 "Ja, Behandlung in Arztpraxis oder Rettungsstelle"
-* #6002 "Ja, Behandlung mit Aufnahme im Krankenhaus"
-
-// body temperature categories
-* #7001 "Weniger als 37,5 °C"
-* #7002 "37,5 °C bis 37,9 °C"
-* #7003 "38,0 °C bis 38,4 °C"
-* #7004 "38,5 °C bis 38,9 °C"
-* #7005 "39,0 °C bis 40,0 °C"
-* #7006 "Mehr als 40 °C"
-
-// alcoholic beverage intake
-* #8001 "Einmal im Monat oder seltener"
-* #8002 "2-4 Mal im Monat"
-* #8003 "2-3 Mal pro Woche"
-* #8004 "4 Mal oder öfter die Woche"
-* #8005 "Nicht mehr (früher gelegentlich)"
-
-// alcoholic beverage intake per day
-* #9001 "0,5 bis 1 alkoholische Getränke pro Tag"
-* #9002 "1,5 bis 2 alkoholische Getränke pro Tag"
-* #9003 "2,5 bis 3 alkoholische Getränke pro Tag"
-* #9004 "3,5 bis 4,5 alkoholische Getränke pro Tag"
-* #9005 "5 oder mehr alkoholische Getränke pro Tag"
+* #no-longer "No longer"
 
 // allgemeine Beschwerden nach Impfung
 * #10001 "Fieber und/oder Schüttelfrost (inkl. sich fiebrig fühlen)"
