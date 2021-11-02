@@ -10,6 +10,7 @@ Description: "Whether a patient is receiving an immunosuppressive or -modulatory
 * status from RestrictedEventStatus
 * category.coding[sct] = $sctIntl2021#277132007 "Therapeutic procedure (procedure)"
 * code.coding[sct] from ImmunosuppressiveImmunomodulatoryTherapy
+* performedDateTime.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
 
 Instance: ImmunomodulatoryTherapyNotDone
 InstanceOf: immunomodulatory-therapy
