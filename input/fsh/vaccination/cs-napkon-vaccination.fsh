@@ -7,24 +7,6 @@ Description: "NAPKON Vaccination Module Code System - Collection of vaccination 
 
 // questions
 * #q1001 "Willingness for additional SARS-CoV-2 vaccination if recommended"
-* #q1004 "Medical treatment for actual or potential adverse events"
-* #q1005 "General complaints after vaccination"
-* #q1006 "Course of SARS-CoV-2 Infection"
-* #q1007 "Injection site pain at rest"
-* #q1008 "Injection site pain with pressure or movement"
-
-// COVID vaccines
-* #0001 "Comirnaty (BioNTech/Pfizer)"
-* #0002 "COVID-19 Vaccine Moderna (Moderna Biotech)"
-* #0003 "Vaxzevria (AstraZeneca AB)"
-* #0004 "COVID-19 Vaccine Janssen (Janssen-Cilag/Johnson & Johnson)"
-
-// infection course
-* #1001 "Nicht erkrankt (keine Symptome)"
-* #1002 "Erkrankt und zu Hause"
-* #1003 "Erkrankt und im Krankenhaus ohne Sauerstofftherapie"
-* #1004 "Erkrankt und im Krankenhaus mit Sauerstofftherapie"
-* #1005 "Erkrankt und im Krankenhaus auf einer Intensivstation"
 
 // vaccination reasons
 * #2001 "Um mich vor einer Infektion mit SARS-CoV-2 bzw. vor COVID-19 zu schützen"
@@ -39,6 +21,8 @@ Description: "NAPKON Vaccination Module Code System - Collection of vaccination 
 * #3003 "Sehr starke Schmerzen, die dazu führen, dass täglichen Aktivitäten nicht mehr durchgeführt werden können"
 
 * #no-longer "No longer"
+* #pain-by-pressure "Pain provoked by pressure"
+* #pain-by-pressure-or-movement "Pain provoked by pressure or movement"
 
 // allgemeine Beschwerden nach Impfung
 * #10001 "Fieber und/oder Schüttelfrost (inkl. sich fiebrig fühlen)"

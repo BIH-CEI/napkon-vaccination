@@ -15,19 +15,12 @@ Description: "Pain intensity at vaccine injection site at rest or movement"
 * code.coding[sct] = $sctIntl2021#95388000 "Injection site pain (disorder)"
 * code.coding[sct].system 1..
 * code.coding[sct].code 1..
-* component 1..2 MS
+* component 1..* MS
 * component
   * code from PainProvokingFactor (required)
   * value[x] MS
   * value[x] only CodeableConcept
   * valueCodeableConcept from VaccinationPainScale (required)
-
-ValueSet: PainProvokingFactor
-Id: pain-provoking-factor
-Title: "Pain Provoking Factor"
-Description: ""
-* $sctIntl2021#426120002 "Pain provoked by rest (finding)"
-* $sctIntl2021#425423002 "Pain provoked by movement (finding)"
 
 Instance: VaccinationInjectionSitePain
 InstanceOf: vaccination-injection-site-pain
