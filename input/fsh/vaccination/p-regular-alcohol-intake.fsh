@@ -53,7 +53,7 @@ Usage: #example
 Title: "Regular Alcohol Intake"
 Description: "Example of a patient who does no longer drink alcohol"
 * status = #final
-* valueCodeableConcept = $nvm#8001 "No longer"
+* valueCodeableConcept = $nvm#no-longer "No longer"
 * subject = Reference(ExamplePatient)
 
 Instance: RegularAlcoholIntakeNo

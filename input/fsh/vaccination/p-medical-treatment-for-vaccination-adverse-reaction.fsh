@@ -5,27 +5,12 @@ Parent: $mii-encounter
 Id: medical-treatment-for-vaccination-adverse-reaction
 Title: "Medical Treatment For Vaccination Adverse Reaction"
 Description: "Whether a patient underwent medical treatment for a potential or actual adverse reaction to a vaccination event"
+* insert napkon-metadata(2021-10-05, #draft, 0.1.0)
 * period.start.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
 * class from EncounterAmbulatoryEmergencyInpatient (extensible)
 * reasonReference MS
 * reasonReference only Reference(GeneralComplaintsAfterVaccination)
 * obeys reason-code-or-reference-set
-
-Invariant: reason-code-or-reference-set
-Description: "Either reasonReference or reasonCode.text must be set"
-Expression: "reasonReference.exists() or reasonCode.text.exists()"
-Severity: #error
-
-
-ValueSet: EncounterAmbulatoryEmergencyInpatient
-Id: encounter-ambulatory-emergency-inpatient
-Title: "Encounter Ambulatory Emergency Inpatient"
-Description: ""
-* $cs-act-code#AMB "ambulatory"
-* $cs-act-code#EMER "emergency"
-* $cs-act-code#IMP "inpatient encounter"
-
-
 
 Instance: MedicalTreatmentForVaccinationAdverseReactionInHospital
 InstanceOf: medical-treatment-for-vaccination-adverse-reaction

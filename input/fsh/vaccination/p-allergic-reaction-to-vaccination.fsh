@@ -12,7 +12,7 @@ Description: "Whether a vaccination caused an allergic reaction"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     sct 1..*
-* code.coding[sct] = $sctIntl2021#15920121000119103 "Allergic reaction caused by vaccine (disorder)"
+* code.coding[sct] = $sctIntl2021#15920121000119103 "Allergic reaction caused by vaccine product (disorder)"
 * code.coding[sct].system 1..
 * code.coding[sct].code 1..
 * value[x] MS

@@ -43,3 +43,8 @@ Alias: $nvm = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napko
 Alias: $ext-data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $ext-condition-dueTo = http://hl7.org/fhir/StructureDefinition/condition-dueTo
 Alias: $ext-condition-occurredFollowing = http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing
+
+// DE Basisprofil ValueSets und CodeSystems
+Alias: $vs-kontakt-art-de = http://fhir.de/ValueSet/kontaktart-de
+Alias: $cs-kontakt-art-de = http://fhir.de/CodeSystem/kontaktart-de
+Alias: $vs-encounter-class-de = http://fhir.de/ValueSet/EncounterClassDE
