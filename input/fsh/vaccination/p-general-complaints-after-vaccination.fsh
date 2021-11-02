@@ -18,7 +18,7 @@ Description: "General complaints after a vaccination event"
 * severity from ComplaintIntensity (required)
 * extension contains $ext-condition-occurredFollowing named occurredFollowing 1..* MS
 * extension[occurredFollowing].value[x] only Reference
-* extension[occurredFollowing].valueReference only Reference(CovidVaccination)
+* extension[occurredFollowing].valueReference only Reference(Covid19Immunization)
 
 Instance: GeneralComplaintsAfterVaccination
 InstanceOf: general-complaints-after-vaccination

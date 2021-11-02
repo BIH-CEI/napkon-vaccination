@@ -1,10 +1,10 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-Profile: CovidVaccination
+Profile: Covid19Immunization
 Parent: gecco-immunization
-Id: covid-vaccination
-Title: "Covid Vaccination"
-Description: "COVID-19 vaccination event"
+Id: covid19-immunization
+Title: "COVID19 Immunization"
+Description: "COVID-19 immunization event"
 * vaccineCode.coding ^slicing.discriminator.type = #pattern
 * vaccineCode.coding ^slicing.discriminator.path = "$this"
 * vaccineCode.coding ^slicing.rules = #open
@@ -30,7 +30,7 @@ Description: "COVID-19 vaccination event"
 )
 
 Instance: CovidVaccinationNotDone
-InstanceOf: covid-vaccination
+InstanceOf: covid19-immunization
 Usage: #example
 Title: "Covid Vaccination Not Done"
 Description: "Example of a patient not receiving a vaccination due to pregnancy"
@@ -43,7 +43,7 @@ Description: "Example of a patient not receiving a vaccination due to pregnancy"
 * reasonCode = $sctIntl2021#385432009 "Not applicable (qualifier value)"
 
 Instance: CovidVaccinationNotDoneReasonOther
-InstanceOf: covid-vaccination
+InstanceOf: covid19-immunization
 Usage: #example
 Title: "Covid Vaccination Not Done Reason Other"
 Description: "Example of a patient not receiving a vaccination due to a specified (free-text) 'other reason'"
@@ -57,7 +57,7 @@ Description: "Example of a patient not receiving a vaccination due to a specifie
 * reasonCode = $sctIntl2021#385432009 "Not applicable (qualifier value)"
 
 Instance: CovidVaccinationDone
-InstanceOf: covid-vaccination
+InstanceOf: covid19-immunization
 Usage: #example
 Title: "Covid Vaccination Done"
 Description: "Example of a patient having received a vaccination"
