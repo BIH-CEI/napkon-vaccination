@@ -15,33 +15,8 @@ Description: "Maximal body temperature after a vaccination event (indicating fev
 * code.coding[sct] = $sctIntl2021#386725007 "Body temperature (observable entity)"
 * code.coding[sct].system 1..
 * code.coding[sct].code 1..
-* value[x] MS
-* value[x] only Range or Quantity
-* valueQuantity MS
-  * system 1.. MS
-  * system = $ucum
-  * value 1.. MS
-  * unit 1.. MS
-  * unit = "DegreesCelsius"
-  * code 1.. MS
-  * code = #Cel
-* valueRange
-  * low
-    * system 1.. MS
-    * system = $ucum
-    * value 1.. MS
-    * unit 1.. MS
-    * unit = "DegreesCelsius"
-    * code 1.. MS
-    * code = #Cel
-  * high
-    * system 1.. MS
-    * system = $ucum
-    * value 1.. MS
-    * unit 1.. MS
-    * unit = "DegreesCelsius"
-    * code 1.. MS
-    * code = #Cel
+* insert value-quantity-or-range(#Cel, "DegreesCelsius")
+* obeys value-or-data-absent-reason
 
 Instance: BodyTemperatureAfterVaccinationQuantity
 InstanceOf: body-temperature-after-vaccination
@@ -61,4 +36,13 @@ Description: "Example of an elevated body temperature after vaccination"
 * valueRange
   * low = 37.5 #Cel
   * high = 38.0 #Cel
+* subject = Reference(ExamplePatient)
+
+Instance: BodyTemperatureAfterVaccinationNotMeasured
+InstanceOf: body-temperature-after-vaccination
+Usage: #example
+Title: "Body Temperature After Vaccination"
+Description: "Example of a not measured body temperature after vaccination"
+* status = #final
+* dataAbsentReason = $cs-data-absent-reason#not-performed
 * subject = Reference(ExamplePatient)
