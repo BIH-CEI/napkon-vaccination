@@ -16,6 +16,7 @@ Alias: $cs-absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-
 Alias: $cs-condition-category = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $cs-data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $cs-condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $cs-act-code = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
 // LOINC ValueSets
 Alias: $loinc-sars-cov2-variants = http://loinc.org/vs/LL5768-8
@@ -32,6 +33,7 @@ Alias: $mii-condition = https://www.medizininformatik-initiative.de/fhir/core/mo
 Alias: $mii-procedure = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure
 Alias: $mii-reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 Alias: $mii-observation-lab = https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab
+Alias: $mii-encounter = https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung
 
 // Own code systems
 Alias: $nped = https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module

@@ -35,6 +35,9 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.meta:
     uri: https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument
     version: 1.0.3
+  de.medizininformatikinitiative.kerndatensatz.fall:
+    uri: https://simplifier.net/guide/medizininformatikinitiative-modulfall-implementationguide
+    version: 1.0.1
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
