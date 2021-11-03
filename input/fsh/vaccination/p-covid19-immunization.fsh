@@ -68,4 +68,4 @@ Description: "Example of a patient having received a vaccination"
 * protocolApplied.doseNumberPositiveInt = 4
 * occurrenceDateTime = "2021-10-01T13:06:00+02:00"
 * lotNumber = "batch-no #2465"
-* reasonCode = $nvm#2004 "Weil alle sich impfen lassen"
+* reasonCode = $nvm#2004 "Because everyone gets vaccinated"
