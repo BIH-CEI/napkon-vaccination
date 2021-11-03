@@ -1,6 +1,6 @@
-// Author Standard Health  https://github.com/standardhealth/fsh-ae/blob/master/input/fsh/VS_AdverseEvent.fsh
-// LICENSE: APACHE 2.0
-// TODO: check how to include license
+// Authors: Standard Health Record Collaborative / Michelle Casagni, May Terry
+// THIS FILE IS AN EXCERPT OF https://github.com/standardhealth/fsh-ae/blob/master/input/fsh/VS_AdverseEvent.fsh
+// LICENSE: APACHE 2.0 (see ThirdPartyNotices.txt)
 ValueSet: CTCAEGradeVS
 Id: ctcae-grade-value-set
 Title: "CTCAE Grade Value Set"
