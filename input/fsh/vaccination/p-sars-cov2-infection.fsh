@@ -4,7 +4,7 @@ Profile: SARSCoV2Infection
 Parent: $gecco-diagnosis-covid19
 Id: sars-cov2-infection
 Title: "SARS CoV2 Infection"
-Description: ""
+Description: "Profile to capture the diagnosis of disease caused by 2019 novel coronavirus."
 * onset[x] only dateTime
 * onsetDateTime MS
 

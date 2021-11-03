@@ -31,6 +31,8 @@ Description: "Pain intensity at vaccine injection site at rest or movement"
     * coding[sct].system 1..
     * coding[sct].code 1..
     * coding[ctcae] from $vs-ctc-adverse-event-grade
+    * coding[ctcae].system 1..
+    * coding[ctcae].code 1..
 
 Instance: VaccinationInjectionSitePain
 InstanceOf: vaccination-injection-site-pain
