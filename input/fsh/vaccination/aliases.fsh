@@ -1,4 +1,10 @@
+// Canonical URLs for instances
+Alias: $additional-vaccination-willingness-questionnaire-url = https://www.netzwerk-universitaetsmedizin.de/fhir/additional-vaccination-willingness-questionnaire
+
+// Code Systems
 Alias: $cs-eu-vaccine-codes = https://ec.europa.eu/health/documents/community-register/html/
+
+// Base Profiles
 Alias: $gecco-diagnosis-covid19 = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19
 
 // Adverse Event Grading
