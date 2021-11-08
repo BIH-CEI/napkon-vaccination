@@ -27,6 +27,7 @@ Alias: $cardiovascular-diseases = https://www.netzwerk-universitaetsmedizin.de/f
 
 // GECCO resources
 Alias: $gecco-base-condition = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition
+Alias: $gecco-diagnosis-covid19 = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19
 // MII resources
 Alias: $mii-medication-statement = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement
 Alias: $mii-condition = https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
