@@ -18,10 +18,7 @@ Description: "Variant/strain of detected SARS CoV2 (Pango Cov-lineage)"
 * identifier[analyseBefundCode].assigner.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
 * effectiveDateTime.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
 
-/*
-// Can't use instance with sushi v2.1.1 and FHIR validator because sushi inserts the identifier[analyseBefundCode].type twice,
-// which is not allowed (max cardinality = 1) and therefore triggers an error when running the validator
-Instance: //-break-regex-of-fsh-validator-to-not-detect-this-instance SARSCoV2Variant
+Instance: SARSCoV2Variant
 InstanceOf: sars-cov2-variant
 Usage: #example
 Title: "SARS CoV2 Variant"
@@ -35,4 +32,3 @@ Description: "Example of a SARS CoV2 variant (Pango lineage)"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2021-01-01T00:00:00+00:00" // required for sushi 2.1.1 (error is raised otherwise), but not for actual profile ..
 * effectiveDateTime.extension[dataAbsentReason].valueCode = $cs-data-absent-reason#unknown
-*/
