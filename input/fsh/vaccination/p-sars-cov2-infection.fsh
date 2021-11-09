@@ -26,3 +26,13 @@ Description: "Example of a patient with a SARS CoV2 infection"
 * recordedDate = "2021"
 * onsetDateTime = "2021-02-01"
 * subject = Reference(ExamplePatient)
+
+Instance: SARSCoV2InfectionUnknown
+InstanceOf: sars-cov2-infection
+Usage: #example
+Title: "SARS CoV2 Infection"
+Description: "Example of an unknown SARS CoV2 infection"
+* insert uncertainty-of-presence
+* recordedDate = "2021"
+* onsetDateTime = "2021-02-01"
+* subject = Reference(ExamplePatient)
