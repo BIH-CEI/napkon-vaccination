@@ -17,4 +17,3 @@ Description: "NAPKON Vaccination Module Code System - Collection of vaccination 
 
 * #no-longer "No longer"
 * #pain-by-pressure "Pain provoked by pressure"
-* #pain-by-pressure-or-movement "Pain provoked by pressure or movement"
