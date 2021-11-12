@@ -35,6 +35,6 @@ Usage: #example
 Title: "Allergic Reaction To Vaccination Instance"
 Description: "Example of a free-text answer to an allergic reaction caused by vaccination"
 * status = #final
-* valueCodeableConcept = $sctIntl2021#74964007	"Other (qualifier value)"
+* valueCodeableConcept = $sctIntl2021#74964007 "Other (qualifier value)"
 * valueCodeableConcept.text = "some other reason"
 * subject = Reference(ExamplePatient)

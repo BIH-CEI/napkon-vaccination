@@ -41,10 +41,10 @@ Title: "Vaccination Injection Site Pain Rest"
 Description: "Example of mild pain at vaccine injection site at rest and movement"
 * status = #final
 * component[+]
-  * code = $sctIntl2021#426120002 "Pain provoked by rest (finding)"
-  * valueCodeableConcept.coding[sct] = $sctIntl2021#6736007	"Moderate (severity modifier) (qualifier value)"
+  * code = $sctIntl2021#52598005 "Rest pain (finding)"
+  * valueCodeableConcept.coding[sct] = $sctIntl2021#6736007 "Moderate (severity modifier) (qualifier value)"
   * valueCodeableConcept.coding[ctcae] = $cs-ctc-adverse-event-grade#2 "Moderate Adverse Event"
 * component[+]
   * code = $sctIntl2021#425423002 "Pain provoked by movement (finding)"
-  * valueCodeableConcept.coding[sct] = $sctIntl2021#6736007	"Moderate (severity modifier) (qualifier value)"
+  * valueCodeableConcept.coding[sct] = $sctIntl2021#6736007 "Moderate (severity modifier) (qualifier value)"
 * subject = Reference(ExamplePatient)

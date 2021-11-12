@@ -12,7 +12,7 @@ Description: "Size of an erythema at a vaccine injection site"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     sct 1..*
-* code.coding[sct] = $sctIntl2021#213338000	"Injection site erythema (disorder)"
+* code.coding[sct] = $sctIntl2021#213338000 "Injection site erythema (disorder)"
 * code.coding[sct].system 1..
 * code.coding[sct].code 1..
 * bodySite = $sctIntl2021#13136005 "Injection site (morphologic abnormality)"

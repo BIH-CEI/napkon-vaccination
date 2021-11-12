@@ -10,7 +10,7 @@ Description: "Whether a patient is or has been receiving a chemotherapy within t
 * status from RestrictedEventStatus
 * category.coding[sct] = $sctIntl2021#277132007 "Therapeutic procedure (procedure)"
 * code.coding[sct] 1..1 MS
-* code.coding[sct] = $sctIntl2021#367336001	"Chemotherapy (procedure)"
+* code.coding[sct] = $sctIntl2021#367336001 "Chemotherapy (procedure)"
 * performedDateTime.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
 // TODO: IG "aktuell oder in den letzten 3 Monaten"
 
