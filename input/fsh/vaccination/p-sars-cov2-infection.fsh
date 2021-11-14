@@ -1,29 +1,38 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
 Profile: SARSCoV2Infection
-Parent: Observation
-Id: sars-cov2-infection-vaccination
+Parent: $gecco-diagnosis-covid19
+Id: sars-cov2-infection
 Title: "SARS CoV2 Infection"
-Description: "Whether SARS CoV2 was detected in a patient"
-* insert napkon-metadata(2021-10-05, #draft, 0.1.0)
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    sct 1..*
-* code.coding[sct] = $sctIntl2021#1240581000000104 "Severe acute respiratory syndrome coronavirus 2 detected (finding)"
-* code.coding[sct].system 1..
-* code.coding[sct].code 1..
-* value[x] MS
-* value[x] only CodeableConcept
-* valueCodeableConcept from DetectedNotDetectedUnknownUndetermined (required)
-* effectiveDateTime 1..1 MS
+Description: "Profile to capture the diagnosis of disease caused by 2019 novel coronavirus."
+* onset[x] only dateTime
+* onsetDateTime MS
 
-Instance: SARSCoV2Infection
-InstanceOf: sars-cov2-infection-vaccination
+Instance: SARSCoV2InfectionNone
+InstanceOf: sars-cov2-infection
 Usage: #example
 Title: "SARS CoV2 Infection"
-Description: "Example of a patient without detected SARS CoV2"
-* status = #final
-* valueCodeableConcept = $sctIntl2021#260415000 "Not detected (qualifier value)"
-* effectiveDateTime = "2021-10-01T13:06:00+02:00"
+Description: "Example of a patient without SARS CoV2 infection"
+* verificationStatus.coding[conditionVerificationStatus] = $cs-condition-ver-status#refuted
+* recordedDate = "2021"
+* subject = Reference(ExamplePatient)
+
+Instance: SARSCoV2Infection
+InstanceOf: sars-cov2-infection
+Usage: #example
+Title: "SARS CoV2 Infection"
+Description: "Example of a patient with a SARS CoV2 infection"
+* verificationStatus.coding[conditionVerificationStatus] = $cs-condition-ver-status#confirmed
+* recordedDate = "2021"
+* onsetDateTime = "2021-02-01"
+* subject = Reference(ExamplePatient)
+
+Instance: SARSCoV2InfectionUnknown
+InstanceOf: sars-cov2-infection
+Usage: #example
+Title: "SARS CoV2 Infection"
+Description: "Example of an unknown SARS CoV2 infection"
+* insert uncertainty-of-presence
+* recordedDate = "2021"
+* onsetDateTime = "2021-02-01"
+* subject = Reference(ExamplePatient)

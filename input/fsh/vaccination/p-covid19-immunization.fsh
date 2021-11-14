@@ -1,16 +1,16 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-Profile: CovidVaccination
+Profile: Covid19Immunization
 Parent: gecco-immunization
-Id: covid-vaccination
-Title: "Covid Vaccination"
-Description: "COVID-19 vaccination event"
+Id: covid19-immunization
+Title: "COVID19 Immunization"
+Description: "COVID-19 immunization event"
 * vaccineCode.coding ^slicing.discriminator.type = #pattern
 * vaccineCode.coding ^slicing.discriminator.path = "$this"
 * vaccineCode.coding ^slicing.rules = #open
 * vaccineCode.coding contains
-    napkon 0..*
-* vaccineCode.coding[napkon] from CovidVaccinationCodes
+    Covid19VaccineName 0..*
+* vaccineCode.coding[Covid19VaccineName] from covid19-vaccine-codes
 * protocolApplied 1..* MS
 * protocolApplied.doseNumberPositiveInt 1..1
 * protocolApplied.targetDisease = $sctIntl2021#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
@@ -22,8 +22,7 @@ Description: "COVID-19 vaccination event"
 * reasonCode from CovidVaccinationReasons
 * reasonCode obeys codeable-concept-text-present-if-code-other
 * reaction.detail only Reference(
-    VaccinationInjectionSitePainRest
-    or VaccinationInjectionSitePainMovement
+    VaccinationInjectionSitePain
     or VaccinationInjectionSiteErythema
     or VaccinationInjectionSiteSwelling
     or BodyTemperatureAfterVaccination
@@ -31,7 +30,7 @@ Description: "COVID-19 vaccination event"
 )
 
 Instance: CovidVaccinationNotDone
-InstanceOf: covid-vaccination
+InstanceOf: covid19-immunization
 Usage: #example
 Title: "Covid Vaccination Not Done"
 Description: "Example of a patient not receiving a vaccination due to pregnancy"
@@ -44,7 +43,7 @@ Description: "Example of a patient not receiving a vaccination due to pregnancy"
 * reasonCode = $sctIntl2021#385432009 "Not applicable (qualifier value)"
 
 Instance: CovidVaccinationNotDoneReasonOther
-InstanceOf: covid-vaccination
+InstanceOf: covid19-immunization
 Usage: #example
 Title: "Covid Vaccination Not Done Reason Other"
 Description: "Example of a patient not receiving a vaccination due to a specified (free-text) 'other reason'"
@@ -58,15 +57,15 @@ Description: "Example of a patient not receiving a vaccination due to a specifie
 * reasonCode = $sctIntl2021#385432009 "Not applicable (qualifier value)"
 
 Instance: CovidVaccinationDone
-InstanceOf: covid-vaccination
+InstanceOf: covid19-immunization
 Usage: #example
 Title: "Covid Vaccination Done"
 Description: "Example of a patient having received a vaccination"
 * patient = Reference(ExamplePatient)
 * status = #completed
-* vaccineCode.coding[napkon] = $nvm#0001 "Comirnaty (BioNTech/Pfizer)"
+* vaccineCode.coding[Covid19VaccineName] = $cs-eu-vaccine-codes#EU/1/20/1528 "Comirnaty"
 * vaccineCode.coding[snomed] = $sctIntl2021#1119349007 "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)"
 * protocolApplied.doseNumberPositiveInt = 4
 * occurrenceDateTime = "2021-10-01T13:06:00+02:00"
 * lotNumber = "batch-no #2465"
-* reasonCode = $nvm#2004 "Weil alle sich impfen lassen"
+* reasonCode = $nvm#2004 "Because everyone gets vaccinated"
