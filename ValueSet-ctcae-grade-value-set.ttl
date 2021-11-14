@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ctcae-grade-value-set"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ctcae-grade-code-system.html\"><code>https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
+  fhir:ValueSet.name [ fhir:value "CTCAEGradeVS"];
+  fhir:ValueSet.title [ fhir:value "CTCAE Grade Value Set"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-11-14T14:19:42+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

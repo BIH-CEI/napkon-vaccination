@@ -1,0 +1,34 @@
+{
+  "resourceType": "Observation",
+  "id": "RegularAlcoholIntakeQuantity",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/regular-alcohol-intake-quantity"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 74013-4}\">Alcoholic drinks per day</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: 5-? PerDay</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "74013-4",
+        "display": "Alcoholic drinks per day"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "valueRange": {
+    "low": {
+      "value": 5,
+      "unit": "PerDay",
+      "system": "http://unitsofmeasure.org",
+      "code": "/d"
+    }
+  }
+}

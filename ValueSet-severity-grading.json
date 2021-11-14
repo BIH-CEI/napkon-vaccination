@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "severity-grading",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007\">260413007</a></td><td>None (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255604002\">255604002</a></td><td>Mild (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6736007\">6736007</a></td><td>Moderate (severity modifier) (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24484000\">24484000</a></td><td>Severe (severity modifier) (qualifier value)</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/severity-grading",
+  "version": "1.0.0",
+  "name": "SeverityGrading",
+  "title": "Severity Grading",
+  "status": "active",
+  "date": "2021-11-14T14:19:42+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Scale to grade the severity of an outcome/condition/observation",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+        "concept": [
+          {
+            "code": "260413007",
+            "display": "None (qualifier value)"
+          },
+          {
+            "code": "255604002",
+            "display": "Mild (qualifier value)"
+          },
+          {
+            "code": "6736007",
+            "display": "Moderate (severity modifier) (qualifier value)"
+          },
+          {
+            "code": "24484000",
+            "display": "Severe (severity modifier) (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

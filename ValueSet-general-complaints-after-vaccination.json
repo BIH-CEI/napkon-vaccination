@@ -1,0 +1,105 @@
+{
+  "resourceType": "ValueSet",
+  "id": "general-complaints-after-vaccination",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007\">260413007</a></td><td>None (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386661006\">386661006</a></td><td>Fever (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43724002\">43724002</a></td><td>Chill (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=274640006\">274640006</a></td><td>Fever with chills (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103001002\">103001002</a></td><td>Feeling feverish (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60119000\">60119000</a></td><td>Exhaustion (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84229001\">84229001</a></td><td>Fatigue (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001\">68962001</a></td><td>Muscle pain (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57676002\">57676002</a></td><td>Joint pain (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230145002\">230145002</a></td><td>Difficulty breathing (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=267036007\">267036007</a></td><td>Dyspnea (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422587007\">422587007</a></td><td>Nausea (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=249497008\">249497008</a></td><td>Vomiting symptom (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62315008\">62315008</a></td><td>Diarrhea (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=398032003\">398032003</a></td><td>Loose stool (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=27731006\">27731006</a></td><td>Soft stool (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=398212009\">398212009</a></td><td>Liquid stool (finding)</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/general-complaints-after-vaccination",
+  "version": "1.0.0",
+  "name": "GeneralComplaintsAfterVaccination",
+  "title": "General Complaints After Vaccination",
+  "status": "active",
+  "date": "2021-11-14T14:19:42+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "General complaints after vaccination",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+        "concept": [
+          {
+            "code": "260413007",
+            "display": "None (qualifier value)"
+          },
+          {
+            "code": "386661006",
+            "display": "Fever (finding)"
+          },
+          {
+            "code": "43724002",
+            "display": "Chill (finding)"
+          },
+          {
+            "code": "274640006",
+            "display": "Fever with chills (finding)"
+          },
+          {
+            "code": "103001002",
+            "display": "Feeling feverish (finding)"
+          },
+          {
+            "code": "60119000",
+            "display": "Exhaustion (finding)"
+          },
+          {
+            "code": "84229001",
+            "display": "Fatigue (finding)"
+          },
+          {
+            "code": "68962001",
+            "display": "Muscle pain (finding)"
+          },
+          {
+            "code": "57676002",
+            "display": "Joint pain (finding)"
+          },
+          {
+            "code": "230145002",
+            "display": "Difficulty breathing (finding)"
+          },
+          {
+            "code": "267036007",
+            "display": "Dyspnea (finding)"
+          },
+          {
+            "code": "422587007",
+            "display": "Nausea (finding)"
+          },
+          {
+            "code": "249497008",
+            "display": "Vomiting symptom (finding)"
+          },
+          {
+            "code": "62315008",
+            "display": "Diarrhea (finding)"
+          },
+          {
+            "code": "398032003",
+            "display": "Loose stool (finding)"
+          },
+          {
+            "code": "27731006",
+            "display": "Soft stool (finding)"
+          },
+          {
+            "code": "398212009",
+            "display": "Liquid stool (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

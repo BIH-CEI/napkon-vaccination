@@ -1,0 +1,268 @@
+[
+  {
+    "id": "ctcae-grade-code-system",
+    "type": "CodeSystem",
+    "url": "https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system",
+    "version": "1.0.0",
+    "name": "CTCAEGradeCS"
+  },
+  {
+    "id": "napkon-vaccination-module",
+    "type": "CodeSystem",
+    "url": "https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module",
+    "version": "1.0.0",
+    "name": "NapkonVaccinationModule"
+  },
+  {
+    "id": "napkon-vaccination",
+    "type": "ImplementationGuide",
+    "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-vaccination",
+    "version": "1.0.0",
+    "name": "napkonvaccination"
+  },
+  {
+    "id": "additional-vaccination-willingness",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/additional-vaccination-willingness",
+    "version": "1.0.0",
+    "name": "AdditionalVaccinationWillingness"
+  },
+  {
+    "id": "allergic-reaction-to-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/allergic-reaction-to-vaccination",
+    "version": "1.0.0",
+    "name": "AllergicReactionToVaccination"
+  },
+  {
+    "id": "analgesic-antipyretic-intake-after-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination",
+    "version": "1.0.0",
+    "name": "AnalgesicAntipyreticIntakeAfterVaccination"
+  },
+  {
+    "id": "body-temperature-after-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/body-temperature-after-vaccination",
+    "version": "1.0.0",
+    "name": "BodyTemperatureAfterVaccination"
+  },
+  {
+    "id": "chemotherapy",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/chemotherapy",
+    "version": "1.0.0",
+    "name": "Chemotherapy"
+  },
+  {
+    "id": "covid19-encounter",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-encounter",
+    "version": "1.0.0",
+    "name": "Covid19Encounter"
+  },
+  {
+    "id": "covid19-immunization",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization",
+    "version": "1.0.0",
+    "name": "Covid19Immunization"
+  },
+  {
+    "id": "covid19-oxygen-therapy",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy",
+    "version": "1.0.0",
+    "name": "Covid19OxygenTherapy"
+  },
+  {
+    "id": "general-complaints-after-vaccination",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/general-complaints-after-vaccination",
+    "version": "1.0.0",
+    "name": "GeneralComplaintsAfterVaccination"
+  },
+  {
+    "id": "immunomodulatory-therapy",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/immunomodulatory-therapy",
+    "version": "1.0.0",
+    "name": "ImmunomodulatoryTherapy"
+  },
+  {
+    "id": "medical-treatment-for-vaccination-adverse-reaction",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction",
+    "version": "1.0.0",
+    "name": "MedicalTreatmentForVaccinationAdverseReaction"
+  },
+  {
+    "id": "regular-alcohol-intake",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/regular-alcohol-intake",
+    "version": "1.0.0",
+    "name": "RegularAlcoholIntake"
+  },
+  {
+    "id": "regular-alcohol-intake-quantity",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/regular-alcohol-intake-quantity",
+    "version": "1.0.0",
+    "name": "RegularAlcoholIntakeQuantity"
+  },
+  {
+    "id": "sars-cov2-infection",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-infection",
+    "version": "1.0.0",
+    "name": "SARSCoV2Infection"
+  },
+  {
+    "id": "sars-cov2-variant",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-variant",
+    "version": "1.0.0",
+    "name": "SARSCoV2Variant"
+  },
+  {
+    "id": "vaccination-injection-site-erythema",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-erythema",
+    "version": "1.0.0",
+    "name": "VaccinationInjectionSiteErythema"
+  },
+  {
+    "id": "vaccination-injection-site-pain",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-pain",
+    "version": "1.0.0",
+    "name": "VaccinationInjectionSitePain"
+  },
+  {
+    "id": "vaccination-injection-site-swelling",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-swelling",
+    "version": "1.0.0",
+    "name": "VaccinationInjectionSiteSwelling"
+  },
+  {
+    "id": "analgesics-antipyretics",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/analgesics-antipyretics",
+    "version": "1.0.0",
+    "name": "AnalgesicsAntipyretics"
+  },
+  {
+    "id": "complaint-intensity",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/complaint-intensity",
+    "version": "1.0.0",
+    "name": "ComplaintIntensity"
+  },
+  {
+    "id": "covid-vaccination-contraindications",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/covid-vaccination-contraindications",
+    "version": "1.0.0",
+    "name": "CovidVaccinationContraindications"
+  },
+  {
+    "id": "covid-vaccination-reasons",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/covid-vaccination-reasons",
+    "version": "1.0.0",
+    "name": "CovidVaccinationReasons"
+  },
+  {
+    "id": "covid19-vaccine-codes",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/covid19-vaccine-codes",
+    "version": "1.0.0",
+    "name": "Covid19VaccineCodes"
+  },
+  {
+    "id": "ctcae-grade-value-set",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set",
+    "version": "1.0.0",
+    "name": "CTCAEGradeVS"
+  },
+  {
+    "id": "detected-not-detected-unknown-undetermined",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
+    "version": "1.0.0",
+    "name": "DetectedNotDetectedUnknownUndetermined"
+  },
+  {
+    "id": "encounter-ambulatory-emergency-inpatient",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/encounter-ambulatory-emergency-inpatient",
+    "version": "1.0.0",
+    "name": "EncounterAmbulatoryEmergencyInpatient"
+  },
+  {
+    "id": "encounter-homehealth-ambulatory-inpatient",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/encounter-homehealth-ambulatory-inpatient",
+    "version": "1.0.0",
+    "name": "EncounterHomeHealthAmbulatoryInpatient"
+  },
+  {
+    "id": "general-complaints-after-vaccination",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/general-complaints-after-vaccination",
+    "version": "1.0.0",
+    "name": "GeneralComplaintsAfterVaccination"
+  },
+  {
+    "id": "immunosuppressive-immunomodulatory-therapy",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/immunosuppressive-immunomodulatory-therapy",
+    "version": "1.0.0",
+    "name": "ImmunosuppressiveImmunomodulatoryTherapy"
+  },
+  {
+    "id": "pain-provoking-factor",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/pain-provoking-factor",
+    "version": "1.0.0",
+    "name": "PainProvokingFactor"
+  },
+  {
+    "id": "present-not-present-undetermined-other",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other",
+    "version": "1.0.0",
+    "name": "PresentNotPresentUndeterminedOther"
+  },
+  {
+    "id": "restricted-event-status",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/restricted-event-status",
+    "version": "1.0.0",
+    "name": "RestrictedEventStatus"
+  },
+  {
+    "id": "severity-grading",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/severity-grading",
+    "version": "1.0.0",
+    "name": "SeverityGrading"
+  },
+  {
+    "id": "yes-no-unknown",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/yes-no-unknown",
+    "version": "1.0.0",
+    "name": "YesNoUnknown"
+  },
+  {
+    "id": "AdditionalVaccinationWillingnessQuestionaire",
+    "type": "Questionnaire",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/additional-vaccination-willingness-questionnaire",
+    "version": "1.0.0",
+    "name": "AdditionalVaccinationWillingnessQuestionnaire"
+  }
+]

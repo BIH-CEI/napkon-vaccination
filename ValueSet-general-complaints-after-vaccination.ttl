@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/general-complaints-after-vaccination> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "general-complaints-after-vaccination"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007\">260413007</a></td><td>None (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386661006\">386661006</a></td><td>Fever (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43724002\">43724002</a></td><td>Chill (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=274640006\">274640006</a></td><td>Fever with chills (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103001002\">103001002</a></td><td>Feeling feverish (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60119000\">60119000</a></td><td>Exhaustion (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84229001\">84229001</a></td><td>Fatigue (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001\">68962001</a></td><td>Muscle pain (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57676002\">57676002</a></td><td>Joint pain (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230145002\">230145002</a></td><td>Difficulty breathing (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=267036007\">267036007</a></td><td>Dyspnea (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422587007\">422587007</a></td><td>Nausea (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=249497008\">249497008</a></td><td>Vomiting symptom (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62315008\">62315008</a></td><td>Diarrhea (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=398032003\">398032003</a></td><td>Loose stool (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=27731006\">27731006</a></td><td>Soft stool (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=398212009\">398212009</a></td><td>Liquid stool (finding)</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/general-complaints-after-vaccination"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
+  fhir:ValueSet.name [ fhir:value "GeneralComplaintsAfterVaccination"];
+  fhir:ValueSet.title [ fhir:value "General Complaints After Vaccination"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-11-14T14:19:42+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "General complaints after vaccination"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.version [ fhir:value "http://snomed.info/sct/900000000000207008/version/20210731" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260413007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "None (qualifier value)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "386661006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fever (finding)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43724002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chill (finding)" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "274640006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fever with chills (finding)" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "103001002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Feeling feverish (finding)" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "60119000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exhaustion (finding)" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "84229001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fatigue (finding)" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "68962001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Muscle pain (finding)" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57676002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Joint pain (finding)" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "230145002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Difficulty breathing (finding)" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "267036007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dyspnea (finding)" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "422587007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nausea (finding)" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "249497008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vomiting symptom (finding)" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "62315008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diarrhea (finding)" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "398032003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Loose stool (finding)" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "27731006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Soft stool (finding)" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "398212009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Liquid stool (finding)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/general-complaints-after-vaccination.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

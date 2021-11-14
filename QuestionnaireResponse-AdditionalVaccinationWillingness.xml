@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="AdditionalVaccinationWillingness"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/additional-vaccination-willingness"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href="https://www.netzwerk-universitaetsmedizin.de/fhir/additional-vaccination-willingness-questionnaire">https://www.netzwerk-universitaetsmedizin.de/fhir/additional-vaccination-willingness-questionnaire</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: additional-vaccination-willingness</p><h3>Answers</h3><table class="grid"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title="{http://snomed.info/sct 373066001}">Yes (qualifier value)</span></td></tr></table></blockquote></div>
+  </text>
+  <questionnaire value="https://www.netzwerk-universitaetsmedizin.de/fhir/additional-vaccination-willingness-questionnaire"/>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <item>
+    <linkId value="additional-vaccination-willingness"/>
+    <answer>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+        <code value="373066001"/>
+        <display value="Yes (qualifier value)"/>
+      </valueCoding>
+    </answer>
+  </item>
+</QuestionnaireResponse>

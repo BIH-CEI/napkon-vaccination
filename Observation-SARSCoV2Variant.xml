@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="SARSCoV2Variant"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/sars-cov2-variant"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Observation Instance Identifier: ?ngen-9?</p><p></p><p><b>category</b>: <span title="Codes: {http://loinc.org 26436-6}, {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory studies (set)</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 96741-4}">SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Jan 1, 2021, 12:00:00 AM</p><p><b>value</b>: <span title="Codes: {http://loinc.org LA32552-4}">SARS-CoV-2 Delta variant (WHO)</span></p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="OBI"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="OBI"/>
+      </coding>
+    </type>
+    <system>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </system>
+    <value>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </value>
+    <assigner>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+      <display value="not-applicable"/>
+    </assigner>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="26436-6"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="96741-4"/>
+      <display value="SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <effectiveDateTime value="2021-01-01T00:00:00+00:00">
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="unknown"/>
+    </extension>
+  </effectiveDateTime>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA32552-4"/>
+      <display value="SARS-CoV-2 Delta variant (WHO)"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,35 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "AnalgesicAntipyreticIntakeAfterVaccination",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>medication</b>: <span title=\"Codes: {http://fhir.de/CodeSystem/bfarm/atc N02BA06}\">Salsalat</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Jan 1, 2021, 12:00:00 AM</p></div>"
+  },
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "N02BA06",
+        "display": "Salsalat"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2021-01-01T00:00:00+00:00",
+  "_effectiveDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  }
+}

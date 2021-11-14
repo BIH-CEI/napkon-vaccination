@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "RegularAlcoholIntakeNoLonger",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/regular-alcohol-intake"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 81032-5}\">Days per week alcoholic drinks consumed</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module no-longer}\">No longer</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "81032-5",
+        "display": "Days per week alcoholic drinks consumed"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+        "code": "no-longer",
+        "display": "No longer"
+      }
+    ]
+  }
+}

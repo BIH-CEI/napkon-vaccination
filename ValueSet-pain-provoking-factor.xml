@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pain-provoking-factor"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52598005">52598005</a></td><td>Rest pain (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=425423002">425423002</a></td><td>Pain provoked by movement (finding)</td></tr></table></li><li>Include these codes as defined in <code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>pain-by-pressure</td><td>Pain provoked by pressure</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/pain-provoking-factor"/>
+  <version value="1.0.0"/>
+  <name value="PainProvokingFactor"/>
+  <title value="Pain Provoking Factor"/>
+  <status value="active"/>
+  <date value="2021-11-14T14:19:42+00:00"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Pain provoking factors"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+      <concept>
+        <code value="52598005"/>
+        <display value="Rest pain (finding)"/>
+      </concept>
+      <concept>
+        <code value="425423002"/>
+        <display value="Pain provoked by movement (finding)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+      <concept>
+        <code value="pain-by-pressure"/>
+        <display value="Pain provoked by pressure"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

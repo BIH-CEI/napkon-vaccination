@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Observation/VaccinationInjectionSitePain> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "VaccinationInjectionSitePain"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-pain";
+       fhir:index 0;
+       fhir:link <https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-pain>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 95388000}\">Injection site pain (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 52598005}\">Rest pain (finding)</span></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 6736007}, {https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system 2}\">Moderate (severity modifier) (qualifier value)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 425423002}\">Pain provoked by movement (finding)</span></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 6736007}\">Moderate (severity modifier) (qualifier value)</span></p></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:95388000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/900000000000207008/version/20210731" ];
+       fhir:Coding.code [ fhir:value "95388000" ];
+       fhir:Coding.display [ fhir:value "Injection site pain (disorder)" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://www.napkon.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:52598005;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.version [ fhir:value "http://snomed.info/sct/900000000000207008/version/20210731" ];
+         fhir:Coding.code [ fhir:value "52598005" ];
+         fhir:Coding.display [ fhir:value "Rest pain (finding)" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:6736007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.version [ fhir:value "http://snomed.info/sct/900000000000207008/version/20210731" ];
+         fhir:Coding.code [ fhir:value "6736007" ];
+         fhir:Coding.display [ fhir:value "Moderate (severity modifier) (qualifier value)" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system" ];
+         fhir:Coding.code [ fhir:value "2" ];
+         fhir:Coding.display [ fhir:value "Moderate Adverse Event" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:425423002;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.version [ fhir:value "http://snomed.info/sct/900000000000207008/version/20210731" ];
+         fhir:Coding.code [ fhir:value "425423002" ];
+         fhir:Coding.display [ fhir:value "Pain provoked by movement (finding)" ]
+       ]
+     ];
+     fhir:Observation.component.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:6736007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.version [ fhir:value "http://snomed.info/sct/900000000000207008/version/20210731" ];
+         fhir:Coding.code [ fhir:value "6736007" ];
+         fhir:Coding.display [ fhir:value "Moderate (severity modifier) (qualifier value)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Observation/VaccinationInjectionSitePain.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,78 @@
+{
+  "resourceType": "Observation",
+  "id": "VaccinationInjectionSitePain",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-pain"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 95388000}\">Injection site pain (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 52598005}\">Rest pain (finding)</span></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 6736007}, {https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system 2}\">Moderate (severity modifier) (qualifier value)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 425423002}\">Pain provoked by movement (finding)</span></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 6736007}\">Moderate (severity modifier) (qualifier value)</span></p></blockquote></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+        "code": "95388000",
+        "display": "Injection site pain (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+            "code": "52598005",
+            "display": "Rest pain (finding)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+            "code": "6736007",
+            "display": "Moderate (severity modifier) (qualifier value)"
+          },
+          {
+            "system": "https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system",
+            "code": "2",
+            "display": "Moderate Adverse Event"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+            "code": "425423002",
+            "display": "Pain provoked by movement (finding)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+            "code": "6736007",
+            "display": "Moderate (severity modifier) (qualifier value)"
+          }
+        ]
+      }
+    }
+  ]
+}

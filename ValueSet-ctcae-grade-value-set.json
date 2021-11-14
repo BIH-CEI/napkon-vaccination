@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ctcae-grade-value-set",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ctcae-grade-code-system.html\"><code>https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system</code></a></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set",
+  "version": "1.0.0",
+  "name": "CTCAEGradeVS",
+  "title": "CTCAE Grade Value Set",
+  "status": "active",
+  "date": "2021-11-14T14:19:42+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"
+      }
+    ]
+  }
+}

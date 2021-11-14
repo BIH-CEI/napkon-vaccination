@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NAPKON-VACCINATION\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>1.0.0 - ci-build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">napkonvaccination - Local Development build (v1.0.0). See the <a href="https://www.napkon.de/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Questionnaires</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Questionnaires </h3>
+   <p>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-AdditionalVaccinationWillingnessQuestionaire.html"
+                     title="Questionnaire/AdditionalVaccinationWillingnessQuestionaire">Additional Vaccination Willingness</a>
+               </td>
+               <td>
+<p>Willingness of the patient to receive additional COVID-19 vaccination if officially recommended</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-additional-vaccination-willingness.html"
+                     title="StructureDefinition/additional-vaccination-willingness">Additional Vaccination Willingness</a>
+               </td>
+               <td>
+<p>Response to AdditionalVaccinationWillingnessQuestionnaire</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-allergic-reaction-to-vaccination.html"
+                     title="StructureDefinition/allergic-reaction-to-vaccination">Allergic Reaction To Vaccination</a>
+               </td>
+               <td>
+<p>Whether a vaccination caused an allergic reaction</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-analgesic-antipyretic-intake-after-vaccination.html"
+                     title="StructureDefinition/analgesic-antipyretic-intake-after-vaccination">Analgesic Antipyretic Intake After Vaccination</a>
+               </td>
+               <td>
+<p>Whether a patient took analgesic or antipyretic drugs after a vaccination event</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-body-temperature-after-vaccination.html"
+                     title="StructureDefinition/body-temperature-after-vaccination">Body Temperature After Vaccination</a>
+               </td>
+               <td>
+<p>Maximal body temperature after a vaccination event (indicating fever)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-chemotherapy.html"
+                     title="StructureDefinition/chemotherapy">Chemotherapy</a>
+               </td>
+               <td>
+<p>Whether a patient is or has been receiving a chemotherapy within the last 3 months</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-covid19-encounter.html"
+                     title="StructureDefinition/covid19-encounter">COVID19 Encounter</a>
+               </td>
+               <td>
+<p>Whether a patient underwent medical treatment for COVID19</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-covid19-immunization.html"
+                     title="StructureDefinition/covid19-immunization">COVID19 Immunization</a>
+               </td>
+               <td>
+<p>COVID-19 immunization event</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-covid19-oxygen-therapy.html"
+                     title="StructureDefinition/covid19-oxygen-therapy">Covid19 Oxygen Therapy</a>
+               </td>
+               <td>
+<p>Indicating whether a COVID-19 patient received an oxygen therapy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-general-complaints-after-vaccination.html"
+                     title="StructureDefinition/general-complaints-after-vaccination">General Complaints After Vaccination</a>
+               </td>
+               <td>
+<p>General complaints after a vaccination event</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-immunomodulatory-therapy.html"
+                     title="StructureDefinition/immunomodulatory-therapy">Immunomodulatory Therapy</a>
+               </td>
+               <td>
+<p>Whether a patient is receiving an immunosuppressive or -modulatory therapy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html"
+                     title="StructureDefinition/medical-treatment-for-vaccination-adverse-reaction">Medical Treatment For Vaccination Adverse Reaction</a>
+               </td>
+               <td>
+<p>Whether a patient underwent medical treatment for a potential or actual adverse reaction to a vaccination event</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-regular-alcohol-intake.html"
+                     title="StructureDefinition/regular-alcohol-intake">Regular Alcohol Intake</a>
+               </td>
+               <td>
+<p>Whether a patient regularly drinks alcohol</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-regular-alcohol-intake-quantity.html"
+                     title="StructureDefinition/regular-alcohol-intake-quantity">Regular Alcohol Intake Quantity</a>
+               </td>
+               <td>
+<p>How many alcoholic drinks a patient usually drinks per day</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sars-cov2-infection.html"
+                     title="StructureDefinition/sars-cov2-infection">SARS CoV2 Infection</a>
+               </td>
+               <td>
+<p>Profile to capture the diagnosis of disease caused by 2019 novel coronavirus.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sars-cov2-variant.html"
+                     title="StructureDefinition/sars-cov2-variant">SARS CoV2 Variant</a>
+               </td>
+               <td>
+<p>Variant/strain of detected SARS CoV2 (Pango Cov-lineage)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vaccination-injection-site-erythema.html"
+                     title="StructureDefinition/vaccination-injection-site-erythema">Vaccination Injection Site Erythema</a>
+               </td>
+               <td>
+<p>Size of an erythema at a vaccine injection site</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vaccination-injection-site-pain.html"
+                     title="StructureDefinition/vaccination-injection-site-pain">Vaccination Injection Site Pain</a>
+               </td>
+               <td>
+<p>Pain intensity at vaccine injection site at rest or movement</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-vaccination-injection-site-swelling.html"
+                     title="StructureDefinition/vaccination-injection-site-swelling">Vaccination Injection Site Swelling</a>
+               </td>
+               <td>
+<p>Size of an swelling at a vaccine injection site</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-analgesics-antipyretics.html"
+                     title="ValueSet/analgesics-antipyretics">Analgesics Antipyretics</a>
+               </td>
+               <td>
+<p>Analgetic and antipyretic drugs</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-ctcae-grade-value-set.html"
+                     title="ValueSet/ctcae-grade-value-set">CTCAE Grade Value Set</a>
+               </td>
+               <td>
+<p>CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-complaint-intensity.html"
+                     title="ValueSet/complaint-intensity">Complaint Intensity</a>
+               </td>
+               <td>
+<p>Intensity of general complaints</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-covid19-vaccine-codes.html"
+                     title="ValueSet/covid19-vaccine-codes">COVID-19 Vaccine Codes</a>
+               </td>
+               <td>
+<p>COVID-19 Vaccine Codes (vaccines approved in the European Union)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-covid-vaccination-contraindications.html"
+                     title="ValueSet/covid-vaccination-contraindications">covid-vaccination-contraindications</a>
+               </td>
+               <td>
+<p>Contraindications precluding COVID-19 vaccination</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-covid-vaccination-reasons.html"
+                     title="ValueSet/covid-vaccination-reasons">Covid Vaccination Reasons</a>
+               </td>
+               <td>
+<p>Individual reason for getting vaccinated against COVID-19</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-detected-not-detected-unknown-undetermined.html"
+                     title="ValueSet/detected-not-detected-unknown-undetermined">Detected Not Detected Unknown Undetermined</a>
+               </td>
+               <td>
+<p>Values for laboratory observations</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-encounter-ambulatory-emergency-inpatient.html"
+                     title="ValueSet/encounter-ambulatory-emergency-inpatient">Encounter Ambulatory Emergency Inpatient</a>
+               </td>
+               <td>
+<p>ValueSet to determine the encounter type of a patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-encounter-homehealth-ambulatory-inpatient.html"
+                     title="ValueSet/encounter-homehealth-ambulatory-inpatient">Encounter HomeHealth Ambulatory Inpatient</a>
+               </td>
+               <td>
+<p>ValueSet to determine the encounter type of a patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-general-complaints-after-vaccination.html"
+                     title="ValueSet/general-complaints-after-vaccination">General Complaints After Vaccination</a>
+               </td>
+               <td>
+<p>General complaints after vaccination</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-immunosuppressive-immunomodulatory-therapy.html"
+                     title="ValueSet/immunosuppressive-immunomodulatory-therapy">Immunosuppressive Immunomodulatory Therapy</a>
+               </td>
+               <td>
+<p>Immunosuppressive and immunomodulatory procedures / therapies codes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-pain-provoking-factor.html"
+                     title="ValueSet/pain-provoking-factor">Pain Provoking Factor</a>
+               </td>
+               <td>
+<p>Pain provoking factors</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-present-not-present-undetermined-other.html"
+                     title="ValueSet/present-not-present-undetermined-other">Present Not Present Undetermined Other</a>
+               </td>
+               <td>
+<p>Values for laboratory observations</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-restricted-event-status.html"
+                     title="ValueSet/restricted-event-status">RestrictedEventStatus</a>
+               </td>
+               <td>
+<p>EventStatus value set restricted to codes not-done, active, completed and unknown</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-severity-grading.html" title="ValueSet/severity-grading">Severity Grading</a>
+               </td>
+               <td>
+<p>Scale to grade the severity of an outcome/condition/observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-yes-no-unknown.html" title="ValueSet/yes-no-unknown">Yes No Unknown</a>
+               </td>
+               <td>
+<p>Yes / No / Unknown</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-ctcae-grade-code-system.html"
+                     title="CodeSystem/ctcae-grade-code-system">CTCAE Grade Code System</a>
+               </td>
+               <td>
+<p>Common terminology criteria (CTC) grades associated with the severity of an adverse event, expressed as integers, 0 through 5, with 0 representing no adverse event, and 5 representing death.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-napkon-vaccination-module.html"
+                     title="CodeSystem/napkon-vaccination-module">NapkonVaccinationModule</a>
+               </td>
+               <td>
+<p>NAPKON Vaccination Module Code System - Collection of vaccination module-specific codes that are missing from common terminologies such as SNOMED CT</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-AdditionalVaccinationWillingness.html"
+                     title="QuestionnaireResponse/AdditionalVaccinationWillingness">Additional Vaccination Willingness</a>
+               </td>
+               <td>
+<p>Example of a subject who is willing to receive an additional COVID-19 vaccination if it is officially recommended</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-AllergicReactionToVaccinationInstance.html"
+                     title="Observation/AllergicReactionToVaccinationInstance">Allergic Reaction To Vaccination Instance</a>
+               </td>
+               <td>
+<p>Example of an undetermined state of an allergic reaction cause by a vaccine</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-AllergicReactionToVaccinationInstanceOther.html"
+                     title="Observation/AllergicReactionToVaccinationInstanceOther">Allergic Reaction To Vaccination Instance</a>
+               </td>
+               <td>
+<p>Example of a free-text answer to an allergic reaction caused by vaccination</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationStatement-AnalgesicAntipyreticIntakeAfterVaccination.html"
+                     title="MedicationStatement/AnalgesicAntipyreticIntakeAfterVaccination">Analgesic Antipyretic Intake After Vaccination</a>
+               </td>
+               <td>
+<p>Example of an antipyretic drug taken after a vaccination event</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-BodyTemperatureAfterVaccinationNotMeasured.html"
+                     title="Observation/BodyTemperatureAfterVaccinationNotMeasured">Body Temperature After Vaccination</a>
+               </td>
+               <td>
+<p>Example of a not measured body temperature after vaccination</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-BodyTemperatureAfterVaccinationQuantity.html"
+                     title="Observation/BodyTemperatureAfterVaccinationQuantity">Body Temperature After Vaccination</a>
+               </td>
+               <td>
+<p>Example of an elevated body temperature after vaccination</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-BodyTemperatureAfterVaccinationRange.html"
+                     title="Observation/BodyTemperatureAfterVaccinationRange">Body Temperature After Vaccination</a>
+               </td>
+               <td>
+<p>Example of an elevated body temperature after vaccination</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-Chemotherapy.html" title="Procedure/Chemotherapy">Chemotherapy</a>
+               </td>
+               <td>
+<p>Example of a patient not receiving chemotherapy during the last 3 months</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-Covid19EncounterInpatient.html"
+                     title="Encounter/Covid19EncounterInpatient">Medical Treatment For Vaccination Adverse Reaction</a>
+               </td>
+               <td>
+<p>Example of a patient hospitalized for a potential or actual adverse reaction to a vaccination event</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-Covid19OxygenTherapy.html"
+                     title="Procedure/Covid19OxygenTherapy">Covid19 Oxygen Therapy</a>
+               </td>
+               <td>
+<p>Example of a COVID-19 patient who received an oxygen therapy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Immunization-CovidVaccinationDone.html"
+                     title="Immunization/CovidVaccinationDone">Covid Vaccination Done</a>
+               </td>
+               <td>
+<p>Example of a patient having received a vaccination</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Immunization-CovidVaccinationNotDone.html"
+                     title="Immunization/CovidVaccinationNotDone">Covid Vaccination Not Done</a>
+               </td>
+               <td>
+<p>Example of a patient not receiving a vaccination due to pregnancy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Immunization-CovidVaccinationNotDoneReasonOther.html"
+                     title="Immunization/CovidVaccinationNotDoneReasonOther">Covid Vaccination Not Done Reason Other</a>
+               </td>
+               <td>
+<p>Example of a patient not receiving a vaccination due to a specified (free-text) ‘other reason’</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-ExamplePatient.html" title="Patient/ExamplePatient">ExamplePatient</a>
+               </td>
+               <td>
+<p>Example patient to be used as reference in other instances</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-GeneralComplaintsAfterVaccination.html"
+                     title="Condition/GeneralComplaintsAfterVaccination">General Complaints After Vaccination</a>
+               </td>
+               <td>
+<p>Example of a chill after a vaccination event</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-ImmunomodulatoryTherapy.html"
+                     title="Procedure/ImmunomodulatoryTherapy">Immunomodulatory Therapy</a>
+               </td>
+               <td>
+<p>Example of a patient receiving an immunosuppresive therapy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-ImmunomodulatoryTherapyNotDone.html"
+                     title="Procedure/ImmunomodulatoryTherapyNotDone">Immunomodulatory Therapy</a>
+               </td>
+               <td>
+<p>Example of a patient not receiving an immunosuppresive therapy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-MedicalTreatmentForVaccinationAdverseReactionAtGP.html"
+                     title="Encounter/MedicalTreatmentForVaccinationAdverseReactionAtGP">Medical Treatment For Vaccination Adverse Reaction</a>
+               </td>
+               <td>
+<p>Example of a patient treated in the mergency room or by a general practitioner for a potential or actual adverse reaction to a vaccination event</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-MedicalTreatmentForVaccinationAdverseReactionInHospital.html"
+                     title="Encounter/MedicalTreatmentForVaccinationAdverseReactionInHospital">Medical Treatment For Vaccination Adverse Reaction</a>
+               </td>
+               <td>
+<p>Example of a patient hospitalized for a potential or actual adverse reaction to a vaccination event</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-RegularAlcoholIntake1.html"
+                     title="Observation/RegularAlcoholIntake1">Regular Alcohol Intake</a>
+               </td>
+               <td>
+<p>Example of a patient who drinks a single drink per week</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-RegularAlcoholIntake4.html"
+                     title="Observation/RegularAlcoholIntake4">Regular Alcohol Intake</a>
+               </td>
+               <td>
+<p>Example of a patient who drinks at least 4 drinks per week</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-RegularAlcoholIntakeNo.html"
+                     title="Observation/RegularAlcoholIntakeNo">Regular Alcohol Intake</a>
+               </td>
+               <td>
+<p>Example of a patient for whom the alcohol intake is unknown</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-RegularAlcoholIntakeNoLonger.html"
+                     title="Observation/RegularAlcoholIntakeNoLonger">Regular Alcohol Intake</a>
+               </td>
+               <td>
+<p>Example of a patient who does no longer drink alcohol</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-RegularAlcoholIntakeQuantity.html"
+                     title="Observation/RegularAlcoholIntakeQuantity">Regular Alcohol Intake Quantity</a>
+               </td>
+               <td>
+<p>Example of intake of 5 or more alcoholic beverages per day</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-RegularAlcoholIntakeQuantityNone.html"
+                     title="Observation/RegularAlcoholIntakeQuantityNone">Regular Alcohol Intake Quantity</a>
+               </td>
+               <td>
+<p>Example of a patient for whom the quantity is unknown</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-SARSCoV2Infection.html"
+                     title="Condition/SARSCoV2Infection">SARS CoV2 Infection</a>
+               </td>
+               <td>
+<p>Example of a patient with a SARS CoV2 infection</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-SARSCoV2InfectionNone.html"
+                     title="Condition/SARSCoV2InfectionNone">SARS CoV2 Infection</a>
+               </td>
+               <td>
+<p>Example of a patient without SARS CoV2 infection</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-SARSCoV2InfectionUnknown.html"
+                     title="Condition/SARSCoV2InfectionUnknown">SARS CoV2 Infection</a>
+               </td>
+               <td>
+<p>Example of an unknown SARS CoV2 infection</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-SARSCoV2Variant.html"
+                     title="Observation/SARSCoV2Variant">SARS CoV2 Variant</a>
+               </td>
+               <td>
+<p>Example of a SARS CoV2 variant (Pango lineage)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-VaccinationInjectionSiteErythema.html"
+                     title="Observation/VaccinationInjectionSiteErythema">Vaccination Injection Site Erythema</a>
+               </td>
+               <td>
+<p>Example of a 2.5-5 cm erythema at a vaccine injection site</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-VaccinationInjectionSitePain.html"
+                     title="Observation/VaccinationInjectionSitePain">Vaccination Injection Site Pain Rest</a>
+               </td>
+               <td>
+<p>Example of mild pain at vaccine injection site at rest and movement</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-VaccinationInjectionSiteSwelling.html"
+                     title="Observation/VaccinationInjectionSiteSwelling">Vaccination Injection Site Swelling Instance</a>
+               </td>
+               <td>
+<p>Example of a 5.1-10 cm swelling at a vaccine injection site</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Nov 14, 2021 14:19+0000">2021-11-14</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

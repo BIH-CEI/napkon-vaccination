@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Procedure/Chemotherapy> a fhir:Procedure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Chemotherapy"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.napkon.de/fhir/StructureDefinition/chemotherapy";
+       fhir:index 0;
+       fhir:link <https://www.napkon.de/fhir/StructureDefinition/chemotherapy>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: not-done</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 367336001}\">Chemotherapy (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>performed</b>: 2020</p></div>"
+  ];
+  fhir:Procedure.status [ fhir:value "not-done"];
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:367336001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/900000000000207008/version/20210731" ];
+       fhir:Coding.code [ fhir:value "367336001" ];
+       fhir:Coding.display [ fhir:value "Chemotherapy (procedure)" ]
+     ]
+  ];
+  fhir:Procedure.subject [
+     fhir:link <https://www.napkon.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Procedure.performedDateTime [ fhir:value "2020"^^xsd:gYear] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Procedure/Chemotherapy.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

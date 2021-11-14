@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "analgesics-antipyretics",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href=\"?ngen-14?.html#CodeSystemATC2021-N02\">N02</a></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/analgesics-antipyretics",
+  "version": "1.0.0",
+  "name": "AnalgesicsAntipyretics",
+  "title": "Analgesics Antipyretics",
+  "status": "active",
+  "date": "2021-11-14T14:19:42+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Analgetic and antipyretic drugs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "N02"
+          }
+        ]
+      }
+    ]
+  }
+}

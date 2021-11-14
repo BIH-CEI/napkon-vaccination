@@ -1,0 +1,41 @@
+{
+  "resourceType": "Observation",
+  "id": "BodyTemperatureAfterVaccinationRange",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/body-temperature-after-vaccination"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 386725007}\">Body temperature (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: 37.5-38 DegreesCelsius</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+        "code": "386725007",
+        "display": "Body temperature (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "valueRange": {
+    "low": {
+      "value": 37.5,
+      "unit": "DegreesCelsius",
+      "system": "http://unitsofmeasure.org",
+      "code": "Cel"
+    },
+    "high": {
+      "value": 38,
+      "unit": "DegreesCelsius",
+      "system": "http://unitsofmeasure.org",
+      "code": "Cel"
+    }
+  }
+}

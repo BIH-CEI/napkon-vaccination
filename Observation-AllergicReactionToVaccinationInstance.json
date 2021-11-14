@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "AllergicReactionToVaccinationInstance",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/allergic-reaction-to-vaccination"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 15920121000119103}\">Allergic reaction caused by vaccine product (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: <span title=\"Codes: {http://snomed.info/sct 373068000}\">Undetermined (qualifier value)</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+        "code": "15920121000119103",
+        "display": "Allergic reaction caused by vaccine product (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+        "code": "373068000",
+        "display": "Undetermined (qualifier value)"
+      }
+    ]
+  }
+}

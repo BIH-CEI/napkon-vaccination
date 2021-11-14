@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "immunosuppressive-immunomodulatory-therapy",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  86553008 (Immunosuppressive therapy)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  76334006 (Immunotherapy)</li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/immunosuppressive-immunomodulatory-therapy",
+  "version": "1.0.0",
+  "name": "ImmunosuppressiveImmunomodulatoryTherapy",
+  "title": "Immunosuppressive Immunomodulatory Therapy",
+  "status": "active",
+  "date": "2021-11-14T14:19:42+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Immunosuppressive and immunomodulatory procedures / therapies codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "86553008"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "76334006"
+          }
+        ]
+      }
+    ]
+  }
+}

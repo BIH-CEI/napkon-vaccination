@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "covid19-vaccine-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://ec.europa.eu/health/documents/community-register/html/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>EU/1/20/1528</td><td>Comirnaty</td></tr><tr><td>EU/1/20/1507</td><td>COVID-19 Vaccine Moderna</td></tr><tr><td>EU/1/21/1529</td><td>Vaxzevria</td></tr><tr><td>EU/1/20/1525</td><td>COVID-19 Vaccine Janssen</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/covid19-vaccine-codes",
+  "version": "1.0.0",
+  "name": "Covid19VaccineCodes",
+  "title": "COVID-19 Vaccine Codes",
+  "status": "active",
+  "date": "2021-11-14T14:19:42+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "COVID-19 Vaccine Codes (vaccines approved in the European Union)",
+  "compose": {
+    "include": [
+      {
+        "system": "https://ec.europa.eu/health/documents/community-register/html/",
+        "concept": [
+          {
+            "code": "EU/1/20/1528",
+            "display": "Comirnaty"
+          },
+          {
+            "code": "EU/1/20/1507",
+            "display": "COVID-19 Vaccine Moderna"
+          },
+          {
+            "code": "EU/1/21/1529",
+            "display": "Vaxzevria"
+          },
+          {
+            "code": "EU/1/20/1525",
+            "display": "COVID-19 Vaccine Janssen"
+          }
+        ]
+      }
+    ]
+  }
+}

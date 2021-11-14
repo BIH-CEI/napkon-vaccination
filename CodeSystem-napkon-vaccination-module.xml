@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="napkon-vaccination-module"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">q1001<a name="napkon-vaccination-module-q1001"> </a></td><td>Willingness for additional SARS-CoV-2 vaccination if recommended</td></tr><tr><td style="white-space:nowrap">2001<a name="napkon-vaccination-module-2001"> </a></td><td>To protect myself from infection with SARS-CoV-2 or from COVID-19</td></tr><tr><td style="white-space:nowrap">2002<a name="napkon-vaccination-module-2002"> </a></td><td>To protect my private environment from infection with SARS-CoV-2 or COVID-19</td></tr><tr><td style="white-space:nowrap">2003<a name="napkon-vaccination-module-2003"> </a></td><td>To protect my work environment from infection with SARS-CoV-2 or COVID-19</td></tr><tr><td style="white-space:nowrap">2004<a name="napkon-vaccination-module-2004"> </a></td><td>Because everyone gets vaccinated</td></tr><tr><td style="white-space:nowrap">2005<a name="napkon-vaccination-module-2005"> </a></td><td>Because I am afraid of being discriminated against due to my vaccination status (e.g. travel ban, work ban).</td></tr><tr><td style="white-space:nowrap">no-longer<a name="napkon-vaccination-module-no-longer"> </a></td><td>No longer</td></tr><tr><td style="white-space:nowrap">pain-by-pressure<a name="napkon-vaccination-module-pain-by-pressure"> </a></td><td>Pain provoked by pressure</td></tr></table></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module"/>
+  <version value="1.0.0"/>
+  <name value="NapkonVaccinationModule"/>
+  <title value="NapkonVaccinationModule"/>
+  <status value="active"/>
+  <date value="2021-11-14T14:19:42+00:00"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="NAPKON Vaccination Module Code System - Collection of vaccination module-specific codes that are missing from common terminologies such as SNOMED CT"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="q1001"/>
+    <display value="Willingness for additional SARS-CoV-2 vaccination if recommended"/>
+  </concept>
+  <concept>
+    <code value="2001"/>
+    <display value="To protect myself from infection with SARS-CoV-2 or from COVID-19"/>
+  </concept>
+  <concept>
+    <code value="2002"/>
+    <display value="To protect my private environment from infection with SARS-CoV-2 or COVID-19"/>
+  </concept>
+  <concept>
+    <code value="2003"/>
+    <display value="To protect my work environment from infection with SARS-CoV-2 or COVID-19"/>
+  </concept>
+  <concept>
+    <code value="2004"/>
+    <display value="Because everyone gets vaccinated"/>
+  </concept>
+  <concept>
+    <code value="2005"/>
+    <display value="Because I am afraid of being discriminated against due to my vaccination status (e.g. travel ban, work ban)."/>
+  </concept>
+  <concept>
+    <code value="no-longer"/>
+    <display value="No longer"/>
+  </concept>
+  <concept>
+    <code value="pain-by-pressure"/>
+    <display value="Pain provoked by pressure"/>
+  </concept>
+</CodeSystem>

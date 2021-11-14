@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/severity-grading> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "severity-grading"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007\">260413007</a></td><td>None (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255604002\">255604002</a></td><td>Mild (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6736007\">6736007</a></td><td>Moderate (severity modifier) (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24484000\">24484000</a></td><td>Severe (severity modifier) (qualifier value)</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/severity-grading"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
+  fhir:ValueSet.name [ fhir:value "SeverityGrading"];
+  fhir:ValueSet.title [ fhir:value "Severity Grading"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-11-14T14:19:42+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Scale to grade the severity of an outcome/condition/observation"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.version [ fhir:value "http://snomed.info/sct/900000000000207008/version/20210731" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260413007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "None (qualifier value)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "255604002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mild (qualifier value)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6736007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Moderate (severity modifier) (qualifier value)" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "24484000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Severe (severity modifier) (qualifier value)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/severity-grading.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

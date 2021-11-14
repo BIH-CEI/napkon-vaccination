@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/analgesics-antipyretics> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "analgesics-antipyretics"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href=\"?ngen-14?.html#CodeSystemATC2021-N02\">N02</a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/analgesics-antipyretics"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
+  fhir:ValueSet.name [ fhir:value "AnalgesicsAntipyretics"];
+  fhir:ValueSet.title [ fhir:value "Analgesics Antipyretics"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-11-14T14:19:42+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Analgetic and antipyretic drugs"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/atc" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "N02" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/analgesics-antipyretics.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

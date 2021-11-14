@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Observation/VaccinationInjectionSiteSwelling> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "VaccinationInjectionSiteSwelling"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-swelling";
+       fhir:index 0;
+       fhir:link <https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-swelling>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 863910007}\">Vaccination site swelling (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: 5.1-10 CentiMeter</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:863910007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.version [ fhir:value "http://snomed.info/sct/900000000000207008/version/20210731" ];
+       fhir:Coding.code [ fhir:value "863910007" ];
+       fhir:Coding.display [ fhir:value "Vaccination site swelling (disorder)" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://www.napkon.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Observation.valueRange [
+     fhir:Range.low [
+       fhir:Quantity.value [ fhir:value "5.1"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "CentiMeter" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "cm" ]
+     ];
+     fhir:Range.high [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "CentiMeter" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "cm" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Observation/VaccinationInjectionSiteSwelling.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

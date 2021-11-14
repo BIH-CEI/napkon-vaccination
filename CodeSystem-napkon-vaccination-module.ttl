@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "napkon-vaccination-module"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">q1001<a name=\"napkon-vaccination-module-q1001\"> </a></td><td>Willingness for additional SARS-CoV-2 vaccination if recommended</td></tr><tr><td style=\"white-space:nowrap\">2001<a name=\"napkon-vaccination-module-2001\"> </a></td><td>To protect myself from infection with SARS-CoV-2 or from COVID-19</td></tr><tr><td style=\"white-space:nowrap\">2002<a name=\"napkon-vaccination-module-2002\"> </a></td><td>To protect my private environment from infection with SARS-CoV-2 or COVID-19</td></tr><tr><td style=\"white-space:nowrap\">2003<a name=\"napkon-vaccination-module-2003\"> </a></td><td>To protect my work environment from infection with SARS-CoV-2 or COVID-19</td></tr><tr><td style=\"white-space:nowrap\">2004<a name=\"napkon-vaccination-module-2004\"> </a></td><td>Because everyone gets vaccinated</td></tr><tr><td style=\"white-space:nowrap\">2005<a name=\"napkon-vaccination-module-2005\"> </a></td><td>Because I am afraid of being discriminated against due to my vaccination status (e.g. travel ban, work ban).</td></tr><tr><td style=\"white-space:nowrap\">no-longer<a name=\"napkon-vaccination-module-no-longer\"> </a></td><td>No longer</td></tr><tr><td style=\"white-space:nowrap\">pain-by-pressure<a name=\"napkon-vaccination-module-pain-by-pressure\"> </a></td><td>Pain provoked by pressure</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
+  fhir:CodeSystem.name [ fhir:value "NapkonVaccinationModule"];
+  fhir:CodeSystem.title [ fhir:value "NapkonVaccinationModule"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-11-14T14:19:42+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "NAPKON Vaccination Module Code System - Collection of vaccination module-specific codes that are missing from common terminologies such as SNOMED CT"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "q1001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Willingness for additional SARS-CoV-2 vaccination if recommended" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "To protect myself from infection with SARS-CoV-2 or from COVID-19" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "2002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "To protect my private environment from infection with SARS-CoV-2 or COVID-19" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "2003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "To protect my work environment from infection with SARS-CoV-2 or COVID-19" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "2004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Because everyone gets vaccinated" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "2005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Because I am afraid of being discriminated against due to my vaccination status (e.g. travel ban, work ban)." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "no-longer" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No longer" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "pain-by-pressure" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pain provoked by pressure" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

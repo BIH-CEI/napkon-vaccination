@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "complaint-intensity",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255604002\">255604002</a></td><td>Mild (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=371924009\">371924009</a></td><td>Moderate to severe (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24484000\">24484000</a></td><td>Severe (severity modifier) (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=442452003\">442452003</a></td><td>Life threatening severity (qualifier value)</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/complaint-intensity",
+  "version": "1.0.0",
+  "name": "ComplaintIntensity",
+  "title": "Complaint Intensity",
+  "status": "active",
+  "date": "2021-11-14T14:19:42+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Intensity of general complaints",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+        "concept": [
+          {
+            "code": "255604002",
+            "display": "Mild (qualifier value)"
+          },
+          {
+            "code": "371924009",
+            "display": "Moderate to severe (qualifier value)"
+          },
+          {
+            "code": "24484000",
+            "display": "Severe (severity modifier) (qualifier value)"
+          },
+          {
+            "code": "442452003",
+            "display": "Life threatening severity (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

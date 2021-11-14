@@ -1,0 +1,41 @@
+{
+  "resourceType": "Observation",
+  "id": "VaccinationInjectionSiteSwelling",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-swelling"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 863910007}\">Vaccination site swelling (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: 5.1-10 CentiMeter</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+        "code": "863910007",
+        "display": "Vaccination site swelling (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "valueRange": {
+    "low": {
+      "value": 5.1,
+      "unit": "CentiMeter",
+      "system": "http://unitsofmeasure.org",
+      "code": "cm"
+    },
+    "high": {
+      "value": 10,
+      "unit": "CentiMeter",
+      "system": "http://unitsofmeasure.org",
+      "code": "cm"
+    }
+  }
+}

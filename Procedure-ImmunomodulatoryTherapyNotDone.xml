@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ImmunomodulatoryTherapyNotDone"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/immunomodulatory-therapy"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: not-done</p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 86553008}">Immunosuppressive therapy (procedure)</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>performed</b>: 2021</p></div>
+  </text>
+  <status value="not-done"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+      <code value="86553008"/>
+      <display value="Immunosuppressive therapy (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <performedDateTime value="2021"/>
+</Procedure>

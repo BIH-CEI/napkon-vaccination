@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Condition/SARSCoV2InfectionNone> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SARSCoV2InfectionNone"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-infection";
+       fhir:index 0;
+       fhir:link <https://www.napkon.de/fhir/StructureDefinition/sars-cov2-infection>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>verificationStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status refuted}\">Refuted</span></p><p><b>category</b>: <span title=\"Codes: {http://snomed.info/sct 394807007}\">Infectious diseases (specialty) (qualifier value)</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 840539006}\">Disease caused by 2019 novel coronavirus</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>recordedDate</b>: 2021</p></div>"
+  ];
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
+       fhir:Coding.code [ fhir:value "refuted" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ]
+     ]
+  ];
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:394807007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "394807007" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:840539006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "840539006" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <https://www.napkon.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Condition.recordedDate [ fhir:value "2021"^^xsd:gYear] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Condition/SARSCoV2InfectionNone.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

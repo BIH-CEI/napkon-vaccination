@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Observation/SARSCoV2Variant> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SARSCoV2Variant"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-variant";
+       fhir:index 0;
+       fhir:link <https://www.napkon.de/fhir/StructureDefinition/sars-cov2-variant>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Observation Instance Identifier: ?ngen-9?</p><p></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 26436-6}, {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory studies (set)</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 96741-4}\">SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Jan 1, 2021, 12:00:00 AM</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA32552-4}\">SARS-CoV-2 Delta variant (WHO)</span></p></div>"
+  ];
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "OBI" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "OBI" ]
+       ]
+     ];
+     fhir:Identifier.system [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ];
+         fhir:Extension.valueCode [ fhir:value "not-applicable" ]
+       ]
+     ];
+     fhir:Identifier.value [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ];
+         fhir:Extension.valueCode [ fhir:value "not-applicable" ]
+       ]
+     ];
+     fhir:Identifier.assigner [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ];
+         fhir:Extension.valueCode [ fhir:value "not-applicable" ]
+       ];
+       fhir:Reference.display [ fhir:value "not-applicable" ]
+     ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:26436-6;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "26436-6" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:96741-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "96741-4" ];
+       fhir:Coding.display [ fhir:value "SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://www.napkon.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Observation.effectiveDateTime [
+     fhir:value "2021-01-01T00:00:00+00:00"^^xsd:dateTime;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/data-absent-reason" ];
+       fhir:Extension.valueCode [ fhir:value "unknown" ]
+     ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:LA32552-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "LA32552-4" ];
+       fhir:Coding.display [ fhir:value "SARS-CoV-2 Delta variant (WHO)" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Observation/SARSCoV2Variant.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

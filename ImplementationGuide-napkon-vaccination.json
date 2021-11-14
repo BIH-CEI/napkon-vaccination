@@ -1,0 +1,1373 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "napkon-vaccination",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkonvaccination</h2><p>The official URL for this implementation guide is: </p><pre>https://www.napkon.de/fhir/ImplementationGuide/napkon-vaccination</pre></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-vaccination",
+  "version": "1.0.0",
+  "name": "napkonvaccination",
+  "status": "active",
+  "date": "2021-11-14T14:19:42+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "packageId": "napkon-vaccination",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "de_medizininformatikinitiative_kerndatensatz_prozedur",
+      "uri": "https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide",
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.prozedur",
+      "version": "2.0.0-alpha3"
+    },
+    {
+      "id": "de_medizininformatikinitiative_kerndatensatz_person",
+      "uri": "https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide",
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.person",
+      "version": "2.0.0-alpha3"
+    },
+    {
+      "id": "de_medizininformatikinitiative_kerndatensatz_medikation",
+      "uri": "https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide",
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
+      "version": "1.0.10"
+    },
+    {
+      "id": "de_medizininformatikinitiative_kerndatensatz_diagnose",
+      "uri": "https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide",
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.diagnose",
+      "version": "2.0.0-alpha3"
+    },
+    {
+      "id": "de_medizininformatikinitiative_kerndatensatz_laborbefund",
+      "uri": "https://simplifier.net/guide/laborbefundindermedizininformatik-initiative",
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.laborbefund",
+      "version": "1.0.6"
+    },
+    {
+      "id": "de_gecco",
+      "uri": "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide",
+      "packageId": "de.gecco",
+      "version": "1.0.5"
+    },
+    {
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta",
+      "uri": "https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument",
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "1.0.3"
+    },
+    {
+      "id": "de_medizininformatikinitiative_kerndatensatz_fall",
+      "uri": "https://simplifier.net/guide/medizininformatikinitiative-modulfall-implementationguide",
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.fall",
+      "version": "1.0.1"
+    }
+  ],
+  "definition": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "copyrightyear"
+          },
+          {
+            "url": "value",
+            "valueString": "2021+"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "releaselabel"
+          },
+          {
+            "url": "value",
+            "valueString": "ci-build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-qa"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/qa"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-temp"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/pages"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "output"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-suppressed-warnings"
+          },
+          {
+            "url": "value",
+            "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "https://www.napkon.de/fhir/history.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-html"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-md"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page-md.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-context"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-copyright"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-license"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/additional-vaccination-willingness"
+        },
+        "name": "Additional Vaccination Willingness",
+        "description": "Response to AdditionalVaccinationWillingnessQuestionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/allergic-reaction-to-vaccination"
+        },
+        "name": "Allergic Reaction To Vaccination",
+        "description": "Whether a vaccination caused an allergic reaction",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/analgesic-antipyretic-intake-after-vaccination"
+        },
+        "name": "Analgesic Antipyretic Intake After Vaccination",
+        "description": "Whether a patient took analgesic or antipyretic drugs after a vaccination event",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/body-temperature-after-vaccination"
+        },
+        "name": "Body Temperature After Vaccination",
+        "description": "Maximal body temperature after a vaccination event (indicating fever)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/chemotherapy"
+        },
+        "name": "Chemotherapy",
+        "description": "Whether a patient is or has been receiving a chemotherapy within the last 3 months",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/covid19-encounter"
+        },
+        "name": "COVID19 Encounter",
+        "description": "Whether a patient underwent medical treatment for COVID19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/covid19-immunization"
+        },
+        "name": "COVID19 Immunization",
+        "description": "COVID-19 immunization event",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/covid19-oxygen-therapy"
+        },
+        "name": "Covid19 Oxygen Therapy",
+        "description": "Indicating whether a COVID-19 patient received an oxygen therapy",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/general-complaints-after-vaccination"
+        },
+        "name": "General Complaints After Vaccination",
+        "description": "General complaints after a vaccination event",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/immunomodulatory-therapy"
+        },
+        "name": "Immunomodulatory Therapy",
+        "description": "Whether a patient is receiving an immunosuppressive or -modulatory therapy",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/medical-treatment-for-vaccination-adverse-reaction"
+        },
+        "name": "Medical Treatment For Vaccination Adverse Reaction",
+        "description": "Whether a patient underwent medical treatment for a potential or actual adverse reaction to a vaccination event",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/regular-alcohol-intake"
+        },
+        "name": "Regular Alcohol Intake",
+        "description": "Whether a patient regularly drinks alcohol",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/regular-alcohol-intake-quantity"
+        },
+        "name": "Regular Alcohol Intake Quantity",
+        "description": "How many alcoholic drinks a patient usually drinks per day",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sars-cov2-infection"
+        },
+        "name": "SARS CoV2 Infection",
+        "description": "Profile to capture the diagnosis of disease caused by 2019 novel coronavirus.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sars-cov2-variant"
+        },
+        "name": "SARS CoV2 Variant",
+        "description": "Variant/strain of detected SARS CoV2 (Pango Cov-lineage)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vaccination-injection-site-erythema"
+        },
+        "name": "Vaccination Injection Site Erythema",
+        "description": "Size of an erythema at a vaccine injection site",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vaccination-injection-site-pain"
+        },
+        "name": "Vaccination Injection Site Pain",
+        "description": "Pain intensity at vaccine injection site at rest or movement",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vaccination-injection-site-swelling"
+        },
+        "name": "Vaccination Injection Site Swelling",
+        "description": "Size of an swelling at a vaccine injection site",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/analgesics-antipyretics"
+        },
+        "name": "Analgesics Antipyretics",
+        "description": "Analgetic and antipyretic drugs",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ctcae-grade-value-set"
+        },
+        "name": "CTCAE Grade Value Set",
+        "description": "CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/complaint-intensity"
+        },
+        "name": "Complaint Intensity",
+        "description": "Intensity of general complaints",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid19-vaccine-codes"
+        },
+        "name": "COVID-19 Vaccine Codes",
+        "description": "COVID-19 Vaccine Codes (vaccines approved in the European Union)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid-vaccination-contraindications"
+        },
+        "name": "covid-vaccination-contraindications",
+        "description": "Contraindications precluding COVID-19 vaccination",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid-vaccination-reasons"
+        },
+        "name": "Covid Vaccination Reasons",
+        "description": "Individual reason for getting vaccinated against COVID-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/detected-not-detected-unknown-undetermined"
+        },
+        "name": "Detected Not Detected Unknown Undetermined",
+        "description": "Values for laboratory observations",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/encounter-ambulatory-emergency-inpatient"
+        },
+        "name": "Encounter Ambulatory Emergency Inpatient",
+        "description": "ValueSet to determine the encounter type of a patient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/encounter-homehealth-ambulatory-inpatient"
+        },
+        "name": "Encounter HomeHealth Ambulatory Inpatient",
+        "description": "ValueSet to determine the encounter type of a patient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/general-complaints-after-vaccination"
+        },
+        "name": "General Complaints After Vaccination",
+        "description": "General complaints after vaccination",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/immunosuppressive-immunomodulatory-therapy"
+        },
+        "name": "Immunosuppressive Immunomodulatory Therapy",
+        "description": "Immunosuppressive and immunomodulatory procedures / therapies codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/pain-provoking-factor"
+        },
+        "name": "Pain Provoking Factor",
+        "description": "Pain provoking factors",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/present-not-present-undetermined-other"
+        },
+        "name": "Present Not Present Undetermined Other",
+        "description": "Values for laboratory observations",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/restricted-event-status"
+        },
+        "name": "RestrictedEventStatus",
+        "description": "EventStatus value set restricted to codes not-done, active, completed and unknown",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/severity-grading"
+        },
+        "name": "Severity Grading",
+        "description": "Scale to grade the severity of an outcome/condition/observation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/yes-no-unknown"
+        },
+        "name": "Yes No Unknown",
+        "description": "Yes / No / Unknown",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ctcae-grade-code-system"
+        },
+        "name": "CTCAE Grade Code System",
+        "description": "Common terminology criteria (CTC) grades associated with the severity of an adverse event, expressed as integers, 0 through 5, with 0 representing no adverse event, and 5 representing death.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/napkon-vaccination-module"
+        },
+        "name": "NapkonVaccinationModule",
+        "description": "NAPKON Vaccination Module Code System - Collection of vaccination module-specific codes that are missing from common terminologies such as SNOMED CT",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/AdditionalVaccinationWillingness"
+        },
+        "name": "Additional Vaccination Willingness",
+        "description": "Example of a subject who is willing to receive an additional COVID-19 vaccination if it is officially recommended",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/additional-vaccination-willingness"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/AdditionalVaccinationWillingnessQuestionaire"
+        },
+        "name": "Additional Vaccination Willingness",
+        "description": "Willingness of the patient to receive additional COVID-19 vaccination if officially recommended",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/AllergicReactionToVaccinationInstance"
+        },
+        "name": "Allergic Reaction To Vaccination Instance",
+        "description": "Example of an undetermined state of an allergic reaction cause by a vaccine",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/allergic-reaction-to-vaccination"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/AllergicReactionToVaccinationInstanceOther"
+        },
+        "name": "Allergic Reaction To Vaccination Instance",
+        "description": "Example of a free-text answer to an allergic reaction caused by vaccination",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/allergic-reaction-to-vaccination"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/AnalgesicAntipyreticIntakeAfterVaccination"
+        },
+        "name": "Analgesic Antipyretic Intake After Vaccination",
+        "description": "Example of an antipyretic drug taken after a vaccination event",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BodyTemperatureAfterVaccinationNotMeasured"
+        },
+        "name": "Body Temperature After Vaccination",
+        "description": "Example of a not measured body temperature after vaccination",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/body-temperature-after-vaccination"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BodyTemperatureAfterVaccinationQuantity"
+        },
+        "name": "Body Temperature After Vaccination",
+        "description": "Example of an elevated body temperature after vaccination",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/body-temperature-after-vaccination"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/BodyTemperatureAfterVaccinationRange"
+        },
+        "name": "Body Temperature After Vaccination",
+        "description": "Example of an elevated body temperature after vaccination",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/body-temperature-after-vaccination"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/Chemotherapy"
+        },
+        "name": "Chemotherapy",
+        "description": "Example of a patient not receiving chemotherapy during the last 3 months",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chemotherapy"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/Covid19EncounterInpatient"
+        },
+        "name": "Medical Treatment For Vaccination Adverse Reaction",
+        "description": "Example of a patient hospitalized for a potential or actual adverse reaction to a vaccination event",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-encounter"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/Covid19OxygenTherapy"
+        },
+        "name": "Covid19 Oxygen Therapy",
+        "description": "Example of a COVID-19 patient who received an oxygen therapy",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/CovidVaccinationDone"
+        },
+        "name": "Covid Vaccination Done",
+        "description": "Example of a patient having received a vaccination",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/CovidVaccinationNotDone"
+        },
+        "name": "Covid Vaccination Not Done",
+        "description": "Example of a patient not receiving a vaccination due to pregnancy",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/CovidVaccinationNotDoneReasonOther"
+        },
+        "name": "Covid Vaccination Not Done Reason Other",
+        "description": "Example of a patient not receiving a vaccination due to a specified (free-text) 'other reason'",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/ExamplePatient"
+        },
+        "name": "ExamplePatient",
+        "description": "Example patient to be used as reference in other instances",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/GeneralComplaintsAfterVaccination"
+        },
+        "name": "General Complaints After Vaccination",
+        "description": "Example of a chill after a vaccination event",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/general-complaints-after-vaccination"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/ImmunomodulatoryTherapy"
+        },
+        "name": "Immunomodulatory Therapy",
+        "description": "Example of a patient receiving an immunosuppresive therapy",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/immunomodulatory-therapy"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/ImmunomodulatoryTherapyNotDone"
+        },
+        "name": "Immunomodulatory Therapy",
+        "description": "Example of a patient not receiving an immunosuppresive therapy",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/immunomodulatory-therapy"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/MedicalTreatmentForVaccinationAdverseReactionAtGP"
+        },
+        "name": "Medical Treatment For Vaccination Adverse Reaction",
+        "description": "Example of a patient treated in the mergency room or by a general practitioner for a potential or actual adverse reaction to a vaccination event",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/MedicalTreatmentForVaccinationAdverseReactionInHospital"
+        },
+        "name": "Medical Treatment For Vaccination Adverse Reaction",
+        "description": "Example of a patient hospitalized for a potential or actual adverse reaction to a vaccination event",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/medical-treatment-for-vaccination-adverse-reaction"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/RegularAlcoholIntake1"
+        },
+        "name": "Regular Alcohol Intake",
+        "description": "Example of a patient who drinks a single drink per week",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/regular-alcohol-intake"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/RegularAlcoholIntake4"
+        },
+        "name": "Regular Alcohol Intake",
+        "description": "Example of a patient who drinks at least 4 drinks per week",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/regular-alcohol-intake"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/RegularAlcoholIntakeNo"
+        },
+        "name": "Regular Alcohol Intake",
+        "description": "Example of a patient for whom the alcohol intake is unknown",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/regular-alcohol-intake"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/RegularAlcoholIntakeNoLonger"
+        },
+        "name": "Regular Alcohol Intake",
+        "description": "Example of a patient who does no longer drink alcohol",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/regular-alcohol-intake"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/RegularAlcoholIntakeQuantity"
+        },
+        "name": "Regular Alcohol Intake Quantity",
+        "description": "Example of intake of 5 or more alcoholic beverages per day",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/regular-alcohol-intake-quantity"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/RegularAlcoholIntakeQuantityNone"
+        },
+        "name": "Regular Alcohol Intake Quantity",
+        "description": "Example of a patient for whom the quantity is unknown",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/regular-alcohol-intake-quantity"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/SARSCoV2Infection"
+        },
+        "name": "SARS CoV2 Infection",
+        "description": "Example of a patient with a SARS CoV2 infection",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-infection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/SARSCoV2InfectionNone"
+        },
+        "name": "SARS CoV2 Infection",
+        "description": "Example of a patient without SARS CoV2 infection",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-infection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/SARSCoV2InfectionUnknown"
+        },
+        "name": "SARS CoV2 Infection",
+        "description": "Example of an unknown SARS CoV2 infection",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-infection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/SARSCoV2Variant"
+        },
+        "name": "SARS CoV2 Variant",
+        "description": "Example of a SARS CoV2 variant (Pango lineage)",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-variant"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/VaccinationInjectionSiteErythema"
+        },
+        "name": "Vaccination Injection Site Erythema",
+        "description": "Example of a 2.5-5 cm erythema at a vaccine injection site",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-erythema"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/VaccinationInjectionSitePain"
+        },
+        "name": "Vaccination Injection Site Pain Rest",
+        "description": "Example of mild pain at vaccine injection site at rest and movement",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-pain"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/VaccinationInjectionSiteSwelling"
+        },
+        "name": "Vaccination Injection Site Swelling Instance",
+        "description": "Example of a 5.1-10 cm swelling at a vaccine injection site",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-swelling"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "path-resource",
+        "value": "input/capabilities"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/examples"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/extensions"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/models"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/operations"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/profiles"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/testing"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "template/config"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/images"
+      },
+      {
+        "code": "path-tx-cache",
+        "value": "input-cache/txcache"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="analgesics-antipyretics"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-N02">N02</a></li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/analgesics-antipyretics"/>
+  <version value="1.0.0"/>
+  <name value="AnalgesicsAntipyretics"/>
+  <title value="Analgesics Antipyretics"/>
+  <status value="active"/>
+  <date value="2021-11-14T14:19:42+00:00"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Analgetic and antipyretic drugs"/>
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="N02"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

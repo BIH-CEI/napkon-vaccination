@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="VaccinationInjectionSitePain"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/vaccination-injection-site-pain"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 95388000}">Injection site pain (disorder)</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 52598005}">Rest pain (finding)</span></p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 6736007}, {https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system 2}">Moderate (severity modifier) (qualifier value)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 425423002}">Pain provoked by movement (finding)</span></p><p><b>value</b>: <span title="Codes: {http://snomed.info/sct 6736007}">Moderate (severity modifier) (qualifier value)</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+      <code value="95388000"/>
+      <display value="Injection site pain (disorder)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+        <code value="52598005"/>
+        <display value="Rest pain (finding)"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+        <code value="6736007"/>
+        <display value="Moderate (severity modifier) (qualifier value)"/>
+      </coding>
+      <coding>
+        <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
+        <code value="2"/>
+        <display value="Moderate Adverse Event"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+        <code value="425423002"/>
+        <display value="Pain provoked by movement (finding)"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+        <code value="6736007"/>
+        <display value="Moderate (severity modifier) (qualifier value)"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>
