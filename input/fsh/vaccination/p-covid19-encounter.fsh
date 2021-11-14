@@ -5,7 +5,7 @@ Parent: $mii-encounter
 Id: covid19-encounter
 Title: "COVID19 Encounter"
 Description: "Whether a patient underwent medical treatment for COVID19"
-* insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-05, #active, 1.0.0)
 * period.start.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
 * class from EncounterHomeHealthAmbulatoryInpatient (extensible)
 * diagnosis 1..*

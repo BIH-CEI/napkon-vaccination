@@ -5,7 +5,7 @@ Parent: Observation
 Id: allergic-reaction-to-vaccination
 Title: "Allergic Reaction To Vaccination"
 Description: "Whether a vaccination caused an allergic reaction"
-* insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-05, #active, 1.0.0)
 * insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"

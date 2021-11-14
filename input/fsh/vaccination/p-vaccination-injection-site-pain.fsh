@@ -5,7 +5,7 @@ Parent: Observation
 Id: vaccination-injection-site-pain
 Title: "Vaccination Injection Site Pain"
 Description: "Pain intensity at vaccine injection site at rest or movement"
-* insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-05, #active, 1.0.0)
 * insert mii-patient-reference
 * code
   * coding ^slicing.discriminator.type = #pattern

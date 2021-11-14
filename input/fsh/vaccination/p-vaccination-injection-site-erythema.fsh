@@ -5,7 +5,7 @@ Parent: Observation
 Id: vaccination-injection-site-erythema
 Title: "Vaccination Injection Site Erythema"
 Description: "Size of an erythema at a vaccine injection site"
-* insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-05, #active, 1.0.0)
 * insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"

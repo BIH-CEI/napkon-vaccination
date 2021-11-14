@@ -5,7 +5,7 @@ Parent: $mii-encounter
 Id: medical-treatment-for-vaccination-adverse-reaction
 Title: "Medical Treatment For Vaccination Adverse Reaction"
 Description: "Whether a patient underwent medical treatment for a potential or actual adverse reaction to a vaccination event"
-* insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-05, #active, 1.0.0)
 * period.start.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
 * class from EncounterAmbulatoryEmergencyInpatient (extensible)
 * reasonReference MS

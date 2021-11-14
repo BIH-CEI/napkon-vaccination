@@ -5,7 +5,7 @@ Parent: $mii-procedure
 Id: chemotherapy
 Title: "Chemotherapy"
 Description: "Whether a patient is or has been receiving a chemotherapy within the last 3 months"
-* insert napkon-metadata(2021-09-13, #draft, 0.1.0)
+* insert napkon-metadata(2021-09-13, #active, 1.0.0)
 * insert mii-patient-reference
 * status from RestrictedEventStatus
 * category.coding[sct] = $sctIntl2021#277132007 "Therapeutic procedure (procedure)"

@@ -5,7 +5,7 @@ InstanceOf: Questionnaire
 Usage: #definition
 Title: "Additional Vaccination Willingness"
 Description: "Willingness of the patient to receive additional COVID-19 vaccination if officially recommended"
-* insert napkon-metadata-instance(2021-11-03, #draft, 0.1.0)
+* insert napkon-metadata-instance(2021-11-03, #active, 1.0.0)
 * url = $additional-vaccination-willingness-questionnaire-url
 * name = "AdditionalVaccinationWillingnessQuestionnaire"
 * status = #active
@@ -20,7 +20,7 @@ Parent: QuestionnaireResponse
 Id: additional-vaccination-willingness
 Title: "Additional Vaccination Willingness"
 Description: "Response to AdditionalVaccinationWillingnessQuestionnaire"
-* insert napkon-metadata(2021-11-03, #draft, 0.1.0)
+* insert napkon-metadata(2021-11-03, #active, 1.0.0)
 * insert mii-patient-reference
 * questionnaire 1..1
 * questionnaire = $additional-vaccination-willingness-questionnaire-url

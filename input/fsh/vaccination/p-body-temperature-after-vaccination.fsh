@@ -5,7 +5,7 @@ Parent: Observation
 Id: body-temperature-after-vaccination
 Title: "Body Temperature After Vaccination"
 Description: "Maximal body temperature after a vaccination event (indicating fever)"
-* insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-05, #active, 1.0.0)
 * insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"

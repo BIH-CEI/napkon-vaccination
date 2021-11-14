@@ -5,7 +5,7 @@ Parent: $mii-observation-lab
 Id: sars-cov2-variant
 Title: "SARS CoV2 Variant"
 Description: "Variant/strain of detected SARS CoV2 (Pango Cov-lineage)"
-* insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-05, #active, 1.0.0)
 * category 1.. MS
   * coding[loinc-observation] = $loinc#26436-6
   * coding[observation-category] = $cs-observation-category#laboratory

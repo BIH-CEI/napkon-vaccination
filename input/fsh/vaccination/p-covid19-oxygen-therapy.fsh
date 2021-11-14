@@ -5,7 +5,7 @@ Parent: $mii-procedure
 Id: covid19-oxygen-therapy
 Title: "Covid19 Oxygen Therapy"
 Description: "Indicating whether a COVID-19 patient received an oxygen therapy"
-* insert napkon-metadata(2021-10-05, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-05, #active, 1.0.0)
 * code.coding[sct] 1..1
 * code.coding[sct] = $sctIntl2021#57485005 "Oxygen therapy (procedure)"
 * encounter 0..1 MS

@@ -5,8 +5,8 @@
 id: "napkon-vaccination"
 canonical: "https://www.napkon.de/fhir"
 name: "napkon-vaccination"
-status: "draft"
-version: "0.1.0"
+status: "active"
+version: "1.0.0"
 fhirVersion: "4.0.1"
 copyrightYear: 2021+
 releaseLabel: ci-build
