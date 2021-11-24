@@ -4,12 +4,13 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: "napkon-vaccination"
 canonical: "https://www.napkon.de/fhir"
-name: "napkon-vaccination"
+name: "NapkonVaccination"
+title: "NAPKON Vaccination Module"
 status: "active"
 version: "1.0.0"
 fhirVersion: "4.0.1"
 copyrightYear: 2021+
-releaseLabel: ci-build
+releaseLabel: trial-use
 publisher:
   name: "Charité - Universitätsmedizin Berlin"
   url: "https://www.netzwerk-universitaetsmedizin.de"
@@ -39,9 +40,27 @@ dependencies:
     uri: https://simplifier.net/guide/medizininformatikinitiative-modulfall-implementationguide
     version: 1.0.1
 
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+pages:
+  index.md:
+    title: NAPKON Vaccination Module
+  guidance.md:
+  profiles.md:
+  codesystems.md:
+    title: Code Systems
+  valuesets.md:
+    title: Value Sets
+  extensions.md:
+  examples.md:
+  downloads.xml:
+  changelog.md:
+    title: Change Log
+
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Guidance: guidance.html
+  Profiles: profiles.html
+  Code Systems: codesystems.html
+  Value Sets: valuesets.html
+  Examples: examples.html
+  Downloads: downloads.html
+  Change Log: changelog.html
