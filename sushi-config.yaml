@@ -64,3 +64,20 @@ menu:
   Examples: examples.html
   Downloads: downloads.html
   Change Log: changelog.html
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  show-inherited-invariants: 'false'
+  usage-stats-opt-out: 'true'
+  excludexml: 'false'
+  excludejsn: 'false'
+  excludettl: 'true'
+  excludemap: 'true'
+  excludeexample: 'true'
+  generate:
+    - xml
+    - json
