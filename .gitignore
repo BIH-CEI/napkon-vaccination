@@ -26,7 +26,6 @@ Thumbs.db
 
 # nodejs files/directories
 ###########################
-package.json
 package-lock.json
 node_modules/
 
