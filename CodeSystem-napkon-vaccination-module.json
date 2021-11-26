@@ -8,9 +8,9 @@
   "url": "https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module",
   "version": "1.0.0",
   "name": "NapkonVaccinationModule",
-  "title": "NapkonVaccinationModule",
+  "title": "NAPKON Vaccination Module Codes",
   "status": "active",
-  "date": "2021-11-14T14:19:42+00:00",
+  "date": "2021-11-25T00:25:38+01:00",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {

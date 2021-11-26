@@ -18,7 +18,7 @@
     "type": "ImplementationGuide",
     "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-vaccination",
     "version": "1.0.0",
-    "name": "napkonvaccination"
+    "name": "NapkonVaccination"
   },
   {
     "id": "additional-vaccination-willingness",

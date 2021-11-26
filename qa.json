@@ -1,11 +1,11 @@
 {
   "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-vaccination",
-  "name": "napkonvaccination",
+  "name": "NapkonVaccination",
   "package-id": "napkon-vaccination",
   "ig-ver": "1.0.0",
-  "date": "Sun, 14 Nov, 2021 14:19:42 +0000",
-  "errs": 22,
-  "warnings": 34,
+  "date": "Thu, 25 Nov, 2021 00:25:38 +0100",
+  "errs": 23,
+  "warnings": 33,
   "hints": 24,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"

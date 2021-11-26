@@ -15,9 +15,9 @@
   fhir:CodeSystem.url [ fhir:value "https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module"];
   fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "NapkonVaccinationModule"];
-  fhir:CodeSystem.title [ fhir:value "NapkonVaccinationModule"];
+  fhir:CodeSystem.title [ fhir:value "NAPKON Vaccination Module Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-11-14T14:19:42+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-11-25T00:25:38+01:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:CodeSystem.contact [
      fhir:index 0;

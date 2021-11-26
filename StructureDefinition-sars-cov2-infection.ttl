@@ -19,7 +19,7 @@
   fhir:StructureDefinition.name [ fhir:value "SARSCoV2Infection"];
   fhir:StructureDefinition.title [ fhir:value "SARS CoV2 Infection"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-11-14T14:19:42+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-11-25T00:25:38+01:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

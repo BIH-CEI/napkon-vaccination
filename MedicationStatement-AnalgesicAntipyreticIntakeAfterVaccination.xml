@@ -6,7 +6,7 @@
     <profile value="https://www.napkon.de/fhir/StructureDefinition/analgesic-antipyretic-intake-after-vaccination"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>medication</b>: <span title="Codes: {http://fhir.de/CodeSystem/bfarm/atc N02BA06}">Salsalat</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Jan 1, 2021, 12:00:00 AM</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>medication</b>: <span title="Codes: {http://fhir.de/CodeSystem/bfarm/atc N02BA06}">Salsalat</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Jan 1, 2021, 1:00:00 AM</p></div>
   </text>
   <status value="completed"/>
   <medicationCodeableConcept>

@@ -15,9 +15,9 @@
   fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/covid-vaccination-contraindications"];
   fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "CovidVaccinationContraindications"];
-  fhir:ValueSet.title [ fhir:value "covid-vaccination-contraindications"];
+  fhir:ValueSet.title [ fhir:value "Covid Vaccination Contraindications"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-11-14T14:19:42+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-11-25T00:25:38+01:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ValueSet.contact [
      fhir:index 0;
