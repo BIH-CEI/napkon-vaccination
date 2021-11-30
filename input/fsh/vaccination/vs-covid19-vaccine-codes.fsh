@@ -1,4 +1,4 @@
-ValueSet: Covid19VaccineCodes
+ValueSet: COVID19VaccineCodes
 Id: covid19-vaccine-codes
 Title: "COVID-19 Vaccine Codes"
 Description: "COVID-19 Vaccine Codes (vaccines approved in the European Union)"

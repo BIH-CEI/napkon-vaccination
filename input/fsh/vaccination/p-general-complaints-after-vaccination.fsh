@@ -23,14 +23,14 @@ Description: "General complaints after a vaccination event"
   * coding[ctcae] from $vs-ctc-adverse-event-grade (required)
 * extension contains $ext-condition-occurredFollowing named occurredFollowing 1..* MS
 * extension[occurredFollowing].value[x] only Reference
-* extension[occurredFollowing].valueReference only Reference(Covid19Immunization)
+* extension[occurredFollowing].valueReference only Reference(COVID19Immunization)
 
 Instance: GeneralComplaintsAfterVaccination
 InstanceOf: general-complaints-after-vaccination
 Usage: #example
 Title: "General Complaints After Vaccination"
 Description: "Example of a chill after a vaccination event"
-* extension[occurredFollowing].valueReference = Reference(CovidVaccinationDone)
+* extension[occurredFollowing].valueReference = Reference(COVIDVaccinationDone)
 * code.coding[sct] = $sctIntl2021#57676002 "Joint pain (finding)"
 * severity.coding[sct] = $sctIntl2021#24484000 "Severe (severity modifier) (qualifier value)"
 * severity.coding[ctcae] = $cs-ctc-adverse-event-grade#3 "Severe Adverse Event"

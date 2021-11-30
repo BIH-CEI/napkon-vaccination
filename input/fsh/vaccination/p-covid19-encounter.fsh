@@ -1,10 +1,10 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-Profile: Covid19Encounter
+Profile: COVID19Encounter
 Parent: $mii-encounter
 Id: covid19-encounter
-Title: "COVID19 Encounter"
-Description: "Whether a patient underwent medical treatment for COVID19"
+Title: "COVID-19 Encounter"
+Description: "Whether a patient underwent medical treatment for COVID-19"
 * insert napkon-metadata(2021-10-05, #active, 1.0.0)
 * period.start.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
 * class from EncounterHomeHealthAmbulatoryInpatient (extensible)
@@ -13,7 +13,7 @@ Description: "Whether a patient underwent medical treatment for COVID19"
 * type from $vs-kontakt-art-de (required)
 * obeys reason-code-or-reference-set
 
-Instance: Covid19EncounterInpatient
+Instance: COVID19EncounterInpatient
 InstanceOf: covid19-encounter
 Usage: #example
 Title: "Medical Treatment For Vaccination Adverse Reaction"

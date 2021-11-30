@@ -2,7 +2,7 @@
 // Berlin Institute of Health | Charité
 CodeSystem: NapkonVaccinationModule
 Id: napkon-vaccination-module
-Title: "NapkonVaccinationModule"
+Title: "NAPKON Vaccination Module Codes"
 Description: "NAPKON Vaccination Module Code System - Collection of vaccination module-specific codes that are missing from common terminologies such as SNOMED CT"
 
 // questions
