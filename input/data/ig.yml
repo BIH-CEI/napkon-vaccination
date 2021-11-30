@@ -79,17 +79,17 @@ definition:
     exampleBoolean: false
   - reference:
       reference: StructureDefinition/covid19-encounter
-    name: COVID19 Encounter
-    description: Whether a patient underwent medical treatment for COVID19
+    name: COVID-19 Encounter
+    description: Whether a patient underwent medical treatment for COVID-19
     exampleBoolean: false
   - reference:
       reference: StructureDefinition/covid19-immunization
-    name: COVID19 Immunization
+    name: COVID-19 Immunization
     description: COVID-19 immunization event
     exampleBoolean: false
   - reference:
       reference: StructureDefinition/covid19-oxygen-therapy
-    name: Covid19 Oxygen Therapy
+    name: COVID-19 Oxygen Therapy
     description: Indicating whether a COVID-19 patient received an oxygen therapy
     exampleBoolean: false
   - reference:
@@ -171,12 +171,12 @@ definition:
     exampleBoolean: false
   - reference:
       reference: ValueSet/covid-vaccination-contraindications
-    name: Covid Vaccination Contraindications
+    name: COVID-19 Vaccination Contraindications
     description: Contraindications precluding COVID-19 vaccination
     exampleBoolean: false
   - reference:
       reference: ValueSet/covid-vaccination-reasons
-    name: Covid Vaccination Reasons
+    name: COVID-19 Vaccination Reasons
     description: Individual reason for getting vaccinated against COVID-19
     exampleBoolean: false
   - reference:
@@ -294,29 +294,29 @@ definition:
       months
     exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/chemotherapy
   - reference:
-      reference: Encounter/Covid19EncounterInpatient
+      reference: Encounter/COVID19EncounterInpatient
     name: Medical Treatment For Vaccination Adverse Reaction
     description: Example of a patient hospitalized for a potential or actual adverse
       reaction to a vaccination event
     exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-encounter
   - reference:
-      reference: Procedure/Covid19OxygenTherapy
-    name: Covid19 Oxygen Therapy
+      reference: Procedure/COVID19OxygenTherapy
+    name: COVID-19 Oxygen Therapy
     description: Example of a COVID-19 patient who received an oxygen therapy
     exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy
   - reference:
-      reference: Immunization/CovidVaccinationDone
-    name: Covid Vaccination Done
+      reference: Immunization/COVID19VaccinationDone
+    name: COVID-19 Vaccination Done
     description: Example of a patient having received a vaccination
     exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-immunization
   - reference:
-      reference: Immunization/CovidVaccinationNotDone
-    name: Covid Vaccination Not Done
+      reference: Immunization/COVIDVaccinationNotDone
+    name: COVID-19 Vaccination Not Done
     description: Example of a patient not receiving a vaccination due to pregnancy
     exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-immunization
   - reference:
-      reference: Immunization/CovidVaccinationNotDoneReasonOther
-    name: Covid Vaccination Not Done Reason Other
+      reference: Immunization/COVIDVaccinationNotDoneReasonOther
+    name: COVID-19 Vaccination Not Done Reason Other
     description: Example of a patient not receiving a vaccination due to a specified
       (free-text) 'other reason'
     exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-immunization
@@ -424,9 +424,6 @@ definition:
     page:
     - nameUrl: index.html
       title: NAPKON Vaccination Module
-      generation: markdown
-    - nameUrl: guidance.html
-      title: Guidance
       generation: markdown
     - nameUrl: profiles.html
       title: Profiles

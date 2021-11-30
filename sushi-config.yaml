@@ -43,7 +43,6 @@ dependencies:
 pages:
   index.md:
     title: NAPKON Vaccination Module
-  guidance.md:
   profiles.md:
   codesystems.md:
     title: Code Systems
@@ -57,7 +56,6 @@ pages:
 
 menu:
   Home: index.html
-  Guidance: guidance.html
   Profiles: profiles.html
   Code Systems: codesystems.html
   Value Sets: valuesets.html
@@ -66,18 +64,19 @@ menu:
   Change Log: changelog.html
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-  active-tables: 'false'
-  apply-contact: 'true'
-  apply-jurisdiction: 'true'
-  apply-publisher: 'true'
-  apply-version: 'true'
-  show-inherited-invariants: 'false'
-  usage-stats-opt-out: 'true'
-  excludexml: 'false'
-  excludejsn: 'false'
-  excludettl: 'true'
-  excludemap: 'true'
+  active-tables: 'true' # Whether to generate active tables in the generated fragments (tables that will expand and contract).
+  apply-contact: 'false' # if true, overwrite all canonical resource contact details with that found in the IG.
+  apply-jurisdiction: 'false' # if true, overwrite all canonical resource jurisidiction details with that found in the IG.
+  apply-publisher: 'false' # if true, overwrite all canonical resource publisher details with that found in the IG.
+  apply-version: 'false' # if true, overwrite all canonical resource version details with that found in the IG.  Default = false
+  show-inherited-invariants: 'false' # If true, render inherited constraints in the full details and invariants view. Default = true
+  usage-stats-opt-out: 'true' # If true, usage stats (information about extensions, value sets, and invariants being used) is not sent to fhir.org (see e.g. http://clinfhir.com/igAnalysis.html).
+  excludexml: 'false' # when true, these parameters will cause the publisher to exclude the generation of the respective formats - xml, json or ttl  - and to exclude the respective tabs from the implementation guide pages.
+  excludejsn: 'false' # when true, these parameters will cause the publisher to exclude the generation of the respective formats - xml, json or ttl  - and to exclude the respective tabs from the implementation guide pages.
+  excludettl: 'true' # when true, these parameters will cause the publisher to exclude the generation of the respective formats - xml, json or ttl  - and to exclude the respective tabs from the implementation guide pages.
+  excludemap: 'true' # when true, these parameters will cause the publisher to exclude the generation of the respective formats - xml, json or ttl  - and to exclude the respective tabs from the implementation guide pages.
   excludeexample: 'true'
-  generate:
-    - xml
-    - json
+  extension-domain: # An external domain fro which extensions are allowed to come (else they'll be flagged as invalid when validating).
+  - https://www.netzwerk-universitaetsmedizin.de
+  - https://napkon.de
+  - https://simplifier.net
