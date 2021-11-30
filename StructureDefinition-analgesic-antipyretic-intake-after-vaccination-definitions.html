@@ -21,9 +21,10 @@
       <!-- Placeholder for child template CSS declarations -->
   <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/napkon.css"/>
 
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/fhir-table-scripts.js" type="text/javascript"> </script>
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -42,13 +43,13 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.4"}
-    h3,h4,h5,h6{--heading-prefix:"10.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.4"}
+    h3,h4,h5,h6{--heading-prefix:"9.4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Left logo - typically the publisher's logo - project or affiliate -->
 <div id="project-nav">
-  <a no-external="true" id="project-logo" href="https://bihealth.org">
+  <a no-external="true" id="project-logo" href="https://napkon.de/">
     <img src="assets/images/napkon-logo.svg" alt="Project home" height="71"/>
   </a>
 </div>
@@ -88,9 +89,6 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="guidance.html">Guidance</a>
   </li>
   <li>
     <a href="profiles.html">Profiles</a>
@@ -489,7 +487,7 @@ A coded concept identifying the substance or product being taken.
   <tr><td>Definition</td><td><p>A reference from one resource to another.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l2127">​</a><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference]]">MII-Reference</a>)(<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l2123">​</a><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference]]">MII-Reference</a>)(<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
@@ -775,7 +773,7 @@ A coded concept describing the site location the medicine enters into or onto th
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l4095">​</a>For example codes, see <a href="file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html">Target Site - IPS</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l4091">​</a>For example codes, see <a href="file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-target-site-uv-ips.html">Target Site - IPS</a>
 target site IPS
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
@@ -918,7 +916,7 @@ A coded concept describing the route or physiological path of administration of 
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l4990">​</a>The codes SHOULD be taken from <a href="file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html">Medicine Route of Administration - IPS</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l4986">​</a>The codes SHOULD be taken from <a href="file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-medicine-route-of-administration.html">Medicine Route of Administration - IPS</a>
 EDQM Standard Terms
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
@@ -1265,10 +1263,10 @@ The kind of dose or rate specified.
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 25, 2021 00:25+0100">2021-11-25</span>
+          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 30, 2021 16:36+0000">2021-11-30</span>
           <br/>
           <span style="color: #FFFF77">
-            <p style="color: white"><a name="l6933">​</a>
+            <p style="color: white"><a name="l6929">​</a>
        Links: <a href="toc.html">Table of Contents</a> |
        <a href="qa.html">QA Report</a> |
        <a href="https://github.com/BIH-CEI/napkon-vaccination/issues/" target="_blank">Issues</a> |

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="covid19-vaccination-contraindications"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=863903001">863903001</a></td><td>Allergy to component of vaccine product (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=77386006">77386006</a></td><td>Pregnant (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a></td><td>Other (qualifier value)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/covid19-vaccination-contraindications"/>
+  <version value="1.0.0"/>
+  <name value="COVID19VaccinationContraindications"/>
+  <title value="COVID-19 Vaccination Contraindications"/>
+  <status value="active"/>
+  <date value="2021-11-30T16:36:32+00:00"/>
+  <description value="Contraindications precluding COVID-19 vaccination"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+      <concept>
+        <code value="863903001"/>
+        <display value="Allergy to component of vaccine product (finding)"/>
+      </concept>
+      <concept>
+        <code value="77386006"/>
+        <display value="Pregnant (finding)"/>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Other (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

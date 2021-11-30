@@ -10,7 +10,7 @@
   <name value="NapkonVaccination"/>
   <title value="NAPKON Vaccination Module"/>
   <status value="active"/>
-  <date value="2021-11-25T00:25:38+01:00"/>
+  <date value="2021-11-30T16:36:32+00:00"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
     <name value="Charité - Universitätsmedizin Berlin"/>
@@ -84,7 +84,7 @@
         <valueString value="active-tables"/>
       </extension>
       <extension url="value">
-        <valueString value="false"/>
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -92,7 +92,7 @@
         <valueString value="apply-contact"/>
       </extension>
       <extension url="value">
-        <valueString value="true"/>
+        <valueString value="false"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -100,7 +100,7 @@
         <valueString value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
-        <valueString value="true"/>
+        <valueString value="false"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -108,7 +108,7 @@
         <valueString value="apply-publisher"/>
       </extension>
       <extension url="value">
-        <valueString value="true"/>
+        <valueString value="false"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -116,7 +116,7 @@
         <valueString value="apply-version"/>
       </extension>
       <extension url="value">
-        <valueString value="true"/>
+        <valueString value="false"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -177,18 +177,26 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="generate"/>
+        <valueString value="extension-domain"/>
       </extension>
       <extension url="value">
-        <valueString value="xml"/>
+        <valueString value="https://www.netzwerk-universitaetsmedizin.de"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="generate"/>
+        <valueString value="extension-domain"/>
       </extension>
       <extension url="value">
-        <valueString value="json"/>
+        <valueString value="https://napkon.de"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://simplifier.net"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -344,21 +352,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/chemotherapy"/>
-      </reference>
-      <name value="Chemotherapy"/>
-      <description value="Whether a patient is or has been receiving a chemotherapy within the last 3 months"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/covid19-encounter"/>
       </reference>
-      <name value="COVID19 Encounter"/>
-      <description value="Whether a patient underwent medical treatment for COVID19"/>
+      <name value="COVID-19 Encounter"/>
+      <description value="Whether a patient underwent medical treatment for COVID-19"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -368,7 +365,7 @@
       <reference>
         <reference value="StructureDefinition/covid19-immunization"/>
       </reference>
-      <name value="COVID19 Immunization"/>
+      <name value="COVID-19 Immunization"/>
       <description value="COVID-19 immunization event"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -379,8 +376,19 @@
       <reference>
         <reference value="StructureDefinition/covid19-oxygen-therapy"/>
       </reference>
-      <name value="Covid19 Oxygen Therapy"/>
+      <name value="COVID-19 Oxygen Therapy"/>
       <description value="Indicating whether a COVID-19 patient received an oxygen therapy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chemotherapy"/>
+      </reference>
+      <name value="Chemotherapy"/>
+      <description value="Whether a patient is or has been receiving a chemotherapy within the last 3 months"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -509,10 +517,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ctcae-grade-value-set"/>
+        <reference value="ValueSet/covid19-vaccination-contraindications"/>
       </reference>
-      <name value="CTCAE Grade Value Set"/>
-      <description value="CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE."/>
+      <name value="COVID-19 Vaccination Contraindications"/>
+      <description value="Contraindications precluding COVID-19 vaccination"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -520,10 +528,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/complaint-intensity"/>
+        <reference value="ValueSet/covid-vaccination-reasons"/>
       </reference>
-      <name value="Complaint Intensity"/>
-      <description value="Intensity of general complaints"/>
+      <name value="COVID-19 Vaccination Reasons"/>
+      <description value="Individual reason for getting vaccinated against COVID-19"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -542,10 +550,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/covid-vaccination-contraindications"/>
+        <reference value="ValueSet/ctcae-grade-value-set"/>
       </reference>
-      <name value="Covid Vaccination Contraindications"/>
-      <description value="Contraindications precluding COVID-19 vaccination"/>
+      <name value="CTCAE Grade Value Set"/>
+      <description value="CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -553,10 +561,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/covid-vaccination-reasons"/>
+        <reference value="ValueSet/complaint-intensity"/>
       </reference>
-      <name value="Covid Vaccination Reasons"/>
-      <description value="Individual reason for getting vaccinated against COVID-19"/>
+      <name value="Complaint Intensity"/>
+      <description value="Intensity of general complaints"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -781,21 +789,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/Chemotherapy"/>
-      </reference>
-      <name value="Chemotherapy"/>
-      <description value="Example of a patient not receiving chemotherapy during the last 3 months"/>
-      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/chemotherapy"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <reference>
-        <reference value="Encounter/Covid19EncounterInpatient"/>
+        <reference value="Encounter/COVID19EncounterInpatient"/>
       </reference>
       <name value="Medical Treatment For Vaccination Adverse Reaction"/>
       <description value="Example of a patient hospitalized for a potential or actual adverse reaction to a vaccination event"/>
@@ -806,9 +803,9 @@
         <valueString value="Procedure"/>
       </extension>
       <reference>
-        <reference value="Procedure/Covid19OxygenTherapy"/>
+        <reference value="Procedure/COVID19OxygenTherapy"/>
       </reference>
-      <name value="Covid19 Oxygen Therapy"/>
+      <name value="COVID-19 Oxygen Therapy"/>
       <description value="Example of a COVID-19 patient who received an oxygen therapy"/>
       <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy"/>
     </resource>
@@ -817,9 +814,9 @@
         <valueString value="Immunization"/>
       </extension>
       <reference>
-        <reference value="Immunization/CovidVaccinationDone"/>
+        <reference value="Immunization/COVIDVaccinationDone"/>
       </reference>
-      <name value="Covid Vaccination Done"/>
+      <name value="COVID-19 Vaccination Done"/>
       <description value="Example of a patient having received a vaccination"/>
       <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/covid19-immunization"/>
     </resource>
@@ -828,9 +825,9 @@
         <valueString value="Immunization"/>
       </extension>
       <reference>
-        <reference value="Immunization/CovidVaccinationNotDone"/>
+        <reference value="Immunization/COVIDVaccinationNotDone"/>
       </reference>
-      <name value="Covid Vaccination Not Done"/>
+      <name value="COVID-19 Vaccination Not Done"/>
       <description value="Example of a patient not receiving a vaccination due to pregnancy"/>
       <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/covid19-immunization"/>
     </resource>
@@ -839,11 +836,22 @@
         <valueString value="Immunization"/>
       </extension>
       <reference>
-        <reference value="Immunization/CovidVaccinationNotDoneReasonOther"/>
+        <reference value="Immunization/COVIDVaccinationNotDoneReasonOther"/>
       </reference>
-      <name value="Covid Vaccination Not Done Reason Other"/>
+      <name value="COVID-19 Vaccination Not Done Reason Other"/>
       <description value="Example of a patient not receiving a vaccination due to a specified (free-text) &#39;other reason&#39;"/>
       <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/covid19-immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/Chemotherapy"/>
+      </reference>
+      <name value="Chemotherapy"/>
+      <description value="Example of a patient not receiving chemotherapy during the last 3 months"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/chemotherapy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1061,11 +1069,6 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="NAPKON Vaccination Module"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="guidance.html"/>
-        <title value="Guidance"/>
         <generation value="markdown"/>
       </page>
       <page>

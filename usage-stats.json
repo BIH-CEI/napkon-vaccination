@@ -49,7 +49,7 @@
     "Immunization": [
       {
         "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization",
-        "title": "COVID19 Immunization"
+        "title": "COVID-19 Immunization"
       }
     ],
     "Condition": [

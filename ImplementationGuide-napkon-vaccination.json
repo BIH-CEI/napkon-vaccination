@@ -10,7 +10,7 @@
   "name": "NapkonVaccination",
   "title": "NAPKON Vaccination Module",
   "status": "active",
-  "date": "2021-11-25T00:25:38+01:00",
+  "date": "2021-11-30T16:36:32+00:00",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
@@ -114,7 +114,7 @@
           },
           {
             "url": "value",
-            "valueString": "false"
+            "valueString": "true"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -127,7 +127,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -140,7 +140,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -153,7 +153,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -166,7 +166,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -266,11 +266,11 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "generate"
+            "valueString": "extension-domain"
           },
           {
             "url": "value",
-            "valueString": "xml"
+            "valueString": "https://www.netzwerk-universitaetsmedizin.de"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -279,11 +279,24 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "generate"
+            "valueString": "extension-domain"
           },
           {
             "url": "value",
-            "valueString": "json"
+            "valueString": "https://napkon.de"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "extension-domain"
+          },
+          {
+            "url": "value",
+            "valueString": "https://simplifier.net"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -523,24 +536,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/chemotherapy"
-        },
-        "name": "Chemotherapy",
-        "description": "Whether a patient is or has been receiving a chemotherapy within the last 3 months",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/covid19-encounter"
         },
-        "name": "COVID19 Encounter",
-        "description": "Whether a patient underwent medical treatment for COVID19",
+        "name": "COVID-19 Encounter",
+        "description": "Whether a patient underwent medical treatment for COVID-19",
         "exampleBoolean": false
       },
       {
@@ -553,7 +552,7 @@
         "reference": {
           "reference": "StructureDefinition/covid19-immunization"
         },
-        "name": "COVID19 Immunization",
+        "name": "COVID-19 Immunization",
         "description": "COVID-19 immunization event",
         "exampleBoolean": false
       },
@@ -567,8 +566,22 @@
         "reference": {
           "reference": "StructureDefinition/covid19-oxygen-therapy"
         },
-        "name": "Covid19 Oxygen Therapy",
+        "name": "COVID-19 Oxygen Therapy",
         "description": "Indicating whether a COVID-19 patient received an oxygen therapy",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/chemotherapy"
+        },
+        "name": "Chemotherapy",
+        "description": "Whether a patient is or has been receiving a chemotherapy within the last 3 months",
         "exampleBoolean": false
       },
       {
@@ -733,10 +746,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/ctcae-grade-value-set"
+          "reference": "ValueSet/covid19-vaccination-contraindications"
         },
-        "name": "CTCAE Grade Value Set",
-        "description": "CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE.",
+        "name": "COVID-19 Vaccination Contraindications",
+        "description": "Contraindications precluding COVID-19 vaccination",
         "exampleBoolean": false
       },
       {
@@ -747,10 +760,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/complaint-intensity"
+          "reference": "ValueSet/covid-vaccination-reasons"
         },
-        "name": "Complaint Intensity",
-        "description": "Intensity of general complaints",
+        "name": "COVID-19 Vaccination Reasons",
+        "description": "Individual reason for getting vaccinated against COVID-19",
         "exampleBoolean": false
       },
       {
@@ -775,10 +788,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/covid-vaccination-contraindications"
+          "reference": "ValueSet/ctcae-grade-value-set"
         },
-        "name": "Covid Vaccination Contraindications",
-        "description": "Contraindications precluding COVID-19 vaccination",
+        "name": "CTCAE Grade Value Set",
+        "description": "CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE.",
         "exampleBoolean": false
       },
       {
@@ -789,10 +802,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/covid-vaccination-reasons"
+          "reference": "ValueSet/complaint-intensity"
         },
-        "name": "Covid Vaccination Reasons",
-        "description": "Individual reason for getting vaccinated against COVID-19",
+        "name": "Complaint Intensity",
+        "description": "Intensity of general complaints",
         "exampleBoolean": false
       },
       {
@@ -1079,25 +1092,11 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Procedure"
-          }
-        ],
-        "reference": {
-          "reference": "Procedure/Chemotherapy"
-        },
-        "name": "Chemotherapy",
-        "description": "Example of a patient not receiving chemotherapy during the last 3 months",
-        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chemotherapy"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Encounter"
           }
         ],
         "reference": {
-          "reference": "Encounter/Covid19EncounterInpatient"
+          "reference": "Encounter/COVID19EncounterInpatient"
         },
         "name": "Medical Treatment For Vaccination Adverse Reaction",
         "description": "Example of a patient hospitalized for a potential or actual adverse reaction to a vaccination event",
@@ -1111,9 +1110,9 @@
           }
         ],
         "reference": {
-          "reference": "Procedure/Covid19OxygenTherapy"
+          "reference": "Procedure/COVID19OxygenTherapy"
         },
-        "name": "Covid19 Oxygen Therapy",
+        "name": "COVID-19 Oxygen Therapy",
         "description": "Example of a COVID-19 patient who received an oxygen therapy",
         "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy"
       },
@@ -1125,9 +1124,9 @@
           }
         ],
         "reference": {
-          "reference": "Immunization/CovidVaccinationDone"
+          "reference": "Immunization/COVIDVaccinationDone"
         },
-        "name": "Covid Vaccination Done",
+        "name": "COVID-19 Vaccination Done",
         "description": "Example of a patient having received a vaccination",
         "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization"
       },
@@ -1139,9 +1138,9 @@
           }
         ],
         "reference": {
-          "reference": "Immunization/CovidVaccinationNotDone"
+          "reference": "Immunization/COVIDVaccinationNotDone"
         },
-        "name": "Covid Vaccination Not Done",
+        "name": "COVID-19 Vaccination Not Done",
         "description": "Example of a patient not receiving a vaccination due to pregnancy",
         "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization"
       },
@@ -1153,11 +1152,25 @@
           }
         ],
         "reference": {
-          "reference": "Immunization/CovidVaccinationNotDoneReasonOther"
+          "reference": "Immunization/COVIDVaccinationNotDoneReasonOther"
         },
-        "name": "Covid Vaccination Not Done Reason Other",
+        "name": "COVID-19 Vaccination Not Done Reason Other",
         "description": "Example of a patient not receiving a vaccination due to a specified (free-text) 'other reason'",
         "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/Chemotherapy"
+        },
+        "name": "Chemotherapy",
+        "description": "Example of a patient not receiving chemotherapy during the last 3 months",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chemotherapy"
       },
       {
         "extension": [
@@ -1434,11 +1447,6 @@
         {
           "nameUrl": "index.html",
           "title": "NAPKON Vaccination Module",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "guidance.html",
-          "title": "Guidance",
           "generation": "markdown"
         },
         {

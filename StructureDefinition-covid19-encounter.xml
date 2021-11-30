@@ -16,19 +16,18 @@
   </text>
   <url value="https://www.napkon.de/fhir/StructureDefinition/covid19-encounter"/>
   <version value="1.0.0"/>
-  <name value="Covid19Encounter"/>
-  <title value="COVID19 Encounter"/>
+  <name value="COVID19Encounter"/>
+  <title value="COVID-19 Encounter"/>
   <status value="active"/>
   <date value="2021-10-05"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
-  <description value="Whether a patient underwent medical treatment for COVID19"/>
+  <description value="Whether a patient underwent medical treatment for COVID-19"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

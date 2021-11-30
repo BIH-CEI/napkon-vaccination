@@ -14,10 +14,9 @@
   <date value="2021-11-03"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
   <item>

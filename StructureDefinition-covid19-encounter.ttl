@@ -14,21 +14,20 @@
   ];
   fhir:StructureDefinition.url [ fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-encounter"];
   fhir:StructureDefinition.version [ fhir:value "1.0.0"];
-  fhir:StructureDefinition.name [ fhir:value "Covid19Encounter"];
-  fhir:StructureDefinition.title [ fhir:value "COVID19 Encounter"];
+  fhir:StructureDefinition.name [ fhir:value "COVID19Encounter"];
+  fhir:StructureDefinition.title [ fhir:value "COVID-19 Encounter"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.date [ fhir:value "2021-10-05"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Whether a patient underwent medical treatment for COVID19"];
+  fhir:StructureDefinition.description [ fhir:value "Whether a patient underwent medical treatment for COVID-19"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

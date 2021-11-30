@@ -17,17 +17,7 @@
   fhir:ValueSet.name [ fhir:value "EncounterAmbulatoryEmergencyInpatient"];
   fhir:ValueSet.title [ fhir:value "Encounter Ambulatory Emergency Inpatient"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-11-25T00:25:38+01:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
-     ]
-  ];
+  fhir:ValueSet.date [ fhir:value "2021-11-30T16:36:32+00:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "ValueSet to determine the encounter type of a patient"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [

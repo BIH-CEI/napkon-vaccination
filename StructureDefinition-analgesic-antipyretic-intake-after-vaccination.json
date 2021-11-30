@@ -10,19 +10,7 @@
   "name": "AnalgesicAntipyreticIntakeAfterVaccination",
   "title": "Analgesic Antipyretic Intake After Vaccination",
   "status": "active",
-  "date": "2021-11-25T00:25:38+01:00",
-  "publisher": "Charité - Universitätsmedizin Berlin",
-  "contact": [
-    {
-      "name": "Charité - Universitätsmedizin Berlin",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
-        }
-      ]
-    }
-  ],
+  "date": "2021-11-30T16:36:32+00:00",
   "description": "Whether a patient took analgesic or antipyretic drugs after a vaccination event",
   "fhirVersion": "4.0.1",
   "kind": "resource",

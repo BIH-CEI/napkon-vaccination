@@ -21,9 +21,10 @@
       <!-- Placeholder for child template CSS declarations -->
   <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/napkon.css"/>
 
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/fhir-table-scripts.js" type="text/javascript"> </script>
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -42,13 +43,13 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.66"}
-    h3,h4,h5,h6{--heading-prefix:"10.66"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.66"}
+    h3,h4,h5,h6{--heading-prefix:"9.66"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Left logo - typically the publisher's logo - project or affiliate -->
 <div id="project-nav">
-  <a no-external="true" id="project-logo" href="https://bihealth.org">
+  <a no-external="true" id="project-logo" href="https://napkon.de/">
     <img src="assets/images/napkon-logo.svg" alt="Project home" height="71"/>
   </a>
 </div>
@@ -88,9 +89,6 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="guidance.html">Guidance</a>
   </li>
   <li>
     <a href="profiles.html">Profiles</a>
@@ -201,7 +199,7 @@
   ];
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generated" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Observation Instance Identifier: ?ngen-9?&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://loinc.org 26436-6}, {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\"&gt;Laboratory studies (set)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://loinc.org 96741-4}\"&gt;SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient-ExamplePatient.html\"&gt;Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Jan 1, 2021, 1:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\"Codes: {http://loinc.org LA32552-4}\"&gt;SARS-CoV-2 Delta variant (WHO)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Observation Instance Identifier: ?ngen-9?&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://loinc.org 26436-6}, {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\"&gt;Laboratory studies (set)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://loinc.org 96741-4}\"&gt;SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient-ExamplePatient.html\"&gt;Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Jan 1, 2021, 12:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\"Codes: {http://loinc.org LA32552-4}\"&gt;SARS-CoV-2 Delta variant (WHO)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
   ];
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">fhir:Observation.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -303,10 +301,10 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 25, 2021 00:25+0100">2021-11-25</span>
+          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 30, 2021 16:36+0000">2021-11-30</span>
           <br/>
           <span style="color: #FFFF77">
-            <p style="color: white"><a name="l639">​</a>
+            <p style="color: white"><a name="l635">​</a>
        Links: <a href="toc.html">Table of Contents</a> |
        <a href="qa.html">QA Report</a> |
        <a href="https://github.com/BIH-CEI/napkon-vaccination/issues/" target="_blank">Issues</a> |

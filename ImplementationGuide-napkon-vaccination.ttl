@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "NapkonVaccination"];
   fhir:ImplementationGuide.title [ fhir:value "NAPKON Vaccination Module"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-11-25T00:25:38+01:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-11-30T16:36:32+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -141,7 +141,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "false" ]
+         fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -153,7 +153,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -165,7 +165,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -177,7 +177,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -189,7 +189,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -281,11 +281,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "generate" ]
+         fhir:Extension.valueString [ fhir:value "extension-domain" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "xml" ]
+         fhir:Extension.valueString [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -293,15 +293,27 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "generate" ]
+         fhir:Extension.valueString [ fhir:value "extension-domain" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "json" ]
+         fhir:Extension.valueString [ fhir:value "https://napkon.de" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
        fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "extension-domain" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://simplifier.net" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -313,7 +325,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -325,7 +337,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -337,7 +349,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -349,7 +361,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -361,7 +373,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -373,7 +385,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -385,7 +397,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -397,7 +409,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -409,7 +421,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -421,7 +433,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -433,7 +445,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -445,7 +457,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -521,11 +533,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chemotherapy>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/chemotherapy" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-encounter" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chemotherapy" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether a patient is or has been receiving a chemotherapy within the last 3 months" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Encounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether a patient underwent medical treatment for COVID-19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -535,11 +547,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-encounter>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-encounter" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-immunization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-immunization" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID19 Encounter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether a patient underwent medical treatment for COVID19" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Immunization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "COVID-19 immunization event" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
@@ -549,11 +561,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-immunization>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-immunization" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-oxygen-therapy" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID19 Immunization" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "COVID-19 immunization event" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Oxygen Therapy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicating whether a COVID-19 patient received an oxygen therapy" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -563,11 +575,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-oxygen-therapy" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chemotherapy>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/chemotherapy" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 Oxygen Therapy" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicating whether a COVID-19 patient received an oxygen therapy" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chemotherapy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Whether a patient is or has been receiving a chemotherapy within the last 3 months" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8;
@@ -731,11 +743,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set>;
-         fhir:Reference.reference [ fhir:value "ValueSet/ctcae-grade-value-set" ]
+         fhir:link <https://www.napkon.de/fhir/ValueSet/covid19-vaccination-contraindications>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid19-vaccination-contraindications" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CTCAE Grade Value Set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Vaccination Contraindications" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contraindications precluding COVID-19 vaccination" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 20;
@@ -745,11 +757,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/ValueSet/complaint-intensity>;
-         fhir:Reference.reference [ fhir:value "ValueSet/complaint-intensity" ]
+         fhir:link <https://www.napkon.de/fhir/ValueSet/covid-vaccination-reasons>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid-vaccination-reasons" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Complaint Intensity" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Intensity of general complaints" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Vaccination Reasons" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Individual reason for getting vaccinated against COVID-19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 21;
@@ -773,11 +785,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/ValueSet/covid-vaccination-contraindications>;
-         fhir:Reference.reference [ fhir:value "ValueSet/covid-vaccination-contraindications" ]
+         fhir:link <https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ctcae-grade-value-set" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid Vaccination Contraindications" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contraindications precluding COVID-19 vaccination" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CTCAE Grade Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 23;
@@ -787,11 +799,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/ValueSet/covid-vaccination-reasons>;
-         fhir:Reference.reference [ fhir:value "ValueSet/covid-vaccination-reasons" ]
+         fhir:link <https://www.napkon.de/fhir/ValueSet/complaint-intensity>;
+         fhir:Reference.reference [ fhir:value "ValueSet/complaint-intensity" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid Vaccination Reasons" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Individual reason for getting vaccinated against COVID-19" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Complaint Intensity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Intensity of general complaints" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 24;
@@ -1099,28 +1111,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Procedure" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Procedure/Chemotherapy>;
-         fhir:Reference.reference [ fhir:value "Procedure/Chemotherapy" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chemotherapy" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient not receiving chemotherapy during the last 3 months" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.napkon.de/fhir/StructureDefinition/chemotherapy";
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chemotherapy>
-       ]
-     ], [
-       fhir:index 45;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Encounter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Encounter/Covid19EncounterInpatient>;
-         fhir:Reference.reference [ fhir:value "Encounter/Covid19EncounterInpatient" ]
+         fhir:link <https://www.napkon.de/fhir/Encounter/COVID19EncounterInpatient>;
+         fhir:Reference.reference [ fhir:value "Encounter/COVID19EncounterInpatient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medical Treatment For Vaccination Adverse Reaction" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient hospitalized for a potential or actual adverse reaction to a vaccination event" ];
@@ -1129,21 +1124,38 @@
          fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-encounter>
        ]
      ], [
-       fhir:index 46;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Procedure" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Procedure/Covid19OxygenTherapy>;
-         fhir:Reference.reference [ fhir:value "Procedure/Covid19OxygenTherapy" ]
+         fhir:link <https://www.napkon.de/fhir/Procedure/COVID19OxygenTherapy>;
+         fhir:Reference.reference [ fhir:value "Procedure/COVID19OxygenTherapy" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 Oxygen Therapy" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Oxygen Therapy" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a COVID-19 patient who received an oxygen therapy" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy";
          fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy>
+       ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Immunization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Immunization/COVIDVaccinationDone>;
+         fhir:Reference.reference [ fhir:value "Immunization/COVIDVaccinationDone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Vaccination Done" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient having received a vaccination" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-immunization>
        ]
      ], [
        fhir:index 47;
@@ -1153,11 +1165,11 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Immunization/CovidVaccinationDone>;
-         fhir:Reference.reference [ fhir:value "Immunization/CovidVaccinationDone" ]
+         fhir:link <https://www.napkon.de/fhir/Immunization/COVIDVaccinationNotDone>;
+         fhir:Reference.reference [ fhir:value "Immunization/COVIDVaccinationNotDone" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid Vaccination Done" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient having received a vaccination" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Vaccination Not Done" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient not receiving a vaccination due to pregnancy" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization";
          fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-immunization>
@@ -1170,11 +1182,11 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Immunization/CovidVaccinationNotDone>;
-         fhir:Reference.reference [ fhir:value "Immunization/CovidVaccinationNotDone" ]
+         fhir:link <https://www.napkon.de/fhir/Immunization/COVIDVaccinationNotDoneReasonOther>;
+         fhir:Reference.reference [ fhir:value "Immunization/COVIDVaccinationNotDoneReasonOther" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid Vaccination Not Done" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient not receiving a vaccination due to pregnancy" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Vaccination Not Done Reason Other" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient not receiving a vaccination due to a specified (free-text) 'other reason'" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization";
          fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-immunization>
@@ -1184,17 +1196,17 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Immunization" ]
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Immunization/CovidVaccinationNotDoneReasonOther>;
-         fhir:Reference.reference [ fhir:value "Immunization/CovidVaccinationNotDoneReasonOther" ]
+         fhir:link <https://www.napkon.de/fhir/Procedure/Chemotherapy>;
+         fhir:Reference.reference [ fhir:value "Procedure/Chemotherapy" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid Vaccination Not Done Reason Other" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient not receiving a vaccination due to a specified (free-text) 'other reason'" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chemotherapy" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient not receiving chemotherapy during the last 3 months" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization";
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-immunization>
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/chemotherapy";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chemotherapy>
        ]
      ], [
        fhir:index 50;
@@ -1528,41 +1540,36 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guidance.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Guidance" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 2;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 3;
+         fhir:index 2;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "codesystems.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Code Systems" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 4;
+         fhir:index 3;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "valuesets.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Value Sets" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 5;
+         fhir:index 4;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "extensions.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Extensions" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 6;
+         fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "examples.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Examples" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 7;
+         fhir:index 6;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 8;
+         fhir:index 7;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changelog.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Change Log" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

@@ -31,11 +31,10 @@
   fhir:StructureDefinition.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "Maximal body temperature after a vaccination event (indicating fever)"];

@@ -60,21 +60,21 @@
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-encounter",
     "version": "1.0.0",
-    "name": "Covid19Encounter"
+    "name": "COVID19Encounter"
   },
   {
     "id": "covid19-immunization",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-immunization",
     "version": "1.0.0",
-    "name": "Covid19Immunization"
+    "name": "COVID19Immunization"
   },
   {
     "id": "covid19-oxygen-therapy",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy",
     "version": "1.0.0",
-    "name": "Covid19OxygenTherapy"
+    "name": "COVID19OxygenTherapy"
   },
   {
     "id": "general-complaints-after-vaccination",
@@ -161,25 +161,25 @@
     "name": "ComplaintIntensity"
   },
   {
-    "id": "covid-vaccination-contraindications",
-    "type": "ValueSet",
-    "url": "https://www.napkon.de/fhir/ValueSet/covid-vaccination-contraindications",
-    "version": "1.0.0",
-    "name": "CovidVaccinationContraindications"
-  },
-  {
     "id": "covid-vaccination-reasons",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/covid-vaccination-reasons",
     "version": "1.0.0",
-    "name": "CovidVaccinationReasons"
+    "name": "COVID19VaccinationReasons"
+  },
+  {
+    "id": "covid19-vaccination-contraindications",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/covid19-vaccination-contraindications",
+    "version": "1.0.0",
+    "name": "COVID19VaccinationContraindications"
   },
   {
     "id": "covid19-vaccine-codes",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/covid19-vaccine-codes",
     "version": "1.0.0",
-    "name": "Covid19VaccineCodes"
+    "name": "COVID19VaccineCodes"
   },
   {
     "id": "ctcae-grade-value-set",

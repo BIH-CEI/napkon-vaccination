@@ -1,0 +1,36 @@
+{
+  "resourceType": "Procedure",
+  "id": "COVID19OxygenTherapy",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/covid19-oxygen-therapy"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 57485005}\">Oxygen therapy (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>encounter</b>: <a href=\"Encounter-COVID19EncounterInpatient.html\">Generated Summary: status: unknown; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; <span title=\"Codes: {http://fhir.de/CodeSystem/kontaktart-de intensivstationaer}\">Intensivstationär</span>; period: </a></p><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20210731",
+        "code": "57485005",
+        "display": "Oxygen therapy (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "encounter": {
+    "reference": "Encounter/COVID19EncounterInpatient"
+  },
+  "performedDateTime": "2021-03",
+  "reasonReference": [
+    {
+      "reference": "Condition/SARSCoV2Infection"
+    }
+  ]
+}

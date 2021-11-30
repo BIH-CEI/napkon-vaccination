@@ -21,9 +21,10 @@
       <!-- Placeholder for child template CSS declarations -->
   <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/napkon.css"/>
 
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/fhir-table-scripts.js" type="text/javascript"> </script>
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -42,13 +43,13 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.35"}
-    h3,h4,h5,h6{--heading-prefix:"10.35"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.35"}
+    h3,h4,h5,h6{--heading-prefix:"9.35"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Left logo - typically the publisher's logo - project or affiliate -->
 <div id="project-nav">
-  <a no-external="true" id="project-logo" href="https://bihealth.org">
+  <a no-external="true" id="project-logo" href="https://napkon.de/">
     <img src="assets/images/napkon-logo.svg" alt="Project home" height="71"/>
   </a>
 </div>
@@ -88,9 +89,6 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="guidance.html">Guidance</a>
   </li>
   <li>
     <a href="profiles.html">Profiles</a>
@@ -179,10 +177,9 @@
  <tr><td>Version:</td><td>1.0.0</td></tr>
  <tr><td>Name:</td><td>YesNoUnknown</td></tr>
  <tr><td>Title:</td><td>Yes No Unknown</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-11-25T00:25:38+01:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-11-30T16:36:32+00:00</td></tr>
  <tr><td>Definition:</td><td><p>Yes / No / Unknown</p>
 </td></tr>
- <tr><td>Publisher:</td><td>Charité - Universitätsmedizin Berlin</td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-yes-no-unknown.xml.html">XML</a> / <a href="ValueSet-yes-no-unknown.json.html">JSON</a> / <a href="ValueSet-yes-no-unknown.ttl.html">Turtle</a></td></tr>
 </tbody></table>
 
@@ -211,7 +208,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xml:lang="en" lang="en"><p>This value set contains 3 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html"><code>http://snomed.info/sct</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-373066001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001">373066001</a></td><td>Yes (qualifier value)</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-373067005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005">373067005</a></td><td>No (qualifier value)</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-261665006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a></td><td>Unknown</td><td></td></tr></table></div>
+  <div><p>This value set contains 3 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html"><code>http://snomed.info/sct</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-373066001"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001">373066001</a></td><td>Yes (qualifier value)</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-373067005"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005">373067005</a></td><td>No (qualifier value)</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---snomed.info-sct-261665006"> </a><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a></td><td>Unknown</td><td></td></tr></table></div>
 
   <hr/>
   <p>
@@ -272,10 +269,10 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 25, 2021 00:25+0100">2021-11-25</span>
+          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 30, 2021 16:36+0000">2021-11-30</span>
           <br/>
           <span style="color: #FFFF77">
-            <p style="color: white"><a name="l604">​</a>
+            <p style="color: white"><a name="l594">​</a>
        Links: <a href="toc.html">Table of Contents</a> |
        <a href="qa.html">QA Report</a> |
        <a href="https://github.com/BIH-CEI/napkon-vaccination/issues/" target="_blank">Issues</a> |

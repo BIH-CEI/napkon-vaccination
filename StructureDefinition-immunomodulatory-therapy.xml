@@ -27,10 +27,9 @@
   <date value="2021-09-13"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
   <description value="Whether a patient is receiving an immunosuppressive or -modulatory therapy"/>

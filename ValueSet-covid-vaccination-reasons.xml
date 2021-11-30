@@ -7,18 +7,10 @@
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/covid-vaccination-reasons"/>
   <version value="1.0.0"/>
-  <name value="CovidVaccinationReasons"/>
-  <title value="Covid Vaccination Reasons"/>
+  <name value="COVID19VaccinationReasons"/>
+  <title value="COVID-19 Vaccination Reasons"/>
   <status value="active"/>
-  <date value="2021-11-25T00:25:38+01:00"/>
-  <publisher value="Charité - Universitätsmedizin Berlin"/>
-  <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
-    <telecom>
-      <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-    </telecom>
-  </contact>
+  <date value="2021-11-30T16:36:32+00:00"/>
   <description value="Individual reason for getting vaccinated against COVID-19"/>
   <compose>
     <include>

@@ -7,23 +7,22 @@
   },
   "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-encounter",
   "version": "1.0.0",
-  "name": "Covid19Encounter",
-  "title": "COVID19 Encounter",
+  "name": "COVID19Encounter",
+  "title": "COVID-19 Encounter",
   "status": "active",
   "date": "2021-10-05",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
-      "name": "Charité - Universitätsmedizin Berlin",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }
       ]
     }
   ],
-  "description": "Whether a patient underwent medical treatment for COVID19",
+  "description": "Whether a patient underwent medical treatment for COVID-19",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

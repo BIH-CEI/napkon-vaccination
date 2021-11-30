@@ -1,11 +1,528 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="14b8fdae-bbec-4640-b24c-8bc730fef172"/>
+  <id value="9d4dc12a-9e44-4aad-ada8-f78c1a09008a"/>
   <meta>
-    <lastUpdated value="2021-11-25T00:25:38.556+01:00"/>
+    <lastUpdated value="2021-11-30T16:36:32.619+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/covid19-vaccination-contraindications"/>
+    <resource>
+      <ValueSet>
+        <id value="covid19-vaccination-contraindications"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-863903001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=863903001">863903001</a>
+                </td>
+                <td>Vaccine allergy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-77386006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=77386006">77386006</a>
+                </td>
+                <td>Pregnancy not delivered</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-74964007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
+                </td>
+                <td>Other</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/covid19-vaccination-contraindications"/>
+        <version value="1.0.0"/>
+        <name value="COVID19VaccinationContraindications"/>
+        <title value="COVID-19 Vaccination Contraindications"/>
+        <status value="active"/>
+        <date value="2021-11-30T16:36:32+00:00"/>
+        <description value="Contraindications precluding COVID-19 vaccination"/>
+        <expansion>
+          <identifier value="urn:uuid:4fc75436-283e-4f93-bdf3-0a5865f773b5"/>
+          <timestamp value="2021-11-30T16:37:09+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="863903001"/>
+            <display value="Vaccine allergy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="77386006"/>
+            <display value="Pregnancy not delivered"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other"/>
+    <resource>
+      <ValueSet>
+        <id value="present-not-present-undetermined-other"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-410605003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410605003">410605003</a>
+                </td>
+                <td>Confirmed present (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-410594000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410594000">410594000</a>
+                </td>
+                <td>Definitely NOT present (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373068000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000">373068000</a>
+                </td>
+                <td>Undetermined (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-74964007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
+                </td>
+                <td>Other</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other"/>
+        <version value="1.0.0"/>
+        <name value="PresentNotPresentUndeterminedOther"/>
+        <title value="Present Not Present Undetermined Other"/>
+        <status value="active"/>
+        <date value="2021-11-30T16:36:32+00:00"/>
+        <description value="Values for laboratory observations"/>
+        <expansion>
+          <identifier value="urn:uuid:52c1bebc-fe62-4cd0-819c-0255e7cbc684"/>
+          <timestamp value="2021-11-30T16:37:10+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="410605003"/>
+            <display value="Confirmed present (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="410594000"/>
+            <display value="Definitely NOT present (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+            <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/encounter-homehealth-ambulatory-inpatient"/>
+    <resource>
+      <ValueSet>
+        <id value="encounter-homehealth-ambulatory-inpatient"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html">ActCode v5.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html">
+                <code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HH"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">HH</a>
+                </td>
+                <td>home health</td>
+                <td>Healthcare encounter that takes place in the residence of the patient or a designee</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-AMB"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">AMB</a>
+                </td>
+                <td>ambulatory</td>
+                <td>A comprehensive term for health care provided in a healthcare facility (e.g. a practitioneraTMs office, clinic setting, or hospital) on a nonresident basis. The term ambulatory usually implies that the patient has come to the location and is not assigned to a bed. Sometimes referred to as an outpatient encounter.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-IMP"> </a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">IMP</a>
+                </td>
+                <td>inpatient encounter</td>
+                <td>A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/encounter-homehealth-ambulatory-inpatient"/>
+        <version value="1.0.0"/>
+        <name value="EncounterHomeHealthAmbulatoryInpatient"/>
+        <title value="Encounter HomeHealth Ambulatory Inpatient"/>
+        <status value="active"/>
+        <date value="2021-11-30T16:36:32+00:00"/>
+        <description value="ValueSet to determine the encounter type of a patient"/>
+        <expansion>
+          <identifier value="urn:uuid:ea1d17ed-704c-4d2a-8ce8-7aea2a6756a2"/>
+          <timestamp value="2021-11-30T16:37:14+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode|5.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="HH"/>
+            <display value="home health"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="AMB"/>
+            <display value="ambulatory"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="IMP"/>
+            <display value="inpatient encounter"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
+    <resource>
+      <ValueSet>
+        <id value="detected-not-detected-unknown-undetermined"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260373001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260373001">260373001</a>
+                </td>
+                <td>Detected</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260415000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260415000">260415000</a>
+                </td>
+                <td>Not detected</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261665006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373068000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000">373068000</a>
+                </td>
+                <td>Undetermined (qualifier value)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined"/>
+        <version value="1.0.0"/>
+        <name value="DetectedNotDetectedUnknownUndetermined"/>
+        <title value="Detected Not Detected Unknown Undetermined"/>
+        <status value="active"/>
+        <date value="2021-11-30T16:36:32+00:00"/>
+        <description value="Values for laboratory observations"/>
+        <expansion>
+          <identifier value="urn:uuid:7e0be15c-6ce6-4074-93a6-c589e944fc12"/>
+          <timestamp value="2021-11-30T16:37:14+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260373001"/>
+            <display value="Detected"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260415000"/>
+            <display value="Not detected"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="261665006"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/severity-grading"/>
+    <resource>
+      <ValueSet>
+        <id value="severity-grading"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260413007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007">260413007</a>
+                </td>
+                <td>None</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-255604002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255604002">255604002</a>
+                </td>
+                <td>Mild</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-6736007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6736007">6736007</a>
+                </td>
+                <td>Moderate</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-24484000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24484000">24484000</a>
+                </td>
+                <td>Severe</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/severity-grading"/>
+        <version value="1.0.0"/>
+        <name value="SeverityGrading"/>
+        <title value="Severity Grading"/>
+        <status value="active"/>
+        <date value="2021-11-30T16:36:32+00:00"/>
+        <description value="Scale to grade the severity of an outcome/condition/observation"/>
+        <expansion>
+          <identifier value="urn:uuid:4f25e7c0-2671-4b8f-8452-46f760e1462d"/>
+          <timestamp value="2021-11-30T16:37:14+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260413007"/>
+            <display value="None"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="255604002"/>
+            <display value="Mild"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="6736007"/>
+            <display value="Moderate"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="24484000"/>
+            <display value="Severe"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://www.napkon.de/fhir/ValueSet/immunosuppressive-immunomodulatory-therapy"/>
     <resource>
@@ -313,22 +830,14 @@
         <name value="ImmunosuppressiveImmunomodulatoryTherapy"/>
         <title value="Immunosuppressive Immunomodulatory Therapy"/>
         <status value="active"/>
-        <date value="2021-11-25T00:25:38+01:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
+        <date value="2021-11-30T16:36:32+00:00"/>
         <description value="Immunosuppressive and immunomodulatory procedures / therapies codes"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:dfc554ff-d82b-4e28-a34c-3785fa86290a"/>
-          <timestamp value="2021-11-25T00:25:57+01:00"/>
+          <identifier value="urn:uuid:6207ef69-7e3e-4913-afd8-898257f2ab8f"/>
+          <timestamp value="2021-11-30T16:37:15+00:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
@@ -521,6 +1030,417 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/general-complaints-after-vaccination"/>
+    <resource>
+      <ValueSet>
+        <id value="general-complaints-after-vaccination"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 17 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-260413007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007">260413007</a>
+                </td>
+                <td>None</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-386661006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386661006">386661006</a>
+                </td>
+                <td>Fever (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-43724002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43724002">43724002</a>
+                </td>
+                <td>Shivering</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-274640006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=274640006">274640006</a>
+                </td>
+                <td>Fever with chills</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-103001002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103001002">103001002</a>
+                </td>
+                <td>Feeling feverish</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-60119000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60119000">60119000</a>
+                </td>
+                <td>Exhaustion</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-84229001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84229001">84229001</a>
+                </td>
+                <td>Fatigue</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-68962001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001">68962001</a>
+                </td>
+                <td>Myalgia</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-57676002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57676002">57676002</a>
+                </td>
+                <td>Joint pain</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-230145002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230145002">230145002</a>
+                </td>
+                <td>Difficulty breathing</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-267036007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=267036007">267036007</a>
+                </td>
+                <td>Dyspnea</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-422587007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422587007">422587007</a>
+                </td>
+                <td>Nausea (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-249497008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=249497008">249497008</a>
+                </td>
+                <td>Vomiting symptom (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-62315008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62315008">62315008</a>
+                </td>
+                <td>Diarrhea</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-398032003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=398032003">398032003</a>
+                </td>
+                <td>Loose stool (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-27731006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=27731006">27731006</a>
+                </td>
+                <td>Semisolid stools</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-398212009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=398212009">398212009</a>
+                </td>
+                <td>Liquid stool (finding)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/general-complaints-after-vaccination"/>
+        <version value="1.0.0"/>
+        <name value="GeneralComplaintsAfterVaccination"/>
+        <title value="General Complaints After Vaccination"/>
+        <status value="active"/>
+        <date value="2021-11-30T16:36:32+00:00"/>
+        <description value="General complaints after vaccination"/>
+        <expansion>
+          <identifier value="urn:uuid:fc116eb3-64ff-4234-9eca-2131d1ca5de4"/>
+          <timestamp value="2021-11-30T16:37:15+00:00"/>
+          <total value="17"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260413007"/>
+            <display value="None"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="386661006"/>
+            <display value="Fever (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="43724002"/>
+            <display value="Shivering"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="274640006"/>
+            <display value="Fever with chills"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="103001002"/>
+            <display value="Feeling feverish"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="60119000"/>
+            <display value="Exhaustion"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="84229001"/>
+            <display value="Fatigue"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68962001"/>
+            <display value="Myalgia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="57676002"/>
+            <display value="Joint pain"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="230145002"/>
+            <display value="Difficulty breathing"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="267036007"/>
+            <display value="Dyspnea"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="422587007"/>
+            <display value="Nausea (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="249497008"/>
+            <display value="Vomiting symptom (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="62315008"/>
+            <display value="Diarrhea"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="398032003"/>
+            <display value="Loose stool (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="27731006"/>
+            <display value="Semisolid stools"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="398212009"/>
+            <display value="Liquid stool (finding)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set"/>
+    <resource>
+      <ValueSet>
+        <id value="ctcae-grade-value-set"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-ctcae-grade-code-system.html">CTCAE Grade Code System v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-ctcae-grade-code-system.html">
+                <code>https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-0"> </a>
+                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-0">0</a>
+                </td>
+                <td>Absent Adverse Event</td>
+                <td>The absence of adverse events or within normal limits or values.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-1"> </a>
+                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-1">1</a>
+                </td>
+                <td>Mild Adverse Event</td>
+                <td>An experience that is usually transient, and requires no special treatment or intervention. The event does not generally interfere with usual daily activities. Includes transient laboratory test alterations.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-2"> </a>
+                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-2">2</a>
+                </td>
+                <td>Moderate Adverse Event</td>
+                <td>An experience that is alleviated with simple therapeutic treatments. The event impacts usual daily activities. Includes laboratory test alterations indicating injury, but without long-term risk.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-3"> </a>
+                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-3">3</a>
+                </td>
+                <td>Severe Adverse Event</td>
+                <td>An adverse event experience that requires intensive therapeutic intervention and interrupts usual daily activities.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-4"> </a>
+                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-4">4</a>
+                </td>
+                <td>Life Threatening or Disabling Adverse Event</td>
+                <td>Any adverse event that places the patient, in the view of the initial reporter, at immediate risk of death from the adverse event as it occurred, i.e., it does not include an adverse experience that, had it occurred in a more severe form, might have caused death.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-5"> </a>
+                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-5">5</a>
+                </td>
+                <td>Death Related to Adverse Event</td>
+                <td>The termination of life associated with an adverse event.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set"/>
+        <version value="1.0.0"/>
+        <name value="CTCAEGradeVS"/>
+        <title value="CTCAE Grade Value Set"/>
+        <status value="active"/>
+        <date value="2021-11-30T16:36:32+00:00"/>
+        <description value="CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE."/>
+        <expansion>
+          <identifier value="urn:uuid:b4750f07-5b5c-4db6-8241-cb81676b95f6"/>
+          <timestamp value="2021-11-30T16:37:15+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
+            <code value="0"/>
+            <display value="Absent Adverse Event"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
+            <code value="1"/>
+            <display value="Mild Adverse Event"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
+            <code value="2"/>
+            <display value="Moderate Adverse Event"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
+            <code value="3"/>
+            <display value="Severe Adverse Event"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
+            <code value="4"/>
+            <display value="Life Threatening or Disabling Adverse Event"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
+            <code value="5"/>
+            <display value="Death Related to Adverse Event"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://www.napkon.de/fhir/ValueSet/restricted-event-status"/>
     <resource>
       <ValueSet>
@@ -589,19 +1509,11 @@
         <name value="RestrictedEventStatus"/>
         <title value="RestrictedEventStatus"/>
         <status value="active"/>
-        <date value="2021-11-25T00:25:38+01:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
+        <date value="2021-11-30T16:36:32+00:00"/>
         <description value="EventStatus value set restricted to codes not-done, active, completed and unknown"/>
         <expansion>
-          <identifier value="urn:uuid:951284d2-d132-4a07-9bf7-95d6d71498e1"/>
-          <timestamp value="2021-11-25T00:26:00+01:00"/>
+          <identifier value="urn:uuid:ff3b73b9-3afe-41b6-b604-be018379ac29"/>
+          <timestamp value="2021-11-30T16:37:17+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -636,12 +1548,13 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/complaint-intensity"/>
     <resource>
       <ValueSet>
-        <language value="en"/>
+        <id value="complaint-intensity"/>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+          <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
@@ -696,10 +1609,21 @@
             </table>
           </div>
         </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/complaint-intensity"/>
+        <version value="1.0.0"/>
+        <name value="ComplaintIntensity"/>
+        <title value="Complaint Intensity"/>
         <status value="active"/>
+        <date value="2021-11-30T16:36:32+00:00"/>
+        <description value="Intensity of general complaints"/>
         <expansion>
-          <identifier value="urn:uuid:cd43e3a2-b0a1-42b5-b1f7-8ff00bfd3cd9"/>
-          <timestamp value="2021-11-24T13:36:43.426Z"/>
+          <identifier value="urn:uuid:1350413e-7599-4b79-9778-d17670b5c701"/>
+          <timestamp value="2021-11-30T16:37:19+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -2710,19 +3634,11 @@
         <name value="AnalgesicsAntipyretics"/>
         <title value="Analgesics Antipyretics"/>
         <status value="active"/>
-        <date value="2021-11-25T00:25:38+01:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
+        <date value="2021-11-30T16:36:32+00:00"/>
         <description value="Analgetic and antipyretic drugs"/>
         <expansion>
-          <identifier value="urn:uuid:d2b2b47e-dc5a-4392-b9a8-d0eebb530ebe"/>
-          <timestamp value="2021-11-25T00:26:01+01:00"/>
+          <identifier value="urn:uuid:c06a63a3-33dd-4e60-bfb3-65dd7edb90d5"/>
+          <timestamp value="2021-11-30T16:37:22+00:00"/>
           <total value="194"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3707,974 +4623,6 @@
     </resource>
   </entry>
   <entry>
-    <resource>
-      <ValueSet>
-        <language value="en"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-            <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260413007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007">260413007</a>
-                </td>
-                <td>None</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-255604002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255604002">255604002</a>
-                </td>
-                <td>Mild</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-6736007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6736007">6736007</a>
-                </td>
-                <td>Moderate</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-24484000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24484000">24484000</a>
-                </td>
-                <td>Severe</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="active"/>
-        <expansion>
-          <identifier value="urn:uuid:7f42deeb-b698-4093-81dd-1f299c894b84"/>
-          <timestamp value="2021-11-24T13:36:48.739Z"/>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="260413007"/>
-            <display value="None"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="255604002"/>
-            <display value="Mild"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="6736007"/>
-            <display value="Moderate"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="24484000"/>
-            <display value="Severe"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <resource>
-      <ValueSet>
-        <language value="en"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-            <p>This value set contains 17 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260413007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260413007">260413007</a>
-                </td>
-                <td>None</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-386661006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386661006">386661006</a>
-                </td>
-                <td>Fever (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-43724002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43724002">43724002</a>
-                </td>
-                <td>Shivering</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-274640006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=274640006">274640006</a>
-                </td>
-                <td>Fever with chills</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-103001002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=103001002">103001002</a>
-                </td>
-                <td>Feeling feverish</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-60119000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60119000">60119000</a>
-                </td>
-                <td>Exhaustion</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-84229001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84229001">84229001</a>
-                </td>
-                <td>Fatigue</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-68962001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68962001">68962001</a>
-                </td>
-                <td>Myalgia</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-57676002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=57676002">57676002</a>
-                </td>
-                <td>Joint pain</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-230145002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=230145002">230145002</a>
-                </td>
-                <td>Difficulty breathing</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-267036007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=267036007">267036007</a>
-                </td>
-                <td>Dyspnea</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-422587007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422587007">422587007</a>
-                </td>
-                <td>Nausea (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-249497008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=249497008">249497008</a>
-                </td>
-                <td>Vomiting symptom (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-62315008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=62315008">62315008</a>
-                </td>
-                <td>Diarrhea</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-398032003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=398032003">398032003</a>
-                </td>
-                <td>Loose stool (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-27731006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=27731006">27731006</a>
-                </td>
-                <td>Semisolid stools</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-398212009"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=398212009">398212009</a>
-                </td>
-                <td>Liquid stool (finding)</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="active"/>
-        <expansion>
-          <identifier value="urn:uuid:41f1b67a-ac31-49d8-9934-162b9156f245"/>
-          <timestamp value="2021-11-24T13:36:46.614Z"/>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="260413007"/>
-            <display value="None"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="386661006"/>
-            <display value="Fever (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="43724002"/>
-            <display value="Shivering"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="274640006"/>
-            <display value="Fever with chills"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="103001002"/>
-            <display value="Feeling feverish"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="60119000"/>
-            <display value="Exhaustion"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="84229001"/>
-            <display value="Fatigue"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="68962001"/>
-            <display value="Myalgia"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="57676002"/>
-            <display value="Joint pain"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="230145002"/>
-            <display value="Difficulty breathing"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="267036007"/>
-            <display value="Dyspnea"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="422587007"/>
-            <display value="Nausea (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="249497008"/>
-            <display value="Vomiting symptom (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="62315008"/>
-            <display value="Diarrhea"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="398032003"/>
-            <display value="Loose stool (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="27731006"/>
-            <display value="Semisolid stools"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="398212009"/>
-            <display value="Liquid stool (finding)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <resource>
-      <ValueSet>
-        <language value="en"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-863903001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=863903001">863903001</a>
-                </td>
-                <td>Vaccine allergy</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-77386006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=77386006">77386006</a>
-                </td>
-                <td>Pregnancy not delivered</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-74964007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
-                </td>
-                <td>Other</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="active"/>
-        <expansion>
-          <identifier value="urn:uuid:51b123fd-2c54-4f32-baed-e6dc338ba008"/>
-          <timestamp value="2021-11-24T13:36:44.692Z"/>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="863903001"/>
-            <display value="Vaccine allergy"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="77386006"/>
-            <display value="Pregnancy not delivered"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="74964007"/>
-            <display value="Other"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <resource>
-      <ValueSet>
-        <language value="en"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-            <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-410605003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410605003">410605003</a>
-                </td>
-                <td>Confirmed present (qualifier value)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-410594000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410594000">410594000</a>
-                </td>
-                <td>Definitely NOT present (qualifier value)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-373068000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000">373068000</a>
-                </td>
-                <td>Undetermined (qualifier value)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-74964007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
-                </td>
-                <td>Other</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="active"/>
-        <expansion>
-          <identifier value="urn:uuid:f220388d-3deb-4a33-b158-631de8b38a19"/>
-          <timestamp value="2021-11-24T13:36:48.489Z"/>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="410605003"/>
-            <display value="Confirmed present (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="410594000"/>
-            <display value="Definitely NOT present (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="373068000"/>
-            <display value="Undetermined (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="74964007"/>
-            <display value="Other"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <resource>
-      <ValueSet>
-        <language value="en"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-373066001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001">373066001</a>
-                </td>
-                <td>Yes (qualifier value)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-373067005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005">373067005</a>
-                </td>
-                <td>No (qualifier value)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-261665006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
-                </td>
-                <td>Unknown</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="active"/>
-        <expansion>
-          <identifier value="urn:uuid:e019b691-7ea2-452f-9fcc-47ba2724d436"/>
-          <timestamp value="2021-11-24T13:36:49.020Z"/>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="373066001"/>
-            <display value="Yes (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="373067005"/>
-            <display value="No (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="261665006"/>
-            <display value="Unknown"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/encounter-homehealth-ambulatory-inpatient"/>
-    <resource>
-      <ValueSet>
-        <id value="encounter-homehealth-ambulatory-inpatient"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html">ActCode v5.0.0 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html">
-                <code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HH"> </a>
-                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-HH">HH</a>
-                </td>
-                <td>home health</td>
-                <td>Healthcare encounter that takes place in the residence of the patient or a designee</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-AMB"> </a>
-                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">AMB</a>
-                </td>
-                <td>ambulatory</td>
-                <td>A comprehensive term for health care provided in a healthcare facility (e.g. a practitioneraTMs office, clinic setting, or hospital) on a nonresident basis. The term ambulatory usually implies that the patient has come to the location and is not assigned to a bed. Sometimes referred to as an outpatient encounter.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-IMP"> </a>
-                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP">IMP</a>
-                </td>
-                <td>inpatient encounter</td>
-                <td>A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/encounter-homehealth-ambulatory-inpatient"/>
-        <version value="1.0.0"/>
-        <name value="EncounterHomeHealthAmbulatoryInpatient"/>
-        <title value="Encounter HomeHealth Ambulatory Inpatient"/>
-        <status value="active"/>
-        <date value="2021-11-25T00:25:38+01:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="ValueSet to determine the encounter type of a patient"/>
-        <expansion>
-          <identifier value="urn:uuid:8b4bee12-e208-44e8-b5dd-b74a2235ca46"/>
-          <timestamp value="2021-11-25T00:26:11+01:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode|5.0.0"/>
-          </parameter>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-            <code value="HH"/>
-            <display value="home health"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-            <code value="AMB"/>
-            <display value="ambulatory"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-            <code value="IMP"/>
-            <display value="inpatient encounter"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set"/>
-    <resource>
-      <ValueSet>
-        <id value="ctcae-grade-value-set"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-ctcae-grade-code-system.html">CTCAE Grade Code System v1.0.0 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-ctcae-grade-code-system.html">
-                <code>https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-0"> </a>
-                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-0">0</a>
-                </td>
-                <td>Absent Adverse Event</td>
-                <td>The absence of adverse events or within normal limits or values.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-1"> </a>
-                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-1">1</a>
-                </td>
-                <td>Mild Adverse Event</td>
-                <td>An experience that is usually transient, and requires no special treatment or intervention. The event does not generally interfere with usual daily activities. Includes transient laboratory test alterations.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-2"> </a>
-                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-2">2</a>
-                </td>
-                <td>Moderate Adverse Event</td>
-                <td>An experience that is alleviated with simple therapeutic treatments. The event impacts usual daily activities. Includes laboratory test alterations indicating injury, but without long-term risk.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-3"> </a>
-                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-3">3</a>
-                </td>
-                <td>Severe Adverse Event</td>
-                <td>An adverse event experience that requires intensive therapeutic intervention and interrupts usual daily activities.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-4"> </a>
-                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-4">4</a>
-                </td>
-                <td>Life Threatening or Disabling Adverse Event</td>
-                <td>Any adverse event that places the patient, in the view of the initial reporter, at immediate risk of death from the adverse event as it occurred, i.e., it does not include an adverse experience that, had it occurred in a more severe form, might have caused death.</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.napkon.de-fhir-CodeSystem-ctcae-grade-code-system-5"> </a>
-                  <a href="CodeSystem-ctcae-grade-code-system.html#ctcae-grade-code-system-5">5</a>
-                </td>
-                <td>Death Related to Adverse Event</td>
-                <td>The termination of life associated with an adverse event.</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.napkon.de/fhir/ValueSet/ctcae-grade-value-set"/>
-        <version value="1.0.0"/>
-        <name value="CTCAEGradeVS"/>
-        <title value="CTCAE Grade Value Set"/>
-        <status value="active"/>
-        <date value="2021-11-25T00:25:38+01:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
-        <description value="CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE."/>
-        <expansion>
-          <identifier value="urn:uuid:50f3deff-9129-47f5-b979-c04a69939352"/>
-          <timestamp value="2021-11-25T00:26:11+01:00"/>
-          <total value="6"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system|1.0.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
-            <code value="0"/>
-            <display value="Absent Adverse Event"/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
-            <code value="1"/>
-            <display value="Mild Adverse Event"/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
-            <code value="2"/>
-            <display value="Moderate Adverse Event"/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
-            <code value="3"/>
-            <display value="Severe Adverse Event"/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
-            <code value="4"/>
-            <display value="Life Threatening or Disabling Adverse Event"/>
-          </contains>
-          <contains>
-            <system value="https://www.napkon.de/fhir/CodeSystem/ctcae-grade-code-system"/>
-            <code value="5"/>
-            <display value="Death Related to Adverse Event"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <resource>
-      <ValueSet>
-        <language value="en"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-            <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
-            <p>All codes in this table are from the system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260373001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260373001">260373001</a>
-                </td>
-                <td>Detected</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-260415000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=260415000">260415000</a>
-                </td>
-                <td>Not detected</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-261665006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
-                </td>
-                <td>Unknown</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-373068000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373068000">373068000</a>
-                </td>
-                <td>Undetermined (qualifier value)</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="active"/>
-        <expansion>
-          <identifier value="urn:uuid:041e60c1-31f3-4295-a040-06dd7016780b"/>
-          <timestamp value="2021-11-24T13:36:45.989Z"/>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="260373001"/>
-            <display value="Detected"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="260415000"/>
-            <display value="Not detected"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="261665006"/>
-            <display value="Unknown"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="373068000"/>
-            <display value="Undetermined (qualifier value)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="https://www.napkon.de/fhir/ValueSet/encounter-ambulatory-emergency-inpatient"/>
     <resource>
       <ValueSet>
@@ -4735,19 +4683,11 @@
         <name value="EncounterAmbulatoryEmergencyInpatient"/>
         <title value="Encounter Ambulatory Emergency Inpatient"/>
         <status value="active"/>
-        <date value="2021-11-25T00:25:38+01:00"/>
-        <publisher value="Charité - Universitätsmedizin Berlin"/>
-        <contact>
-          <name value="Charité - Universitätsmedizin Berlin"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.netzwerk-universitaetsmedizin.de"/>
-          </telecom>
-        </contact>
+        <date value="2021-11-30T16:36:32+00:00"/>
         <description value="ValueSet to determine the encounter type of a patient"/>
         <expansion>
-          <identifier value="urn:uuid:78f84cce-6a02-4feb-a179-35a5b37ffdfb"/>
-          <timestamp value="2021-11-25T00:26:13+01:00"/>
+          <identifier value="urn:uuid:2e7d5da5-1901-4791-8b4f-24f4df0aebea"/>
+          <timestamp value="2021-11-30T16:37:23+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4771,6 +4711,102 @@
             <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
             <code value="IMP"/>
             <display value="inpatient encounter"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/yes-no-unknown"/>
+    <resource>
+      <ValueSet>
+        <id value="yes-no-unknown"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373066001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001">373066001</a>
+                </td>
+                <td>Yes (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-373067005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005">373067005</a>
+                </td>
+                <td>No (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-261665006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006">261665006</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/yes-no-unknown"/>
+        <version value="1.0.0"/>
+        <name value="YesNoUnknown"/>
+        <title value="Yes No Unknown"/>
+        <status value="active"/>
+        <date value="2021-11-30T16:36:32+00:00"/>
+        <description value="Yes / No / Unknown"/>
+        <expansion>
+          <identifier value="urn:uuid:a5797135-5412-49e5-a910-9655bc3acbf5"/>
+          <timestamp value="2021-11-30T16:37:25+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="261665006"/>
+            <display value="Unknown"/>
           </contains>
         </expansion>
       </ValueSet>

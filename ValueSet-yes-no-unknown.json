@@ -10,19 +10,7 @@
   "name": "YesNoUnknown",
   "title": "Yes No Unknown",
   "status": "active",
-  "date": "2021-11-25T00:25:38+01:00",
-  "publisher": "Charité - Universitätsmedizin Berlin",
-  "contact": [
-    {
-      "name": "Charité - Universitätsmedizin Berlin",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
-        }
-      ]
-    }
-  ],
+  "date": "2021-11-30T16:36:32+00:00",
   "description": "Yes / No / Unknown",
   "compose": {
     "include": [

@@ -21,9 +21,10 @@
       <!-- Placeholder for child template CSS declarations -->
   <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/napkon.css"/>
 
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/fhir-table-scripts.js" type="text/javascript"> </script>
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -42,13 +43,13 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.16"}
-    h3,h4,h5,h6{--heading-prefix:"10.16"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.16"}
+    h3,h4,h5,h6{--heading-prefix:"9.16"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Left logo - typically the publisher's logo - project or affiliate -->
 <div id="project-nav">
-  <a no-external="true" id="project-logo" href="https://bihealth.org">
+  <a no-external="true" id="project-logo" href="https://napkon.de/">
     <img src="assets/images/napkon-logo.svg" alt="Project home" height="71"/>
   </a>
 </div>
@@ -88,9 +89,6 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="guidance.html">Guidance</a>
   </li>
   <li>
     <a href="profiles.html">Profiles</a>
@@ -668,7 +666,7 @@ A coded type for an identifier that can be used to determine which identifier to
   <tr><td>Definition</td><td><p>A reference from one resource to another.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l3412">​</a><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference]]">MII-Reference</a>)(<a href="http://hl7.org/fhir/R4/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l3408">​</a><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference]]">MII-Reference</a>)(<a href="http://hl7.org/fhir/R4/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
@@ -960,7 +958,7 @@ Codes for high level observation categories.
   <tr><td>Definition</td><td><p>Describes what was observed. Sometimes this is called the observation "name".</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l5323">​</a>The codes SHOULD be taken from <a href="file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-results-laboratory-observations-uv-ips.html">Results Laboratory Observation - IPS</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l5319">​</a>The codes SHOULD be taken from <a href="file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-results-laboratory-observations-uv-ips.html">Results Laboratory Observation - IPS</a>
 Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, NR STATS, PATH.PROTOCOLS.*}  } }
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -977,7 +975,7 @@ Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE 
   <tr><td>Definition</td><td><p>A reference from one resource to another.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5433">​</a><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference]]">MII-Reference</a>)(<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/R4/group.html" title="http://hl7.org/fhir/StructureDefinition/Group">Group</a> | <a href="http://hl7.org/fhir/R4/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a> | <a href="http://hl7.org/fhir/R4/location.html" title="http://hl7.org/fhir/StructureDefinition/Location">Location</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5429">​</a><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference]]">MII-Reference</a>)(<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/R4/group.html" title="http://hl7.org/fhir/StructureDefinition/Group">Group</a> | <a href="http://hl7.org/fhir/R4/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a> | <a href="http://hl7.org/fhir/R4/location.html" title="http://hl7.org/fhir/StructureDefinition/Location">Location</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Must Support Types</a></td><td>No must-support rules about the choice of types/profiles</td></tr>
   <tr><td>Requirements</td><td><p>Observations have no value if you don't know who or what they're about.</p>
@@ -1044,7 +1042,7 @@ Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE 
   <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5929">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum]]">QuelleKlinischesBezugsdatum</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5925">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum]]">QuelleKlinischesBezugsdatum</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
@@ -1092,7 +1090,7 @@ Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE 
   <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l6284">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum]]">QuelleKlinischesBezugsdatum</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l6280">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum]]">QuelleKlinischesBezugsdatum</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
@@ -1808,10 +1806,10 @@ Codes identifying interpretations of observations.
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 25, 2021 00:25+0100">2021-11-25</span>
+          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 30, 2021 16:36+0000">2021-11-30</span>
           <br/>
           <span style="color: #FFFF77">
-            <p style="color: white"><a name="l10765">​</a>
+            <p style="color: white"><a name="l10761">​</a>
        Links: <a href="toc.html">Table of Contents</a> |
        <a href="qa.html">QA Report</a> |
        <a href="https://github.com/BIH-CEI/napkon-vaccination/issues/" target="_blank">Issues</a> |

@@ -41,10 +41,9 @@
   <date value="2021-10-05"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
   <description value="Pain intensity at vaccine injection site at rest or movement"/>

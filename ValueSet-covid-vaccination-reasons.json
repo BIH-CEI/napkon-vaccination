@@ -7,22 +7,10 @@
   },
   "url": "https://www.napkon.de/fhir/ValueSet/covid-vaccination-reasons",
   "version": "1.0.0",
-  "name": "CovidVaccinationReasons",
-  "title": "Covid Vaccination Reasons",
+  "name": "COVID19VaccinationReasons",
+  "title": "COVID-19 Vaccination Reasons",
   "status": "active",
-  "date": "2021-11-25T00:25:38+01:00",
-  "publisher": "Charité - Universitätsmedizin Berlin",
-  "contact": [
-    {
-      "name": "Charité - Universitätsmedizin Berlin",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
-        }
-      ]
-    }
-  ],
+  "date": "2021-11-30T16:36:32+00:00",
   "description": "Individual reason for getting vaccinated against COVID-19",
   "compose": {
     "include": [

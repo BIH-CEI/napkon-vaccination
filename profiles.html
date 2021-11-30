@@ -21,9 +21,10 @@
       <!-- Placeholder for child template CSS declarations -->
   <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/napkon.css"/>
 
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/fhir-table-scripts.js" type="text/javascript"> </script>
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -42,13 +43,13 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Left logo - typically the publisher's logo - project or affiliate -->
 <div id="project-nav">
-  <a no-external="true" id="project-logo" href="https://bihealth.org">
+  <a no-external="true" id="project-logo" href="https://napkon.de/">
     <img src="assets/images/napkon-logo.svg" alt="Project home" height="71"/>
   </a>
 </div>
@@ -88,9 +89,6 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="guidance.html">Guidance</a>
   </li>
   <li>
     <a href="profiles.html">Profiles</a>
@@ -155,56 +153,187 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#immunization" id="markdown-toc-immunization">Immunization</a></li>
+  <li><a href="#immunization-reactions" id="markdown-toc-immunization-reactions">Immunization reactions</a></li>
+  <li><a href="#covid-19-infection--treatment" id="markdown-toc-covid-19-infection--treatment">COVID-19 infection &amp; treatment</a></li>
+  <li><a href="#anamnesis" id="markdown-toc-anamnesis">Anamnesis</a></li>
+  <li><a href="#questionnaires" id="markdown-toc-questionnaires">Questionnaires</a></li>
+</ul>
+
 </div>
-  <!-- List of profiles that define constrains on FHIR resources for systems conforming to this Implementation Guide.
+<h3 id="immunization">Immunization</h3>
 
-|Resource Type|Profile Name|Link to Profile|
-|---|---|---|
-|MeasureReport|Risk Adjustment Coding Gap Report Profile|[Risk Adjustment Coding Gap Report]|
-|Measure|Risk Adjustment Model Measure Profile|[Risk Adjustment Model Measure]|
-|Bundle|Risk Adjustment Coding Gap Report Bundle Profile|[Risk Adjustment Coding Gap Report Bundle]|
-|Group|Patient Group Profile|[Patient Group]| -->
+<tr>
+  <td>
+    <a href="StructureDefinition-covid19-immunization.html">COVID-19 Immunization</a>
+  </td>
+  <td>
+    <p>COVID-19 immunization event</p>
+  </td>
+</tr>
 
-<tr><td><a href="StructureDefinition-allergic-reaction-to-vaccination.html">Allergic Reaction To Vaccination</a> </td><td><p>Whether a vaccination caused an allergic reaction</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-chemotherapy.html">Chemotherapy</a> </td><td><p>Whether a patient is or has been receiving a chemotherapy within the last 3 months</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-additional-vaccination-willingness.html">Additional Vaccination Willingness</a> </td><td><p>Response to AdditionalVaccinationWillingnessQuestionnaire</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-covid19-oxygen-therapy.html">Covid19 Oxygen Therapy</a> </td><td><p>Indicating whether a COVID-19 patient received an oxygen therapy</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html">Medical Treatment For Vaccination Adverse Reaction</a> </td><td><p>Whether a patient underwent medical treatment for a potential or actual adverse reaction to a vaccination event</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-regular-alcohol-intake-quantity.html">Regular Alcohol Intake Quantity</a> </td><td><p>How many alcoholic drinks a patient usually drinks per day</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-regular-alcohol-intake.html">Regular Alcohol Intake</a> </td><td><p>Whether a patient regularly drinks alcohol</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-sars-cov2-infection.html">SARS CoV2 Infection</a> </td><td><p>Profile to capture the diagnosis of disease caused by 2019 novel coronavirus.</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-immunomodulatory-therapy.html">Immunomodulatory Therapy</a> </td><td><p>Whether a patient is receiving an immunosuppressive or -modulatory therapy</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-general-complaints-after-vaccination.html">General Complaints After Vaccination</a> </td><td><p>General complaints after a vaccination event</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-covid19-encounter.html">COVID19 Encounter</a> </td><td><p>Whether a patient underwent medical treatment for COVID19</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-vaccination-injection-site-pain.html">Vaccination Injection Site Pain</a> </td><td><p>Pain intensity at vaccine injection site at rest or movement</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-covid19-immunization.html">COVID19 Immunization</a> </td><td><p>COVID-19 immunization event</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-body-temperature-after-vaccination.html">Body Temperature After Vaccination</a> </td><td><p>Maximal body temperature after a vaccination event (indicating fever)</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-vaccination-injection-site-erythema.html">Vaccination Injection Site Erythema</a> </td><td><p>Size of an erythema at a vaccine injection site</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-analgesic-antipyretic-intake-after-vaccination.html">Analgesic Antipyretic Intake After Vaccination</a> </td><td><p>Whether a patient took analgesic or antipyretic drugs after a vaccination event</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-sars-cov2-variant.html">SARS CoV2 Variant</a> </td><td><p>Variant/strain of detected SARS CoV2 (Pango Cov-lineage)</p>
-</td></tr>
-<tr><td><a href="StructureDefinition-vaccination-injection-site-swelling.html">Vaccination Injection Site Swelling</a> </td><td><p>Size of an swelling at a vaccine injection site</p>
-</td></tr>
+<h3 id="immunization-reactions">Immunization reactions</h3>
 
-<p><br/></p>
+<tr>
+  <td>
+    <a href="StructureDefinition-allergic-reaction-to-vaccination.html">Allergic Reaction To Vaccination</a>
+  </td>
+  <td>
+    <p>Whether a vaccination caused an allergic reaction</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-vaccination-injection-site-pain.html">Vaccination Injection Site Pain</a>
+  </td>
+  <td>
+    <p>Pain intensity at vaccine injection site at rest or movement</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-vaccination-injection-site-erythema.html">Vaccination Injection Site Erythema</a>
+  </td>
+  <td>
+    <p>Size of an erythema at a vaccine injection site</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-vaccination-injection-site-swelling.html">Vaccination Injection Site Swelling</a>
+  </td>
+  <td>
+    <p>Size of an swelling at a vaccine injection site</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-body-temperature-after-vaccination.html">Body Temperature After Vaccination</a>
+  </td>
+  <td>
+    <p>Maximal body temperature after a vaccination event (indicating fever)</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-analgesic-antipyretic-intake-after-vaccination.html">Analgesic Antipyretic Intake After Vaccination</a>
+  </td>
+  <td>
+    <p>Whether a patient took analgesic or antipyretic drugs after a vaccination event</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-general-complaints-after-vaccination.html">General Complaints After Vaccination</a>
+  </td>
+  <td>
+    <p>General complaints after a vaccination event</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html">Medical Treatment For Vaccination Adverse Reaction</a>
+  </td>
+  <td>
+    <p>Whether a patient underwent medical treatment for a potential or actual adverse reaction to a vaccination event</p>
+  </td>
+</tr>
+
+<h3 id="covid-19-infection--treatment">COVID-19 infection &amp; treatment</h3>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-covid19-encounter.html">COVID-19 Encounter</a>
+  </td>
+  <td>
+    <p>Whether a patient underwent medical treatment for COVID-19</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-sars-cov2-infection.html">SARS CoV2 Infection</a>
+  </td>
+  <td>
+    <p>Profile to capture the diagnosis of disease caused by 2019 novel coronavirus.</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-sars-cov2-variant.html">SARS CoV2 Variant</a>
+  </td>
+  <td>
+    <p>Variant/strain of detected SARS CoV2 (Pango Cov-lineage)</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-covid19-oxygen-therapy.html">COVID-19 Oxygen Therapy</a>
+  </td>
+  <td>
+    <p>Indicating whether a COVID-19 patient received an oxygen therapy</p>
+  </td>
+</tr>
+
+<h3 id="anamnesis">Anamnesis</h3>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-regular-alcohol-intake.html">Regular Alcohol Intake</a>
+  </td>
+  <td>
+    <p>Whether a patient regularly drinks alcohol</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-regular-alcohol-intake-quantity.html">Regular Alcohol Intake Quantity</a>
+  </td>
+  <td>
+    <p>How many alcoholic drinks a patient usually drinks per day</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-chemotherapy.html">Chemotherapy</a>
+  </td>
+  <td>
+    <p>Whether a patient is or has been receiving a chemotherapy within the last 3 months</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-immunomodulatory-therapy.html">Immunomodulatory Therapy</a>
+  </td>
+  <td>
+    <p>Whether a patient is receiving an immunosuppressive or -modulatory therapy</p>
+  </td>
+</tr>
+
+<h3 id="questionnaires">Questionnaires</h3>
+
+<tr>
+  <td>
+    <a href="StructureDefinition-additional-vaccination-willingness.html">Additional Vaccination Willingness</a>
+  </td>
+  <td>
+    <p>Response to AdditionalVaccinationWillingnessQuestionnaire</p>
+  </td>
+</tr>
 
 
 
@@ -229,10 +358,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 25, 2021 00:25+0100">2021-11-25</span>
+          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 30, 2021 16:36+0000">2021-11-30</span>
           <br/>
           <span style="color: #FFFF77">
-            <p style="color: white"><a name="l516">​</a>
+            <p style="color: white"><a name="l633">​</a>
        Links: <a href="toc.html">Table of Contents</a> |
        <a href="qa.html">QA Report</a> |
        <a href="https://github.com/BIH-CEI/napkon-vaccination/issues/" target="_blank">Issues</a> |

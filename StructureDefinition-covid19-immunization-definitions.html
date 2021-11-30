@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>NAPKON-VACCINATION\COVID19 Immunization - Definitions - FHIR v4.0.1</title>
+    <title>NAPKON-VACCINATION\COVID-19 Immunization - Definitions - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,9 +21,10 @@
       <!-- Placeholder for child template CSS declarations -->
   <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/napkon.css"/>
 
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/fhir-table-scripts.js" type="text/javascript"> </script>
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -42,13 +43,13 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.8"}
-    h3,h4,h5,h6{--heading-prefix:"10.8"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.7"}
+    h3,h4,h5,h6{--heading-prefix:"9.7"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Left logo - typically the publisher's logo - project or affiliate -->
 <div id="project-nav">
-  <a no-external="true" id="project-logo" href="https://bihealth.org">
+  <a no-external="true" id="project-logo" href="https://napkon.de/">
     <img src="assets/images/napkon-logo.svg" alt="Project home" height="71"/>
   </a>
 </div>
@@ -90,9 +91,6 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="guidance.html">Guidance</a>
-  </li>
-  <li>
     <a href="profiles.html">Profiles</a>
   </li>
   <li>
@@ -122,7 +120,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>COVID19 Immunization</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>COVID-19 Immunization</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -195,7 +193,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: Covid19Immunization - Detailed Descriptions</h2>
+<h2 id="root">Resource Profile: COVID19Immunization - Detailed Descriptions</h2>
 
 <p>Definitions for the covid19-immunization resource profile.</p>
 
@@ -316,7 +314,7 @@ A set of codes indicating the current status of an Immunization.
   <tr><td>Definition</td><td><p>Indicates the reason the immunization event was not performed.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-covid-vaccination-contraindications.html">Covid Vaccination Contraindications</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-covid19-vaccination-contraindications.html">COVID-19 Vaccination Contraindications</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Comments</td><td><p>This is generally only used for the status of "not-done". The reason for performing the immunization event is captured in reasonCode, not here.</p>
 </td></tr>
@@ -368,7 +366,7 @@ The code for vaccine product administered.
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l1411">​</a>The codes SHALL be taken from <a href="null">VaccinesSNOMED</a>; other codes may be used where these codes are not suitable
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l1407">​</a>The codes SHALL be taken from <a href="null">VaccinesSNOMED</a>; other codes may be used where these codes are not suitable
 SNOMED Vaccine Codes
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
@@ -455,7 +453,7 @@ SNOMED Vaccine Codes
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l1953">​</a>The codes SHALL be taken from <a href="null">VaccinesATC</a>; other codes may be used where these codes are not suitable
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l1949">​</a>The codes SHALL be taken from <a href="null">VaccinesATC</a>; other codes may be used where these codes are not suitable
 ATC Vaccine Codes
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
@@ -542,7 +540,7 @@ ATC Vaccine Codes
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l2495">​</a>The codes SHALL be taken from <a href="null">PZN</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l2491">​</a>The codes SHALL be taken from <a href="null">PZN</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
@@ -627,7 +625,7 @@ ATC Vaccine Codes
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l3035">​</a>The codes SHALL be taken from <a href="file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-absent-or-unknown-immunizations-uv-ips.html">Absent or Unknown Immunization - IPS</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l3031">​</a>The codes SHALL be taken from <a href="file://C:\GitHub\hl7.fhir.uv.ips#1.0.0\output/ValueSet-absent-or-unknown-immunizations-uv-ips.html">Absent or Unknown Immunization - IPS</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
@@ -707,8 +705,8 @@ ATC Vaccine Codes
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Immunization.vaccineCode.coding:Covid19VaccineName"> </a><span style="color: grey">49.</span> <b>Immunization.vaccineCode.coding:Covid19VaccineName</b><a href="#Immunization.vaccineCode.coding:Covid19VaccineName" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>Covid19VaccineName</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Immunization.vaccineCode.coding:COVID19VaccineName"> </a><span style="color: grey">49.</span> <b>Immunization.vaccineCode.coding:COVID19VaccineName</b><a href="#Immunization.vaccineCode.coding:COVID19VaccineName" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>COVID19VaccineName</td></tr>
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
@@ -942,7 +940,7 @@ The role a practitioner or organization plays in the immunization event.
   <tr><td>Definition</td><td><p>Reasons why the vaccine was administered.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-covid-vaccination-reasons.html">Covid Vaccination Reasons</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-covid-vaccination-reasons.html">COVID-19 Vaccination Reasons</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
@@ -1399,10 +1397,10 @@ The vaccine preventable disease the dose is being administered for.
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 25, 2021 00:25+0100">2021-11-25</span>
+          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-vaccination#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 30, 2021 16:36+0000">2021-11-30</span>
           <br/>
           <span style="color: #FFFF77">
-            <p style="color: white"><a name="l7872">​</a>
+            <p style="color: white"><a name="l7868">​</a>
        Links: <a href="toc.html">Table of Contents</a> |
        <a href="qa.html">QA Report</a> |
        <a href="https://github.com/BIH-CEI/napkon-vaccination/issues/" target="_blank">Issues</a> |
