@@ -1,11 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="75080a73-2a0d-4645-9201-0022a2071b3b"/>
+  <id value="7dbda198-a984-454a-a78e-e18a275d634a"/>
   <meta>
-    <lastUpdated value="2021-12-06T10:42:28.716+00:00"/>
+    <lastUpdated value="2021-12-06T20:57:44.283+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/covid-vaccination-reasons"/>
+    <resource>
+      <ValueSet>
+        <id value="covid-vaccination-reasons"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-napkon-vaccination-module.html">NAPKON Vaccination Module Codes v1.0.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jul 2021</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-napkon-vaccination-module-2001"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-2001">2001</a>
+                </td>
+                <td>https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>To protect myself from infection with SARS-CoV-2 or from COVID-19</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-napkon-vaccination-module-2002"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-2002">2002</a>
+                </td>
+                <td>https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>To protect my private environment from infection with SARS-CoV-2 or COVID-19</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-napkon-vaccination-module-2003"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-2003">2003</a>
+                </td>
+                <td>https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>To protect my work environment from infection with SARS-CoV-2 or COVID-19</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-napkon-vaccination-module-2004"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-2004">2004</a>
+                </td>
+                <td>https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Because everyone gets vaccinated</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-napkon-vaccination-module-2005"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-2005">2005</a>
+                </td>
+                <td>https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Because I am afraid of being discriminated against due to my vaccination status (e.g. travel ban, work ban).</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-74964007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007">74964007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Other</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-385432009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=385432009">385432009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Not applicable (qualifier value)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/covid-vaccination-reasons"/>
+        <version value="1.0.0"/>
+        <name value="COVID19VaccinationReasons"/>
+        <title value="COVID-19 Vaccination Reasons"/>
+        <status value="active"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
+        <description value="Individual reason for getting vaccinated against COVID-19"/>
+        <expansion>
+          <identifier value="urn:uuid:af6ea27e-8327-402c-acc9-d5c8245d21a7"/>
+          <timestamp value="2021-12-06T20:58:24+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="2001"/>
+            <display value="To protect myself from infection with SARS-CoV-2 or from COVID-19"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="2002"/>
+            <display value="To protect my private environment from infection with SARS-CoV-2 or COVID-19"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="2003"/>
+            <display value="To protect my work environment from infection with SARS-CoV-2 or COVID-19"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="2004"/>
+            <display value="Because everyone gets vaccinated"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="2005"/>
+            <display value="Because I am afraid of being discriminated against due to my vaccination status (e.g. travel ban, work ban)."/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="74964007"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="385432009"/>
+            <display value="Not applicable (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other"/>
     <resource>
@@ -73,11 +242,11 @@
         <name value="PresentNotPresentUndeterminedOther"/>
         <title value="Present Not Present Undetermined Other"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:1be5b203-e622-42e5-b1ca-b82ca59c8549"/>
-          <timestamp value="2021-12-06T10:43:13+00:00"/>
+          <identifier value="urn:uuid:06c022dd-8e89-42d1-a749-dd53c49aab1f"/>
+          <timestamp value="2021-12-06T20:58:25+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -174,11 +343,11 @@
         <name value="COVID19VaccinationContraindications"/>
         <title value="COVID-19 Vaccination Contraindications"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="Contraindications precluding COVID-19 vaccination"/>
         <expansion>
-          <identifier value="urn:uuid:56730340-6286-4fb7-92bd-77a6906c7f1b"/>
-          <timestamp value="2021-12-06T10:43:13+00:00"/>
+          <identifier value="urn:uuid:644ae6d1-0350-486c-a884-6720d7601883"/>
+          <timestamp value="2021-12-06T20:58:25+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -206,6 +375,115 @@
             <system value="http://snomed.info/sct"/>
             <code value="74964007"/>
             <display value="Other"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.napkon.de/fhir/ValueSet/pain-provoking-factor"/>
+    <resource>
+      <ValueSet>
+        <id value="pain-provoking-factor"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-napkon-vaccination-module.html">NAPKON Vaccination Module Codes v1.0.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jul 2021</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-52598005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52598005">52598005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rest pain</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-425423002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=425423002">425423002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pain provoked by movement (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.napkon.de-fhir-CodeSystem-napkon-vaccination-module-pain-by-pressure"> </a>
+                  <a href="CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-pain-by-pressure">pain-by-pressure</a>
+                </td>
+                <td>https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module</td>
+                <td>Pain provoked by pressure</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.napkon.de/fhir/ValueSet/pain-provoking-factor"/>
+        <version value="1.0.0"/>
+        <name value="PainProvokingFactor"/>
+        <title value="Pain Provoking Factor"/>
+        <status value="active"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
+        <description value="Pain provoking factors"/>
+        <expansion>
+          <identifier value="urn:uuid:b8dfeacb-2ace-49c8-bdc3-d351f90dd51d"/>
+          <timestamp value="2021-12-06T20:58:27+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="52598005"/>
+            <display value="Rest pain"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="425423002"/>
+            <display value="Pain provoked by movement (finding)"/>
+          </contains>
+          <contains>
+            <system value="https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module"/>
+            <code value="pain-by-pressure"/>
+            <display value="Pain provoked by pressure"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -272,11 +550,11 @@
         <name value="EncounterHomeHealthAmbulatoryInpatient"/>
         <title value="Encounter HomeHealth Ambulatory Inpatient"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="ValueSet to determine the encounter type of a patient"/>
         <expansion>
-          <identifier value="urn:uuid:6079603f-3f5e-4737-8806-37c725a8c161"/>
-          <timestamp value="2021-12-06T10:43:17+00:00"/>
+          <identifier value="urn:uuid:ae23a355-1315-49a8-a66d-ee3cab710dbb"/>
+          <timestamp value="2021-12-06T20:58:28+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -372,11 +650,11 @@
         <name value="ComplaintIntensity"/>
         <title value="Complaint Intensity"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="Intensity of general complaints"/>
         <expansion>
-          <identifier value="urn:uuid:bd98534b-007b-4b4b-9f2b-526db68d3acb"/>
-          <timestamp value="2021-12-06T10:43:17+00:00"/>
+          <identifier value="urn:uuid:a5f47504-beba-4e4c-9372-d35e66560b0f"/>
+          <timestamp value="2021-12-06T20:58:28+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -473,11 +751,11 @@
         <name value="YesNoUnknown"/>
         <title value="Yes No Unknown"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="Yes / No / Unknown"/>
         <expansion>
-          <identifier value="urn:uuid:1514c09f-ca04-4b80-8184-67e55a3fc71a"/>
-          <timestamp value="2021-12-06T10:43:17+00:00"/>
+          <identifier value="urn:uuid:a53c344d-d295-4069-b55f-37115ec98b4e"/>
+          <timestamp value="2021-12-06T20:58:28+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -577,11 +855,11 @@
         <name value="DetectedNotDetectedUnknownUndetermined"/>
         <title value="Detected Not Detected Unknown Undetermined"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="Values for laboratory observations"/>
         <expansion>
-          <identifier value="urn:uuid:30033779-5d21-44f0-b90a-6f0f099b85b5"/>
-          <timestamp value="2021-12-06T10:43:20+00:00"/>
+          <identifier value="urn:uuid:25237a46-3818-40f8-a0d0-540f67d7478a"/>
+          <timestamp value="2021-12-06T20:58:31+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -686,11 +964,11 @@
         <name value="SeverityGrading"/>
         <title value="Severity Grading"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="Scale to grade the severity of an outcome/condition/observation"/>
         <expansion>
-          <identifier value="urn:uuid:d8ca0da5-9f53-4853-949d-5c252111c294"/>
-          <timestamp value="2021-12-06T10:43:20+00:00"/>
+          <identifier value="urn:uuid:644821ef-db5a-48b9-a2a5-0a6392c8a3e0"/>
+          <timestamp value="2021-12-06T20:58:31+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2706,11 +2984,11 @@
         <name value="AnalgesicsAntipyretics"/>
         <title value="Analgesics Antipyretics"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="Analgetic and antipyretic drugs"/>
         <expansion>
-          <identifier value="urn:uuid:d8a7337c-a72b-49a2-935d-63e682314a59"/>
-          <timestamp value="2021-12-06T10:43:22+00:00"/>
+          <identifier value="urn:uuid:07fb0702-958f-4809-91cd-5fe6536c6e05"/>
+          <timestamp value="2021-12-06T20:58:33+00:00"/>
           <total value="194"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3763,11 +4041,11 @@
         <name value="RestrictedEventStatus"/>
         <title value="RestrictedEventStatus"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="EventStatus value set restricted to codes not-done, active, completed and unknown"/>
         <expansion>
-          <identifier value="urn:uuid:7f4ecfb9-aa1d-4003-889b-84c0840fc32b"/>
-          <timestamp value="2021-12-06T10:43:26+00:00"/>
+          <identifier value="urn:uuid:039de48b-9a51-41dd-94e9-b7c88f828528"/>
+          <timestamp value="2021-12-06T20:58:36+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3862,11 +4140,11 @@
         <name value="EncounterAmbulatoryEmergencyInpatient"/>
         <title value="Encounter Ambulatory Emergency Inpatient"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="ValueSet to determine the encounter type of a patient"/>
         <expansion>
-          <identifier value="urn:uuid:e5be89ce-a06e-455d-aa19-13cbbbf43f46"/>
-          <timestamp value="2021-12-06T10:43:26+00:00"/>
+          <identifier value="urn:uuid:86a42c0f-542f-4a44-9e28-153f7c6a0037"/>
+          <timestamp value="2021-12-06T20:58:37+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3980,11 +4258,11 @@
         <name value="CTCAEGradeVS"/>
         <title value="CTCAE Grade Value Set"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE."/>
         <expansion>
-          <identifier value="urn:uuid:54900a51-2aab-418a-aaa6-e2ceb91b3c8e"/>
-          <timestamp value="2021-12-06T10:43:26+00:00"/>
+          <identifier value="urn:uuid:cbefb42f-5158-4a8b-932c-b98d9ad31293"/>
+          <timestamp value="2021-12-06T20:58:37+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4335,14 +4613,14 @@
         <name value="ImmunosuppressiveImmunomodulatoryTherapy"/>
         <title value="Immunosuppressive Immunomodulatory Therapy"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="Immunosuppressive and immunomodulatory procedures / therapies codes"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:e07309fd-be0b-4207-8b0e-3b680824ab30"/>
-          <timestamp value="2021-12-06T10:43:26+00:00"/>
+          <identifier value="urn:uuid:2af953a0-650f-41a9-aaf8-369dbc8be924"/>
+          <timestamp value="2021-12-06T20:58:37+00:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4705,11 +4983,11 @@
         <name value="GeneralComplaintsAfterVaccination"/>
         <title value="General Complaints After Vaccination"/>
         <status value="active"/>
-        <date value="2021-12-06T10:42:28+00:00"/>
+        <date value="2021-12-06T20:57:44+00:00"/>
         <description value="General complaints after vaccination"/>
         <expansion>
-          <identifier value="urn:uuid:874de615-b2b5-4226-aa4f-1044571c0d15"/>
-          <timestamp value="2021-12-06T10:43:27+00:00"/>
+          <identifier value="urn:uuid:311351de-dfbb-48d0-b3a8-2d2f08e9b5a5"/>
+          <timestamp value="2021-12-06T20:58:37+00:00"/>
           <total value="17"/>
           <parameter>
             <name value="excludeNested"/>

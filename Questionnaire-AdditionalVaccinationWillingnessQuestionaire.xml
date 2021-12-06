@@ -7,7 +7,7 @@
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> additional-vaccination-willingness</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">null</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-yes-no-unknown.html">Yes No Unknown</a></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/additional-vaccination-willingness-questionnaire"/>
+  <url value="https://www.napkon.de/fhir/additional-vaccination-willingness-questionnaire"/>
   <version value="1.0.0"/>
   <name value="AdditionalVaccinationWillingnessQuestionnaire"/>
   <status value="active"/>
@@ -22,7 +22,7 @@
   <item>
     <linkId value="additional-vaccination-willingness"/>
     <code>
-      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module"/>
+      <system value="https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module"/>
       <code value="q1001"/>
       <display value="Willingness for additional SARS-CoV-2 vaccination if recommended"/>
     </code>

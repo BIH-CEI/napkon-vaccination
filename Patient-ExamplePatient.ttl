@@ -28,7 +28,7 @@
          fhir:Coding.code [ fhir:value "MR" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "https://netzwerk-universitätsmedizin/fhir/napkon-example-system" ];
+     fhir:Identifier.system [ fhir:value "https://www.napkon.de/fhir/napkon-example-system" ];
      fhir:Identifier.value [ fhir:value "napkon-example-patient" ]
   ];
   fhir:Patient.name [

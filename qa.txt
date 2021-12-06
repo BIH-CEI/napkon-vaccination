@@ -1,9 +1,9 @@
 ﻿NapkonVaccination : Validation Results
 =========================================
 
-err = 23, warn = 33, info = 24
+err = 24, warn = 28, info = 19
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.90
-Generated Mon Dec 06 10:44:08 UTC 2021. FHIR version 4.0.1 for napkon-vaccination#1.0.0 (canonical = https://www.napkon.de/fhir)
+Generated Mon Dec 06 20:59:13 UTC 2021. FHIR version 4.0.1 for napkon-vaccination#1.0.0 (canonical = https://www.napkon.de/fhir)
  Build Errors : 788 / 8 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-ctcae-grade-code-system : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-vaccination-module : 0 / 0 / 1
@@ -14,7 +14,7 @@ Generated Mon Dec 06 10:44:08 UTC 2021. FHIR version 4.0.1 for napkon-vaccinatio
  /github/workspace/fsh-generated/resources/Encounter-COVID19EncounterInpatient : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Encounter-MedicalTreatmentForVaccinationAdverseReactionAtGP : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-MedicalTreatmentForVaccinationAdverseReactionInHospital : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Immunization-COVIDVaccinationDone : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/Immunization-COVIDVaccinationDone : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/Immunization-COVIDVaccinationNotDone : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Immunization-COVIDVaccinationNotDoneReasonOther : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-napkon-vaccination : 0 / 0 / 1
@@ -27,7 +27,7 @@ Generated Mon Dec 06 10:44:08 UTC 2021. FHIR version 4.0.1 for napkon-vaccinatio
  /github/workspace/fsh-generated/resources/Observation-RegularAlcoholIntake1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-RegularAlcoholIntake4 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-RegularAlcoholIntakeNo : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-RegularAlcoholIntakeNoLonger : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-RegularAlcoholIntakeNoLonger : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-RegularAlcoholIntakeQuantity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-RegularAlcoholIntakeQuantityNone : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-SARSCoV2Variant : 1 / 0 / 2
@@ -39,7 +39,7 @@ Generated Mon Dec 06 10:44:08 UTC 2021. FHIR version 4.0.1 for napkon-vaccinatio
  /github/workspace/fsh-generated/resources/Procedure-Chemotherapy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Procedure-ImmunomodulatoryTherapy : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Procedure-ImmunomodulatoryTherapyNotDone : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-AdditionalVaccinationWillingnessQuestionaire : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-AdditionalVaccinationWillingnessQuestionaire : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-AdditionalVaccinationWillingness : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-additional-vaccination-willingness : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-allergic-reaction-to-vaccination : 0 / 0 / 1
@@ -52,7 +52,7 @@ Generated Mon Dec 06 10:44:08 UTC 2021. FHIR version 4.0.1 for napkon-vaccinatio
  /github/workspace/fsh-generated/resources/StructureDefinition-general-complaints-after-vaccination : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-immunomodulatory-therapy : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction : 2 / 4 / 7
- /github/workspace/fsh-generated/resources/StructureDefinition-regular-alcohol-intake : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-regular-alcohol-intake : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-regular-alcohol-intake-quantity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-infection : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sars-cov2-variant : 0 / 2 / 3
@@ -61,7 +61,7 @@ Generated Mon Dec 06 10:44:08 UTC 2021. FHIR version 4.0.1 for napkon-vaccinatio
  /github/workspace/fsh-generated/resources/StructureDefinition-vaccination-injection-site-swelling : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-analgesics-antipyretics : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-complaint-intensity : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-covid-vaccination-reasons : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-covid-vaccination-reasons : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-covid19-vaccination-contraindications : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-covid19-vaccine-codes : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ctcae-grade-value-set : 0 / 0 / 1
@@ -70,7 +70,7 @@ Generated Mon Dec 06 10:44:08 UTC 2021. FHIR version 4.0.1 for napkon-vaccinatio
  /github/workspace/fsh-generated/resources/ValueSet-encounter-homehealth-ambulatory-inpatient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-general-complaints-after-vaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-immunosuppressive-immunomodulatory-therapy : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-pain-provoking-factor : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-pain-provoking-factor : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-present-not-present-undetermined-other : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-restricted-event-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-severity-grading : 0 / 0 / 1
@@ -104,7 +104,7 @@ ERROR: /github/workspace/output/CodeSystem-ctcae-grade-code-system.json.html#/ht
 ERROR: /github/workspace/output/CodeSystem-ctcae-grade-code-system.ttl.html#/html/body/div/div/div/p/span/p/a at Line 282, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ctcae-grade-code-system.xml.html#/html/body/div/div/div/p/span/p/a at Line 274, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-napkon-vaccination-module.change.history.html#/html/body/div/div/div/p/span/p/a at Line 233, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-napkon-vaccination-module.html#/html/body/div/div/div/p/span/p/a at Line 240, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-napkon-vaccination-module.html#/html/body/div/div/div/p/span/p/a at Line 243, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-napkon-vaccination-module.json.html#/html/body/div/div/div/p/span/p/a at Line 271, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-napkon-vaccination-module.ttl.html#/html/body/div/div/div/p/span/p/a at Line 284, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-napkon-vaccination-module.xml.html#/html/body/div/div/div/p/span/p/a at Line 275, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
@@ -242,7 +242,7 @@ ERROR: /github/workspace/output/Patient-ExamplePatient.change.history.html#/html
 ERROR: /github/workspace/output/Patient-ExamplePatient.html#/html/body/div/div/div/p/span/p/a at Line 218, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/Patient-ExamplePatient.json.html#/html/body/div/div/div/p/span/p/a at Line 269, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/Patient-ExamplePatient.ttl.html#/html/body/div/div/div/p/span/p/a at Line 278, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
-ERROR: /github/workspace/output/Patient-ExamplePatient.xml.html#/html/body/div/div/div/p/span/p/a at Line 257, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
+ERROR: /github/workspace/output/Patient-ExamplePatient.xml.html#/html/body/div/div/div/p/span/p/a at Line 256, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/Procedure-COVID19OxygenTherapy.change.history.html#/html/body/div/div/div/p/span/p/a at Line 233, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/Procedure-COVID19OxygenTherapy.html#/html/body/div/div/div/p/span/p/a at Line 218, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/Procedure-COVID19OxygenTherapy.json.html#/html/body/div/div/div/p/span/p/a at Line 256, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
@@ -359,9 +359,9 @@ ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 895, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 926, column 179: The link '??' for "Medizininformatik-Initiative - ValueSet - RestrictedEncounterStatus (missing link)" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 930, column 137: The link '??' for "KontaktartDe (missing link)" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/a at Line 933, column 189: The link '#a5ced9d1-8ed4-4078-9409-13531a8721cc-null' for "null" cannot be resolved (valid targets: 471 targets)
-ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 942, column 191: The link '#8809d4c4-381b-46d6-98ec-8a2a6dc3fc02-null' for "null" cannot be resolved (valid targets: 471 targets)
-ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 948, column 202: The link '#23418358-cc8c-404d-9476-bcaebee2bece-null' for "null" cannot be resolved (valid targets: 471 targets)
+ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/a at Line 933, column 189: The link '#a8cb6014-8e35-4bf8-89a0-f69cc4a9507c-null' for "null" cannot be resolved (valid targets: 471 targets)
+ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 942, column 191: The link '#a2333134-669e-4d84-9311-97809baa8439-null' for "null" cannot be resolved (valid targets: 471 targets)
+ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 948, column 202: The link '#1058ab15-2ec7-43da-a9ea-31512d5d4a53-null' for "null" cannot be resolved (valid targets: 471 targets)
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/div/div/p/span/p/a at Line 1024, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.profile.history.html#/html/body/div/div/div/p/span/p/a at Line 258, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.profile.json.html#/html/body/div/div/div/p/span/p/a at Line 10695, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
@@ -476,9 +476,9 @@ ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccin
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 855, column 44: The link '' for "KontaktGesundheitseinrichtung" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 872, column 44: The link '' for "KontaktGesundheitseinrichtung" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 913, column 179: The link '??' for "Medizininformatik-Initiative - ValueSet - RestrictedEncounterStatus (missing link)" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/a at Line 920, column 189: The link '#a5ced9d1-8ed4-4078-9409-13531a8721cc-null' for "null" cannot be resolved (valid targets: 475 targets)
-ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 929, column 191: The link '#8809d4c4-381b-46d6-98ec-8a2a6dc3fc02-null' for "null" cannot be resolved (valid targets: 475 targets)
-ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 935, column 202: The link '#23418358-cc8c-404d-9476-bcaebee2bece-null' for "null" cannot be resolved (valid targets: 475 targets)
+ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/a at Line 920, column 189: The link '#a8cb6014-8e35-4bf8-89a0-f69cc4a9507c-null' for "null" cannot be resolved (valid targets: 475 targets)
+ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 929, column 191: The link '#a2333134-669e-4d84-9311-97809baa8439-null' for "null" cannot be resolved (valid targets: 475 targets)
+ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 935, column 202: The link '#1058ab15-2ec7-43da-a9ea-31512d5d4a53-null' for "null" cannot be resolved (valid targets: 475 targets)
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/div/div/p/span/p/a at Line 1011, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.profile.history.html#/html/body/div/div/div/p/span/p/a at Line 258, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.profile.json.html#/html/body/div/div/div/p/span/p/a at Line 10781, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
@@ -791,7 +791,7 @@ ERROR: /github/workspace/output/ValueSet-complaint-intensity.json.html#/html/bod
 ERROR: /github/workspace/output/ValueSet-complaint-intensity.ttl.html#/html/body/div/div/div/p/span/p/a at Line 268, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-complaint-intensity.xml.html#/html/body/div/div/div/p/span/p/a at Line 258, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-covid-vaccination-reasons.change.history.html#/html/body/div/div/div/p/span/p/a at Line 233, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-covid-vaccination-reasons.html#/html/body/div/div/div/p/span/p/a at Line 281, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-covid-vaccination-reasons.html#/html/body/div/div/div/p/span/p/a at Line 280, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-covid-vaccination-reasons.json.html#/html/body/div/div/div/p/span/p/a at Line 278, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-covid-vaccination-reasons.ttl.html#/html/body/div/div/div/p/span/p/a at Line 280, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-covid-vaccination-reasons.xml.html#/html/body/div/div/div/p/span/p/a at Line 278, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
@@ -836,7 +836,7 @@ ERROR: /github/workspace/output/ValueSet-immunosuppressive-immunomodulatory-ther
 ERROR: /github/workspace/output/ValueSet-immunosuppressive-immunomodulatory-therapy.ttl.html#/html/body/div/div/div/p/span/p/a at Line 266, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-immunosuppressive-immunomodulatory-therapy.xml.html#/html/body/div/div/div/p/span/p/a at Line 255, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-pain-provoking-factor.change.history.html#/html/body/div/div/div/p/span/p/a at Line 233, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-pain-provoking-factor.html#/html/body/div/div/div/p/span/p/a at Line 281, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-pain-provoking-factor.html#/html/body/div/div/div/p/span/p/a at Line 280, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-pain-provoking-factor.json.html#/html/body/div/div/div/p/span/p/a at Line 262, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-pain-provoking-factor.ttl.html#/html/body/div/div/div/p/span/p/a at Line 268, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-pain-provoking-factor.xml.html#/html/body/div/div/div/p/span/p/a at Line 258, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
@@ -887,8 +887,6 @@ INFORMATION: Encounter/COVID19EncounterInpatient: Encounter.type[0]: This elemen
 == fsh-generated/resources/Immunization-COVIDVaccinationDone.json ==
 INFORMATION: Immunization/COVIDVaccinationDone: Immunization.vaccineCode.coding[0]: Code System URI 'https://ec.europa.eu/health/documents/community-register/html/' is unknown so the code cannot be validated
 INFORMATION: Immunization/COVIDVaccinationDone: Immunization.vaccineCode.coding[0]: This element does not match any known slice defined in the profile https://www.napkon.de/fhir/StructureDefinition/covid19-immunization
-WARNING: Immunization/COVIDVaccinationDone: Immunization.reasonCode[0]: [Unable to determine whether the provided codes are in the value set https://www.napkon.de/fhir/ValueSet/covid-vaccination-reasons because the value set or a code system it depends on is not known to the validator, Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module' is unknown so the code cannot be validated]
-INFORMATION: Immunization/COVIDVaccinationDone: Immunization.reasonCode[0].coding[0]: Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module' is unknown so the code cannot be validated
 WARNING: Immunization/COVIDVaccinationDone: Immunization.protocolApplied[0].targetDisease[0]: ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease not found by validator
 == fsh-generated/resources/Immunization-COVIDVaccinationNotDone.json ==
 WARNING: Immunization/COVIDVaccinationNotDone: Immunization.protocolApplied[0].targetDisease[0]: ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease not found by validator
@@ -905,7 +903,6 @@ WARNING: Immunization/COVIDVaccinationNotDoneReasonOther: Immunization.protocolA
 == fsh-generated/resources/Observation-RegularAlcoholIntake4.json ==
 == fsh-generated/resources/Observation-RegularAlcoholIntakeNo.json ==
 == fsh-generated/resources/Observation-RegularAlcoholIntakeNoLonger.json ==
-INFORMATION: Observation/RegularAlcoholIntakeNoLonger: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-RegularAlcoholIntakeQuantity.json ==
 == fsh-generated/resources/Observation-RegularAlcoholIntakeQuantityNone.json ==
 == fsh-generated/resources/Observation-SARSCoV2Variant.json ==
@@ -920,7 +917,7 @@ INFORMATION: Observation/SARSCoV2Variant: Observation.effective.ofType(dateTime)
 == fsh-generated/resources/Procedure-ImmunomodulatoryTherapy.json ==
 == fsh-generated/resources/Procedure-ImmunomodulatoryTherapyNotDone.json ==
 == fsh-generated/resources/Questionnaire-AdditionalVaccinationWillingnessQuestionaire.json ==
-INFORMATION: Questionnaire/AdditionalVaccinationWillingnessQuestionaire: Questionnaire.item[0].code[0]: Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module' is unknown so the code cannot be validated
+ERROR: Questionnaire.url: Resource id/url mismatch: AdditionalVaccinationWillingnessQuestionaire/https://www.napkon.de/fhir/additional-vaccination-willingness-questionnaire
 == fsh-generated/resources/QuestionnaireResponse-AdditionalVaccinationWillingness.json ==
 == fsh-generated/resources/StructureDefinition-additional-vaccination-willingness.json ==
 == fsh-generated/resources/StructureDefinition-allergic-reaction-to-vaccination.json ==
@@ -969,8 +966,6 @@ WARNING: StructureDefinition/medical-treatment-for-vaccination-adverse-reaction:
 WARNING: StructureDefinition/medical-treatment-for-vaccination-adverse-reaction: StructureDefinition.snapshot.element[122].binding: The valueSet reference https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/Aufnahmeanlass on element Encounter.hospitalization.admitSource.coding could not be resolved
 WARNING: StructureDefinition/medical-treatment-for-vaccination-adverse-reaction: StructureDefinition.snapshot.element[140].binding: The valueSet reference https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/Entlassungsgrund on element Encounter.hospitalization.dischargeDisposition.coding could not be resolved
 == fsh-generated/resources/StructureDefinition-regular-alcohol-intake.json ==
-INFORMATION: StructureDefinition/regular-alcohol-intake: StructureDefinition.snapshot.element[61].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/regular-alcohol-intake: StructureDefinition.differential.element[21].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-regular-alcohol-intake-quantity.json ==
 == fsh-generated/resources/StructureDefinition-sars-cov2-infection.json ==
 == fsh-generated/resources/StructureDefinition-sars-cov2-variant.json ==
@@ -984,8 +979,6 @@ WARNING: StructureDefinition/sars-cov2-variant: StructureDefinition.snapshot.ele
 == fsh-generated/resources/ValueSet-analgesics-antipyretics.json ==
 == fsh-generated/resources/ValueSet-complaint-intensity.json ==
 == fsh-generated/resources/ValueSet-covid-vaccination-reasons.json ==
-WARNING: ValueSet/covid-vaccination-reasons: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'covid-vaccination-reasons'): Error from server: Unable to provide support for code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module
 == fsh-generated/resources/ValueSet-covid19-vaccination-contraindications.json ==
 == fsh-generated/resources/ValueSet-covid19-vaccine-codes.json ==
 WARNING: ValueSet/covid19-vaccine-codes: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
@@ -997,8 +990,6 @@ WARNING: ValueSet.where(id = 'covid19-vaccine-codes'): Error from server: Unable
 == fsh-generated/resources/ValueSet-general-complaints-after-vaccination.json ==
 == fsh-generated/resources/ValueSet-immunosuppressive-immunomodulatory-therapy.json ==
 == fsh-generated/resources/ValueSet-pain-provoking-factor.json ==
-WARNING: ValueSet/pain-provoking-factor: ValueSet.compose[0].include[1]: Unknown System specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'pain-provoking-factor'): Error from server: Unable to provide support for code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module
 == fsh-generated/resources/ValueSet-present-not-present-undetermined-other.json ==
 == fsh-generated/resources/ValueSet-restricted-event-status.json ==
 == fsh-generated/resources/ValueSet-severity-grading.json ==

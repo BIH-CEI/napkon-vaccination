@@ -3,14 +3,14 @@
   "id": "pain-provoking-factor",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52598005\">52598005</a></td><td>Rest pain (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=425423002\">425423002</a></td><td>Pain provoked by movement (finding)</td></tr></table></li><li>Include these codes as defined in <code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>pain-by-pressure</td><td>Pain provoked by pressure</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52598005\">52598005</a></td><td>Rest pain (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=425423002\">425423002</a></td><td>Pain provoked by movement (finding)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-napkon-vaccination-module.html\"><code>https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-pain-by-pressure\">pain-by-pressure</a></td><td>Pain provoked by pressure</td></tr></table></li></ul></div>"
   },
   "url": "https://www.napkon.de/fhir/ValueSet/pain-provoking-factor",
   "version": "1.0.0",
   "name": "PainProvokingFactor",
   "title": "Pain Provoking Factor",
   "status": "active",
-  "date": "2021-12-06T10:42:28+00:00",
+  "date": "2021-12-06T20:57:44+00:00",
   "description": "Pain provoking factors",
   "compose": {
     "include": [
@@ -29,7 +29,7 @@
         ]
       },
       {
-        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+        "system": "https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module",
         "concept": [
           {
             "code": "pain-by-pressure",

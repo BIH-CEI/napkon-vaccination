@@ -10,7 +10,7 @@
   "name": "AnalgesicAntipyreticIntakeAfterVaccination",
   "title": "Analgesic Antipyretic Intake After Vaccination",
   "status": "active",
-  "date": "2021-12-06T10:42:28+00:00",
+  "date": "2021-12-06T20:57:44+00:00",
   "description": "Whether a patient took analgesic or antipyretic drugs after a vaccination event",
   "fhirVersion": "4.0.1",
   "kind": "resource",

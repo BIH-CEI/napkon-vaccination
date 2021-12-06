@@ -18,7 +18,7 @@
   fhir:StructureDefinition.name [ fhir:value "AnalgesicAntipyreticIntakeAfterVaccination"];
   fhir:StructureDefinition.title [ fhir:value "Analgesic Antipyretic Intake After Vaccination"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-06T10:42:28+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-12-06T20:57:44+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "Whether a patient took analgesic or antipyretic drugs after a vaccination event"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.kind [ fhir:value "resource"];

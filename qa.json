@@ -3,10 +3,10 @@
   "name": "NapkonVaccination",
   "package-id": "napkon-vaccination",
   "ig-ver": "1.0.0",
-  "date": "Mon, 06 Dec, 2021 10:42:28 +0000",
-  "errs": 23,
-  "warnings": 33,
-  "hints": 24,
+  "date": "Mon, 06 Dec, 2021 20:57:44 +0000",
+  "errs": 24,
+  "warnings": 28,
+  "hints": 19,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
 }

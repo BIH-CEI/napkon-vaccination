@@ -261,7 +261,7 @@
   {
     "id": "AdditionalVaccinationWillingnessQuestionaire",
     "type": "Questionnaire",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/additional-vaccination-willingness-questionnaire",
+    "url": "https://www.napkon.de/fhir/additional-vaccination-willingness-questionnaire",
     "version": "1.0.0",
     "name": "AdditionalVaccinationWillingnessQuestionnaire"
   }

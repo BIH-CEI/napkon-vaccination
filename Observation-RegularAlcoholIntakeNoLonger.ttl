@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 81032-5}\">Days per week alcoholic drinks consumed</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module no-longer}\">No longer</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 81032-5}\">Days per week alcoholic drinks consumed</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: <span title=\"Codes: {https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module no-longer}\">No longer</span></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.code [
@@ -37,7 +37,7 @@
   fhir:Observation.valueCodeableConcept [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module" ];
+       fhir:Coding.system [ fhir:value "https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module" ];
        fhir:Coding.code [ fhir:value "no-longer" ];
        fhir:Coding.display [ fhir:value "No longer" ]
      ]

@@ -3,19 +3,19 @@
   "id": "covid-vaccination-reasons",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2001</td><td>To protect myself from infection with SARS-CoV-2 or from COVID-19</td></tr><tr><td>2002</td><td>To protect my private environment from infection with SARS-CoV-2 or COVID-19</td></tr><tr><td>2003</td><td>To protect my work environment from infection with SARS-CoV-2 or COVID-19</td></tr><tr><td>2004</td><td>Because everyone gets vaccinated</td></tr><tr><td>2005</td><td>Because I am afraid of being discriminated against due to my vaccination status (e.g. travel ban, work ban).</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=385432009\">385432009</a></td><td>Not applicable (qualifier value)</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-napkon-vaccination-module.html\"><code>https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-2001\">2001</a></td><td>To protect myself from infection with SARS-CoV-2 or from COVID-19</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-2002\">2002</a></td><td>To protect my private environment from infection with SARS-CoV-2 or COVID-19</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-2003\">2003</a></td><td>To protect my work environment from infection with SARS-CoV-2 or COVID-19</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-2004\">2004</a></td><td>Because everyone gets vaccinated</td></tr><tr><td><a href=\"CodeSystem-napkon-vaccination-module.html#napkon-vaccination-module-2005\">2005</a></td><td>Because I am afraid of being discriminated against due to my vaccination status (e.g. travel ban, work ban).</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/900000000000207008/version/20210731</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74964007\">74964007</a></td><td>Other (qualifier value)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=385432009\">385432009</a></td><td>Not applicable (qualifier value)</td></tr></table></li></ul></div>"
   },
   "url": "https://www.napkon.de/fhir/ValueSet/covid-vaccination-reasons",
   "version": "1.0.0",
   "name": "COVID19VaccinationReasons",
   "title": "COVID-19 Vaccination Reasons",
   "status": "active",
-  "date": "2021-12-06T10:42:28+00:00",
+  "date": "2021-12-06T20:57:44+00:00",
   "description": "Individual reason for getting vaccinated against COVID-19",
   "compose": {
     "include": [
       {
-        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-vaccination-module",
+        "system": "https://www.napkon.de/fhir/CodeSystem/napkon-vaccination-module",
         "concept": [
           {
             "code": "2001",

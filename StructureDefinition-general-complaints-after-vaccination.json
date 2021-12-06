@@ -10,7 +10,7 @@
   "name": "GeneralComplaintsAfterVaccination",
   "title": "General Complaints After Vaccination",
   "status": "active",
-  "date": "2021-12-06T10:42:28+00:00",
+  "date": "2021-12-06T20:57:44+00:00",
   "description": "General complaints after a vaccination event",
   "fhirVersion": "4.0.1",
   "mapping": [
