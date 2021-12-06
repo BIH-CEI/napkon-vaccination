@@ -10,7 +10,7 @@
   "name": "COVID19VaccineCodes",
   "title": "COVID-19 Vaccine Codes",
   "status": "active",
-  "date": "2021-11-30T16:36:32+00:00",
+  "date": "2021-12-06T10:19:03+00:00",
   "description": "COVID-19 Vaccine Codes (vaccines approved in the European Union)",
   "compose": {
     "include": [

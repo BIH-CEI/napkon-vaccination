@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "COVID19VaccinationContraindications"];
   fhir:ValueSet.title [ fhir:value "COVID-19 Vaccination Contraindications"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-11-30T16:36:32+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-12-06T10:19:03+00:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "Contraindications precluding COVID-19 vaccination"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [

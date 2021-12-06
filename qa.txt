@@ -2,8 +2,8 @@
 =========================================
 
 err = 23, warn = 33, info = 24
-IG Publisher Version: 1.1.83 Out of date - current version is 1.1.89
-Generated Tue Nov 30 16:38:02 UTC 2021. FHIR version 4.0.1 for napkon-vaccination#1.0.0 (canonical = https://www.napkon.de/fhir)
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.90
+Generated Mon Dec 06 10:20:34 UTC 2021. FHIR version 4.0.1 for napkon-vaccination#1.0.0 (canonical = https://www.napkon.de/fhir)
  Build Errors : 788 / 8 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-ctcae-grade-code-system : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-vaccination-module : 0 / 0 / 1
@@ -87,17 +87,17 @@ WARNING: ImplementationGuide.dependency[4].url: The canonical URL for an Impleme
 WARNING: ImplementationGuide.dependency[5].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: ImplementationGuide.dependency[6].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: ImplementationGuide.dependency[7].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingICD10GM could not be resolved
-ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingAlphaID could not be resolved
-ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen could not be resolved
-ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/seitenlokalisation could not be resolved
-ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit could not be resolved
-ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/lebensphase could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingOPS could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum could not be resolved
 ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/seitenlokalisation could not be resolved
 ERROR: ?pkp-1?: The reference https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum could not be resolved
 ERROR: ?pkp-1?: The reference https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingICD10GM could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingAlphaID could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit could not be resolved
+ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/lebensphase could not be resolved
 ERROR: /github/workspace/output/CodeSystem-ctcae-grade-code-system.change.history.html#/html/body/div/div/div/p/span/p/a at Line 233, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ctcae-grade-code-system.html#/html/body/div/div/div/p/span/p/a at Line 242, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ctcae-grade-code-system.json.html#/html/body/div/div/div/p/span/p/a at Line 269, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
@@ -359,9 +359,9 @@ ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/div/div/div/div/ul/li/a at Line 895, column 7: The link '' for "MII-Reference (https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference)" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 926, column 179: The link '??' for "Medizininformatik-Initiative - ValueSet - RestrictedEncounterStatus (missing link)" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 930, column 137: The link '??' for "KontaktartDe (missing link)" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/a at Line 933, column 189: The link '#b85ea4b3-e3b4-4ecb-8ea3-a82277f1194b-null' for "null" cannot be resolved (valid targets: 471 targets)
-ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 942, column 191: The link '#3b60bbcf-4eab-4342-8d8a-4ae63ebbf6ec-null' for "null" cannot be resolved (valid targets: 471 targets)
-ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 948, column 202: The link '#0c0c7c00-fef3-4600-83f5-6c4e19554e2f-null' for "null" cannot be resolved (valid targets: 471 targets)
+ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/a at Line 933, column 189: The link '#e2eeb6fa-925d-40de-a267-83196ed210b7-null' for "null" cannot be resolved (valid targets: 471 targets)
+ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 942, column 191: The link '#58bd1fe3-994c-42bc-aad8-a77fb461947b-null' for "null" cannot be resolved (valid targets: 471 targets)
+ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 948, column 202: The link '#84ca1670-025b-4f74-ae6b-ccd8974438af-null' for "null" cannot be resolved (valid targets: 471 targets)
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/div/div/p/span/p/a at Line 1024, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.profile.history.html#/html/body/div/div/div/p/span/p/a at Line 258, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-covid19-encounter.profile.json.html#/html/body/div/div/div/p/span/p/a at Line 10695, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
@@ -476,9 +476,9 @@ ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccin
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 855, column 44: The link '' for "KontaktGesundheitseinrichtung" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/div/div/div/p/a at Line 872, column 44: The link '' for "KontaktGesundheitseinrichtung" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 913, column 179: The link '??' for "Medizininformatik-Initiative - ValueSet - RestrictedEncounterStatus (missing link)" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/a at Line 920, column 189: The link '#b85ea4b3-e3b4-4ecb-8ea3-a82277f1194b-null' for "null" cannot be resolved (valid targets: 475 targets)
-ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 929, column 191: The link '#3b60bbcf-4eab-4342-8d8a-4ae63ebbf6ec-null' for "null" cannot be resolved (valid targets: 475 targets)
-ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 935, column 202: The link '#0c0c7c00-fef3-4600-83f5-6c4e19554e2f-null' for "null" cannot be resolved (valid targets: 475 targets)
+ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/a at Line 920, column 189: The link '#e2eeb6fa-925d-40de-a267-83196ed210b7-null' for "null" cannot be resolved (valid targets: 475 targets)
+ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 929, column 191: The link '#58bd1fe3-994c-42bc-aad8-a77fb461947b-null' for "null" cannot be resolved (valid targets: 475 targets)
+ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/tr/td/a at Line 935, column 202: The link '#84ca1670-025b-4f74-ae6b-ccd8974438af-null' for "null" cannot be resolved (valid targets: 475 targets)
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/div/div/p/span/p/a at Line 1011, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.profile.history.html#/html/body/div/div/div/p/span/p/a at Line 258, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-medical-treatment-for-vaccination-adverse-reaction.profile.json.html#/html/body/div/div/div/p/span/p/a at Line 10781, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
