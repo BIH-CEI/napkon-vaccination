@@ -1,14 +1,8 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-<<<<<<< HEAD
-ValueSet: CovidVaccinationReasons
-Id: covid-vaccination-reasons
-Title: "Covid Vaccination Reasons"
-=======
 ValueSet: COVID19VaccinationReasons
 Id: covid-vaccination-reasons
 Title: "COVID-19 Vaccination Reasons"
->>>>>>> main
 Description: "Individual reason for getting vaccinated against COVID-19"
 * $nvm#2001 "To protect myself from infection with SARS-CoV-2 or from COVID-19"
 * $nvm#2002 "To protect my private environment from infection with SARS-CoV-2 or COVID-19"
