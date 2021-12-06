@@ -5,7 +5,7 @@ Parent: Observation
 Id: sars-cov2-variant
 Title: "SARS CoV2 Variant"
 Description: "Variant/strain of detected SARS CoV2 (Pango Cov-lineage)"
-* insert napkon-metadata(2021-10-05, #active, 1.0.0)
+* insert napkon-metadata(2021-12-06, #active, 1.1.0)
 * insert mii-patient-reference
 * status MS
 * category 1.. MS
