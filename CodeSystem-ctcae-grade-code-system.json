@@ -10,7 +10,7 @@
   "name": "CTCAEGradeCS",
   "title": "CTCAE Grade Code System",
   "status": "active",
-  "date": "2021-12-06T10:19:03+00:00",
+  "date": "2021-12-06T10:42:28+00:00",
   "description": "Common terminology criteria (CTC) grades associated with the severity of an adverse event, expressed as integers, 0 through 5, with 0 representing no adverse event, and 5 representing death.",
   "content": "complete",
   "count": 6,

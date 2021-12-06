@@ -10,7 +10,7 @@
   "name": "COVID19VaccinationContraindications",
   "title": "COVID-19 Vaccination Contraindications",
   "status": "active",
-  "date": "2021-12-06T10:19:03+00:00",
+  "date": "2021-12-06T10:42:28+00:00",
   "description": "Contraindications precluding COVID-19 vaccination",
   "compose": {
     "include": [

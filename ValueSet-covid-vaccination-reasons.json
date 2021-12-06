@@ -10,7 +10,7 @@
   "name": "COVID19VaccinationReasons",
   "title": "COVID-19 Vaccination Reasons",
   "status": "active",
-  "date": "2021-12-06T10:19:03+00:00",
+  "date": "2021-12-06T10:42:28+00:00",
   "description": "Individual reason for getting vaccinated against COVID-19",
   "compose": {
     "include": [

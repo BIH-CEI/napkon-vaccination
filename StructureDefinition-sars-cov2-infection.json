@@ -10,7 +10,7 @@
   "name": "SARSCoV2Infection",
   "title": "SARS CoV2 Infection",
   "status": "active",
-  "date": "2021-12-06T10:19:03+00:00",
+  "date": "2021-12-06T10:42:28+00:00",
   "description": "Profile to capture the diagnosis of disease caused by 2019 novel coronavirus.",
   "fhirVersion": "4.0.1",
   "mapping": [

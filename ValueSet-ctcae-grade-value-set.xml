@@ -10,7 +10,7 @@
   <name value="CTCAEGradeVS"/>
   <title value="CTCAE Grade Value Set"/>
   <status value="active"/>
-  <date value="2021-12-06T10:19:03+00:00"/>
+  <date value="2021-12-06T10:42:28+00:00"/>
   <description value="CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE."/>
   <compose>
     <include>

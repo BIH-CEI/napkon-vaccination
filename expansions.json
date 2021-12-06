@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4170b16d-cbf3-429f-b511-b1f946ec0241",
+  "id" : "75080a73-2a0d-4645-9201-0022a2071b3b",
   "meta" : {
-    "lastUpdated" : "2021-12-06T10:19:03.034+00:00"
+    "lastUpdated" : "2021-12-06T10:42:28.716+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,11 +19,11 @@
       "name" : "PresentNotPresentUndeterminedOther",
       "title" : "Present Not Present Undetermined Other",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:e973b6d7-45a7-4265-b9df-19f408b3be12",
-        "timestamp" : "2021-12-06T10:19:48+00:00",
+        "identifier" : "urn:uuid:1be5b203-e622-42e5-b1ca-b82ca59c8549",
+        "timestamp" : "2021-12-06T10:43:13+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -74,11 +74,11 @@
       "name" : "COVID19VaccinationContraindications",
       "title" : "COVID-19 Vaccination Contraindications",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "Contraindications precluding COVID-19 vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:a2240f07-e061-4e11-8586-4d31dc4b08f8",
-        "timestamp" : "2021-12-06T10:19:48+00:00",
+        "identifier" : "urn:uuid:56730340-6286-4fb7-92bd-77a6906c7f1b",
+        "timestamp" : "2021-12-06T10:43:13+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -124,11 +124,11 @@
       "name" : "EncounterHomeHealthAmbulatoryInpatient",
       "title" : "Encounter HomeHealth Ambulatory Inpatient",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "ValueSet to determine the encounter type of a patient",
       "expansion" : {
-        "identifier" : "urn:uuid:d61e629a-019c-4c42-bd52-33cfaac56b50",
-        "timestamp" : "2021-12-06T10:19:52+00:00",
+        "identifier" : "urn:uuid:6079603f-3f5e-4737-8806-37c725a8c161",
+        "timestamp" : "2021-12-06T10:43:17+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -170,11 +170,11 @@
       "name" : "ComplaintIntensity",
       "title" : "Complaint Intensity",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "Intensity of general complaints",
       "expansion" : {
-        "identifier" : "urn:uuid:91190843-5883-4cd3-ac1d-b2ec810e9aed",
-        "timestamp" : "2021-12-06T10:19:52+00:00",
+        "identifier" : "urn:uuid:bd98534b-007b-4b4b-9f2b-526db68d3acb",
+        "timestamp" : "2021-12-06T10:43:17+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -225,11 +225,11 @@
       "name" : "YesNoUnknown",
       "title" : "Yes No Unknown",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "Yes / No / Unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:b04299d2-fb83-4acf-96c9-31a907b5a5ca",
-        "timestamp" : "2021-12-06T10:19:52+00:00",
+        "identifier" : "urn:uuid:1514c09f-ca04-4b80-8184-67e55a3fc71a",
+        "timestamp" : "2021-12-06T10:43:17+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -275,11 +275,11 @@
       "name" : "DetectedNotDetectedUnknownUndetermined",
       "title" : "Detected Not Detected Unknown Undetermined",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "Values for laboratory observations",
       "expansion" : {
-        "identifier" : "urn:uuid:25975108-a895-4b47-a264-9677ea131ed4",
-        "timestamp" : "2021-12-06T10:19:55+00:00",
+        "identifier" : "urn:uuid:30033779-5d21-44f0-b90a-6f0f099b85b5",
+        "timestamp" : "2021-12-06T10:43:20+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -330,11 +330,11 @@
       "name" : "SeverityGrading",
       "title" : "Severity Grading",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "Scale to grade the severity of an outcome/condition/observation",
       "expansion" : {
-        "identifier" : "urn:uuid:80c54dfe-f75a-45b5-8270-c608b296059f",
-        "timestamp" : "2021-12-06T10:19:55+00:00",
+        "identifier" : "urn:uuid:d8ca0da5-9f53-4853-949d-5c252111c294",
+        "timestamp" : "2021-12-06T10:43:20+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -385,11 +385,11 @@
       "name" : "AnalgesicsAntipyretics",
       "title" : "Analgesics Antipyretics",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "Analgetic and antipyretic drugs",
       "expansion" : {
-        "identifier" : "urn:uuid:db357781-ffe2-422b-8973-f867f1fbdeac",
-        "timestamp" : "2021-12-06T10:19:57+00:00",
+        "identifier" : "urn:uuid:d8a7337c-a72b-49a2-935d-63e682314a59",
+        "timestamp" : "2021-12-06T10:43:22+00:00",
         "total" : 194,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1386,11 +1386,11 @@
       "name" : "RestrictedEventStatus",
       "title" : "RestrictedEventStatus",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "EventStatus value set restricted to codes not-done, active, completed and unknown",
       "expansion" : {
-        "identifier" : "urn:uuid:c9e9dd07-4a43-4f95-8216-6d9dc3f56d02",
-        "timestamp" : "2021-12-06T10:20:01+00:00",
+        "identifier" : "urn:uuid:7f4ecfb9-aa1d-4003-889b-84c0840fc32b",
+        "timestamp" : "2021-12-06T10:43:26+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1437,11 +1437,11 @@
       "name" : "EncounterAmbulatoryEmergencyInpatient",
       "title" : "Encounter Ambulatory Emergency Inpatient",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "ValueSet to determine the encounter type of a patient",
       "expansion" : {
-        "identifier" : "urn:uuid:6f8a57ac-5e4e-49a1-88f9-25ee9179c4f4",
-        "timestamp" : "2021-12-06T10:20:01+00:00",
+        "identifier" : "urn:uuid:e5be89ce-a06e-455d-aa19-13cbbbf43f46",
+        "timestamp" : "2021-12-06T10:43:26+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1483,11 +1483,11 @@
       "name" : "CTCAEGradeVS",
       "title" : "CTCAE Grade Value Set",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "CTCAE Grades 0 through 5. The grade of the adverse event, determined by CTCAE criteria, where 0 represents confirmation that the given adverse event did NOT occur, and 5 represents death. Note that grade 0 events are generally not reportable, but may be created to give positive confirmation that the clinician assessed or considered a particular AE.",
       "expansion" : {
-        "identifier" : "urn:uuid:3047618b-e093-4e99-b153-bbcfcbe7325b",
-        "timestamp" : "2021-12-06T10:20:01+00:00",
+        "identifier" : "urn:uuid:54900a51-2aab-418a-aaa6-e2ceb91b3c8e",
+        "timestamp" : "2021-12-06T10:43:26+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1544,15 +1544,15 @@
       "name" : "ImmunosuppressiveImmunomodulatoryTherapy",
       "title" : "Immunosuppressive Immunomodulatory Therapy",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "Immunosuppressive and immunomodulatory procedures / therapies codes",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:6bd837e0-636a-4550-9e49-1f3809604d89",
-        "timestamp" : "2021-12-06T10:20:01+00:00",
+        "identifier" : "urn:uuid:e07309fd-be0b-4207-8b0e-3b680824ab30",
+        "timestamp" : "2021-12-06T10:43:26+00:00",
         "total" : 34,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1757,11 +1757,11 @@
       "name" : "GeneralComplaintsAfterVaccination",
       "title" : "General Complaints After Vaccination",
       "status" : "active",
-      "date" : "2021-12-06T10:19:03+00:00",
+      "date" : "2021-12-06T10:42:28+00:00",
       "description" : "General complaints after vaccination",
       "expansion" : {
-        "identifier" : "urn:uuid:147402ee-d68c-411e-8f9b-04d7e19a2c26",
-        "timestamp" : "2021-12-06T10:20:01+00:00",
+        "identifier" : "urn:uuid:874de615-b2b5-4226-aa4f-1044571c0d15",
+        "timestamp" : "2021-12-06T10:43:27+00:00",
         "total" : 17,
         "parameter" : [{
           "name" : "excludeNested",

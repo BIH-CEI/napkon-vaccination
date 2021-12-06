@@ -10,7 +10,7 @@
   "name": "EncounterHomeHealthAmbulatoryInpatient",
   "title": "Encounter HomeHealth Ambulatory Inpatient",
   "status": "active",
-  "date": "2021-12-06T10:19:03+00:00",
+  "date": "2021-12-06T10:42:28+00:00",
   "description": "ValueSet to determine the encounter type of a patient",
   "compose": {
     "include": [

@@ -10,7 +10,7 @@
   "name": "COVID19Immunization",
   "title": "COVID-19 Immunization",
   "status": "active",
-  "date": "2021-12-06T10:19:03+00:00",
+  "date": "2021-12-06T10:42:28+00:00",
   "description": "COVID-19 immunization event",
   "fhirVersion": "4.0.1",
   "mapping": [

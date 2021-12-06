@@ -10,7 +10,7 @@
   <name value="NapkonVaccinationModule"/>
   <title value="NAPKON Vaccination Module Codes"/>
   <status value="active"/>
-  <date value="2021-12-06T10:19:03+00:00"/>
+  <date value="2021-12-06T10:42:28+00:00"/>
   <description value="NAPKON Vaccination Module Code System - Collection of vaccination module-specific codes that are missing from common terminologies such as SNOMED CT"/>
   <content value="complete"/>
   <count value="8"/>
