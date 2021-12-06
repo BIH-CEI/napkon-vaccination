@@ -1,11 +1,11 @@
 // Canonical URLs for instances
-Alias: $additional-vaccination-willingness-questionnaire-url = https://www.netzwerk-universitaetsmedizin.de/fhir/additional-vaccination-willingness-questionnaire
+Alias: $additional-vaccination-willingness-questionnaire-url = https://www.napkon.de/fhir/additional-vaccination-willingness-questionnaire
 
 // Code Systems
 Alias: $cs-eu-vaccine-codes = https://ec.europa.eu/health/documents/community-register/html/
 
 // Base Profiles
-Alias: $gecco-diagnosis-covid19 = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19
+Alias: $gecco-diagnosis-covid19 = https://www.napkon.de/fhir/StructureDefinition/diagnosis-covid-19
 
 // Adverse Event Grading
 // TODO: Change to HL7 CodeSystem and ValueSet once released (and update ThirdPartyNotices.txt) -- see https://build.fhir.org/ig/standardhealth/fsh-ae/CodeSystem-ctcae-grade-code-system.html
