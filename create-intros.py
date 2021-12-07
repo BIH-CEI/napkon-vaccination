@@ -7,7 +7,7 @@ import os
 from pathlib import Path
 
 base_path = Path(os.path.dirname(os.path.realpath(__file__))) / 'input'
-output_path = base_path / 'pagecontent'
+output_path = base_path / 'intro-notes'
 ig_fname = base_path / 'data' / 'ig.yml'
 
 template_md = """
