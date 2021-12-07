@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "COVID19VaccinationReasons"];
   fhir:ValueSet.title [ fhir:value "COVID-19 Vaccination Reasons"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-12-06T20:57:44+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-12-07T17:21:29+00:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "Individual reason for getting vaccinated against COVID-19"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
