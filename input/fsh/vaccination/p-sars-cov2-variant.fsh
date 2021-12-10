@@ -12,7 +12,7 @@ Description: "Variant/strain of detected SARS CoV2 (Pango Cov-lineage)"
 * code = $loinc#96741-4 "SARS-CoV-2 (COVID-19) variant [Type] in Specimen by Sequencing"
 * value[x] only CodeableConcept
 * valueCodeableConcept MS
-* valueCodeableConcept from $loinc-sars-cov2-variants (required)
+* valueCodeableConcept from $loinc-sars-cov2-variants (extensible)
 * identifier[analyseBefundCode].system.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
 * identifier[analyseBefundCode].value.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
 * identifier[analyseBefundCode].assigner.extension contains $ext-data-absent-reason named dataAbsentReason 0..1 MS
