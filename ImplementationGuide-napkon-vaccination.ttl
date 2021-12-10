@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "NapkonVaccination"];
   fhir:ImplementationGuide.title [ fhir:value "NAPKON Vaccination Module"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-12-07T17:21:29+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-12-10T11:47:18+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;

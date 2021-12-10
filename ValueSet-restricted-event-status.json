@@ -10,7 +10,7 @@
   "name": "RestrictedEventStatus",
   "title": "RestrictedEventStatus",
   "status": "active",
-  "date": "2021-12-07T17:21:29+00:00",
+  "date": "2021-12-10T11:47:18+00:00",
   "description": "EventStatus value set restricted to codes not-done, active, completed and unknown",
   "compose": {
     "include": [

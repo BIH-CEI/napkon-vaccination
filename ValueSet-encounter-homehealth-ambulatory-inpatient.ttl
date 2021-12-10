@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "EncounterHomeHealthAmbulatoryInpatient"];
   fhir:ValueSet.title [ fhir:value "Encounter HomeHealth Ambulatory Inpatient"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-12-07T17:21:29+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-12-10T11:47:18+00:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "ValueSet to determine the encounter type of a patient"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [

@@ -23,7 +23,7 @@
   <name value="AnalgesicAntipyreticIntakeAfterVaccination"/>
   <title value="Analgesic Antipyretic Intake After Vaccination"/>
   <status value="active"/>
-  <date value="2021-12-07T17:21:29+00:00"/>
+  <date value="2021-12-10T11:47:18+00:00"/>
   <description value="Whether a patient took analgesic or antipyretic drugs after a vaccination event"/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
