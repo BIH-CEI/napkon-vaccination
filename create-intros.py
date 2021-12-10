@@ -2,13 +2,16 @@
 """
 Create an intro file for each profile from input/data/ig.yml
 """
+import json
 import yaml
 import os
 from pathlib import Path
 
-base_path = Path(os.path.dirname(os.path.realpath(__file__))) / 'input'
-output_path = base_path / 'pagecontent'
-ig_fname = base_path / 'data' / 'ig.yml'
+base_path = Path(os.path.dirname(os.path.realpath(__file__)))
+output_path = base_path / 'input' / 'intro-notes'
+ig_fname = base_path / 'input' / 'data' / 'ig.yml'
+linklist_fname = base_path / 'input' / 'includes' / 'link-list.md'
+profiles_fname = base_path / 'input' / 'pagecontent' / 'profiles-generated.md'
 
 template_md = """
 {% assign id = {{include.id}} %}
@@ -52,9 +55,41 @@ This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | 
 {% include link-list.md %}
 """
 
+linklist_general = {
+    "GECCO": "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/home",
+    "NAPKON": "https://napkon.de/",
+    "NUM": "https://www.netzwerk-universitaetsmedizin.de/",
+    "BIH": "https://www.bihealth.org/",
+    "MII": "https://www.medizininformatik-initiative.de/",
+    "uncertaintyOfPresence": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+    "ConditionVerificationStatus": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+    "SNOMEDCT": "http://snomed.info/sct",
+    "LOINC": "http://loinc.org/",
+    "VSdataAbsentReason": "http://hl7.org/fhir/R4/valueset-data-absent-reason.html",
+}
+
 if not ig_fname.exists():
-    print('No ig.yml file found')
-    exit()
+    print('No ig.yml file found, trying to create')
+
+    fsh_generated_path = base_path /'fsh-generated' / 'resources'
+    ig_files = list(fsh_generated_path.glob('ImplementationGuide-*.json'))
+
+    if len(ig_files) == 0:
+        print('No ImplementationGuide files found in fsh-generated/resources')
+        exit(1)
+    elif len(ig_files) > 1:
+        print('More than one ImplementationGuide file found in fsh-generated/resources')
+        exit(1)
+    else:
+        json_ig_fname = ig_files[0]
+
+    if not ig_fname.parent.exists():
+        ig_fname.parent.mkdir()
+
+    print(f"Converting {json_ig_fname} to {ig_fname}")
+    content = json.loads(open(json_ig_fname).read())
+    yaml.dump(content, open(ig_fname, "w"))
+
 
 if not output_path.exists():
     output_path.mkdir(parents=True)
@@ -62,6 +97,7 @@ if not output_path.exists():
 with open(ig_fname, 'r') as f:
     ig = yaml.safe_load(f)
 
+linklist = {}
 
 for resource in ig["definition"]["resource"]:
     ref = resource["reference"]["reference"]
@@ -75,5 +111,28 @@ for resource in ig["definition"]["resource"]:
         print(resource["name"])
         with open(fname, 'w') as f:
             f.write(template_md)
+
+    linklist[resource["name"]] = ref.replace('/', '-') + '.html'
+
+
+if not linklist_fname.exists():
+    if not linklist_fname.parent.exists():
+        linklist_fname.parent.mkdir()
+
+    print(linklist_fname.name)
+    with open(linklist_fname, 'w') as f:
+        for k, v in linklist.items():
+            f.write(f'[{k}]: {v}\n')
+        f.write("\n")
+        for k, v in linklist_general.items():
+            f.write(f'[{k}]: {v}\n')
+
+if not profiles_fname.exists():
+    print(profiles_fname.name)
+    with open(profiles_fname, 'w') as f:
+        f.write('### Profiles\n\n')
+        for name in linklist:
+            f.write(f"{{% include resource-reference.md name='{name}' %}}\n")
+
 
 print("Done")

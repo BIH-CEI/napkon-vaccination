@@ -37,6 +37,6 @@ The NAPKON vaccination module was specified based on the [COVIM study](https://c
 * [Nationales Pandemie Kohorten Netz (NAPKON)][NAPKON]
 * [German Corona Consensus Dataset (GECCO)][GECCO]
 * [GitHub project](https://github.com/BIH-CEI/{{site.data.fhir.packageId}}/)
-* [Dataset description in ART-DECOR](https://github.com/BIH-CEI/{{site.data.fhir.packageId}}/)
+* [Dataset description in ART-DECOR](https://art-decor.org/art-decor/decor-datasets--covid19f-?id=2.16.840.1.113883.3.1937.777.53.1.2&effectiveDate=2020-08-12T00%3A00%3A00&conceptId=2.16.840.1.113883.3.1937.777.53.2.453&conceptEffectiveDate=2021-08-25T12%3A45%3A26&language=en-US)
 
 {% include link-list.md %}
